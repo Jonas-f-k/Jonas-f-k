@@ -1,46 +1,119 @@
-Hi, I'm Jonas 👋
+<div align="center">
 
-I'm a Web Development student with a background in Multimedia Design, focused on building clean, responsive, and practical web applications.
+Jonas Falk Kopietz
+Web Development · Frontend · UI/UX
 
-I enjoy working across both the visual and technical sides of web development — from designing interfaces and prototypes to building them with modern web technologies.
+Building clean, responsive and practical web experiences.
+
+<br>
+
+<img src="https://skillicons.dev/icons?i=js,react,html,css,php,wordpress,figma,git,github,mysql" alt="Tech Stack" />
+
+</div>
 
 About Me
-🎓 Studying Web Development
-💻 Focused on JavaScript, React, WordPress, and frontend development
-🎨 Background in Multimedia Design, UI/UX, and Figma
-🧠 Interested in improving my skills in modern web development and software engineering
-🌍 Languages: German, English, and Danish
 
-Projects
-🌦️ React Weather App
+I'm a Web Development student with a background in Multimedia Design.
 
-A weather application built with React, focused on API usage, component structure, and responsive UI.
+I enjoy combining design and development: planning interfaces in Figma, building them with modern web technologies, working with APIs and improving projects through testing and iteration.
 
-🧠 Quiz App
+Web Development student
+AP Degree in Multimedia Design
+Focused on JavaScript, React and frontend development
+Experience with WordPress, REST APIs, PHP and databases
+Interested in UI/UX, backend fundamentals and software architecture
+Languages: German · English · Danish
+Tech Stack
 
-A category-based quiz application with score tracking and interactive question handling.
+<table> <tr> <td valign="top" width="33%">
 
-📦 WordPress / Web Projects
-
-Worked with custom WordPress layouts, REST API content, responsive design, reusable site components, and UI/UX improvements.
-
-🖥️ Server Dashboard
-
-A React-based dashboard concept for monitoring and managing home-server services and system status.
-
-Currently Learning
-Advanced JavaScript
+Frontend
+JavaScript
 React
-API integration
-Backend fundamentals
-Databases
-Modern frontend architecture
+HTML5
+CSS3
+Responsive Design
+
+</td> <td valign="top" width="33%">
+
+Backend & CMS
+PHP
+WordPress
+REST APIs
+MariaDB / MySQL
+Database Fundamentals
+
+</td> <td valign="top" width="33%">
+
+Tools & Design
+Git
+GitHub
+Figma
+VS Code
+UI/UX Design
+
+</td> </tr> </table>
+
+Featured Projects
+Weather App
+
+A React weather application focused on API integration, component structure and responsive design.
+
+React JavaScript API CSS
+
+Quiz App
+
+An interactive quiz application with categories, question handling and score tracking.
+
+JavaScript Frontend UI
+
+WordPress Projects
+
+Custom WordPress work involving layouts, REST API content, reusable components, responsive design and UI/UX improvements.
+
+WordPress PHP REST API CSS
+
+Home Server Dashboard
+
+A React dashboard concept for displaying and managing home-server services, status information and system data.
+
+React Dashboard Frontend
+
+Currently Working On
+JavaScript      ████████████████░░░░   Improving
+React           ██████░░░░░░░░░░░░░░   Building
+Backend         █░░░░░░░░░░░░░░░░░░░   Learning
+Databases       █░░░░░░░░░░░░░░░░░░░   Learning
+UI / UX         ████████████████░░░░   Experienced
+GitHub Stats
+
+<div align="center">
+
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=YOUR_GITHUB_USERNAME&show_icons=true&hide_border=true&theme=transparent" alt="GitHub Stats" />
+
+<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_GITHUB_USERNAME&layout=compact&hide_border=true&theme=transparent" alt="Top Languages" />
+
+</div>
+
+Replace YOUR_GITHUB_USERNAME in the two links above with your GitHub username.
+
 What I Like Building
 
-I especially enjoy projects where I can combine:
+I enjoy projects that combine the full process:
+
+<div align="center">
 
 Design → Development → Testing → Improvement
 
-My goal is to create interfaces that look good, feel intuitive, and are technically solid.
+</div>
 
-Thanks for visiting my profile.
+My goal is to build interfaces that are visually clean, intuitive to use and technically solid.
+
+<div align="center">
+
+Thanks for visiting
+
+
+
+
+</div>
