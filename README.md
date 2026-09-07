@@ -1,10 +1,12 @@
 <div align="center">
 
-Hi, I'm Jonas 👋
+<h1>Hi, I'm Jonas 👋</h1>
 
-SEA Student · Web Development
+<h3>SEA Student · Web Development</h3>
 
-I enjoy building clean, practical web projects and learning more about modern frontend and backend development.
+<p>
+  I enjoy building clean, practical web projects and learning more about modern frontend and backend development.
+</p>
 
 <p>
   <a href="mailto:Jonas.kopietz44@gmail.com">
@@ -18,115 +20,151 @@ I enjoy building clean, practical web projects and learning more about modern fr
 
 </div>
 
-About Me
+<hr>
 
-🎓 SEA Student studying Web Development
+<h2>About Me</h2>
 
-🎨 AP Degree in Multimedia Design
+<ul>
+  <li>🎓 <b>SEA Student</b> studying Web Development</li>
+  <li>🎨 AP Degree in <b>Multimedia Design</b></li>
+  <li>💻 Currently focusing on JavaScript, React and web development</li>
+  <li>🎯 Interested in frontend development, UI/UX and learning more backend development</li>
+  <li>🌍 Based in Germany</li>
+  <li>🗣️ German · English · Danish</li>
+</ul>
 
-💻 Interested in frontend development, UI/UX and gradually learning more backend development
+<hr>
 
-🌍 Based in Germany
-
-🗣️ German · English · Danish
-
-🧠 I like learning by building projects and improving them step by step
-
-🖥️ I also enjoy working with home servers, self-hosting and small technical side projects
-
-Technologies
+<h2>Technologies & Tools</h2>
 
 <p>
   <img src="https://skillicons.dev/icons?i=html,css,js,react,php,wordpress,mysql,git,github,figma,vscode" alt="Technologies and tools">
 </p>
 
-Main focus: JavaScript, React, HTML, CSS
+<p>
+  <b>Current focus:</b> JavaScript · React · HTML · CSS
+  <br>
+  <b>Also working with:</b> PHP · WordPress · REST APIs · MariaDB / MySQL · Git · Figma
+</p>
 
-Also working with: PHP, WordPress, REST APIs, MariaDB / MySQL, Git and Figma
+<hr>
 
-Projects
+<h2>Projects</h2>
 
-🌦️ Weather App
+<table>
+  <tr>
+    <td width="25%">
+      <b>🌦️ Weather App</b>
+    </td>
+    <td>
+      React weather application using an external API, reusable components and a responsive interface.
+      <br><br>
+      <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React">
+      <img src="https://img.shields.io/badge/JavaScript-323330?style=flat-square&logo=javascript&logoColor=F7DF1E" alt="JavaScript">
+      <img src="https://img.shields.io/badge/API-555555?style=flat-square" alt="API">
+    </td>
+  </tr>
 
-A React weather application built around API integration, reusable components and responsive UI.
+  <tr>
+    <td>
+      <b>🧠 Quiz App</b>
+    </td>
+    <td>
+      JavaScript quiz application with categories, interactive questions and score tracking.
+      <br><br>
+      <img src="https://img.shields.io/badge/JavaScript-323330?style=flat-square&logo=javascript&logoColor=F7DF1E" alt="JavaScript">
+      <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML">
+      <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" alt="CSS">
+    </td>
+  </tr>
 
-React JavaScript API CSS
+  <tr>
+    <td>
+      <b>🌐 WordPress / Web Projects</b>
+    </td>
+    <td>
+      Responsive WordPress work involving REST API content, reusable site elements, UI/UX and Figma prototypes.
+      <br><br>
+      <img src="https://img.shields.io/badge/WordPress-21759B?style=flat-square&logo=wordpress&logoColor=white" alt="WordPress">
+      <img src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white" alt="PHP">
+      <img src="https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white" alt="Figma">
+    </td>
+  </tr>
 
-🧠 Quiz App
+  <tr>
+    <td>
+      <b>🖥️ Home Server Dashboard</b>
+    </td>
+    <td>
+      React dashboard project for displaying home-server services, system status and useful information.
+      <br><br>
+      <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React">
+      <img src="https://img.shields.io/badge/JavaScript-323330?style=flat-square&logo=javascript&logoColor=F7DF1E" alt="JavaScript">
+    </td>
+  </tr>
+</table>
 
-A small JavaScript quiz application with categories, score tracking and interactive questions.
+<hr>
 
-JavaScript HTML CSS
+<h2>Experience</h2>
 
-🌐 WordPress / Web Projects
+<p>
+  My Multimedia Design studies gave me practical experience with both design and web development.
+</p>
 
-Worked on responsive WordPress layouts, REST API content, reusable site elements and UI/UX improvements.
+<ul>
+  <li>WordPress development and responsive layouts</li>
+  <li>REST API integration</li>
+  <li>Figma prototypes and design systems</li>
+  <li>UI/UX and usability testing</li>
+  <li>Content structure and navigation</li>
+  <li>Working with feedback and improving existing designs</li>
+</ul>
 
-WordPress PHP REST API Figma
+<p>
+  I'm now building on that design foundation while developing stronger programming skills.
+</p>
 
-🖥️ Home Server Dashboard
+<hr>
 
-A React dashboard project for displaying home-server services, system status and other useful information.
+<h2>Currently Learning</h2>
 
-React JavaScript Dashboard
+<p>
+  <img src="https://img.shields.io/badge/JavaScript-323330?style=flat-square&logo=javascript&logoColor=F7DF1E" alt="JavaScript">
+  <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React">
+  <img src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white" alt="PHP">
+  <img src="https://img.shields.io/badge/Databases-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="Databases">
+  <img src="https://img.shields.io/badge/REST_APIs-555555?style=flat-square" alt="REST APIs">
+</p>
 
-Experience
+<p>
+  I'm currently spending most of my development time improving my JavaScript and React skills while learning more about backend development, databases and project structure.
+</p>
 
-During my Multimedia Design studies, I worked on real web and design projects involving:
+<hr>
 
-WordPress development
+<h2>Outside of Code</h2>
 
-Responsive layouts
+<p>
+  🏸 Badminton &nbsp;·&nbsp;
+  ✏️ Drawing &nbsp;·&nbsp;
+  📚 Reading &nbsp;·&nbsp;
+  🖥️ Home servers &nbsp;·&nbsp;
+  🏋️ Training
+</p>
 
-REST API integration
-
-Figma prototypes and design systems
-
-UI/UX testing
-
-Content structure and navigation
-
-Working with feedback and improving existing designs
-
-This gave me a good design foundation that I now want to combine with stronger development skills.
-
-Currently Learning
-
-Advanced JavaScript fundamentals
-
-React
-
-PHP and backend basics
-
-Databases
-
-REST APIs
-
-Better project structure and frontend architecture
-
-Outside of Code
-
-When I'm away from development, I enjoy:
-
-🏸 Badminton
-
-✏️ Drawing
-
-📚 Reading
-
-🖥️ Home server / PC projects
-
-🏋️ Training
+<hr>
 
 <div align="center">
 
-Contact
+<h3>Contact</h3>
 
-<a href="mailto:Jonas.kopietz44@gmail.com">Jonas.kopietz44@gmail.com</a>
-<a href="mailto:jonkop01@easv365.dk">jonkop01@easv365.dk</a>
+<p>
+  <a href="mailto:Jonas.kopietz44@gmail.com">Jonas.kopietz44@gmail.com</a>
+  &nbsp;·&nbsp;
+  <a href="mailto:jonkop01@easv365.dk">jonkop01@easv365.dk</a>
+</p>
 
-<br>
-
-Thanks for checking out my profile.
+<p>Thanks for checking out my profile.</p>
 
 </div>
