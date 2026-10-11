@@ -56,9 +56,9 @@ public final class MemoryArmorLayer
   private static LayerDefinition mesh(String style, boolean trim) {
     MeshDefinition mesh = new MeshDefinition();
     var root = mesh.getRoot();
-    var head = box();
+    var head = box().texOffs(0,32);
     var body = box();
-    var arm = box();
+    var arm = box().texOffs(32,0);
     var leg = box();
     float extra = .55f;
     var d = new CubeDeformation(extra);
@@ -215,8 +215,8 @@ public final class MemoryArmorLayer
       var limb =
           root.addOrReplaceChild(
               side + "_leg", box(), PartPose.offset(side.equals("right") ? -1.9f : 1.9f, 12, 0));
-      var upper = box();
-      var boot = box();
+      var upper = box().texOffs(32,24);
+      var boot = box().texOffs(32,48);
       if (trim) {
         upper.addBox(-2.7f, 1, -2.7f, 5.4f, 1, 5.4f);
         boot.addBox(-2.7f, 8, -2.7f, 5.4f, 1.2f, 5.4f);

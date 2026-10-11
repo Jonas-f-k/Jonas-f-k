@@ -13,7 +13,12 @@ assert all(s['type']=='minecraft:single' for s in atlas['sources'])
 for name in names:
  p=A/'textures'/f'{name}.png';im=Image.open(p);w,h=im.size
  assert w in (16,32,64) and h%w==0,(name,im.size)
- if h!=w:assert Path(str(p)+'.mcmeta').exists(),('Missing animation metadata',name)
+ if name.startswith('entity/'):
+  assert im.size==(64,128),('Creature material layout mismatch',name,im.size)
+  assert not Path(str(p)+'.mcmeta').exists(),('Static creature skin marked animated',name)
+  for band in range(4):
+   assert len(im.crop((0,band*32,64,(band+1)*32)).getcolors(2048))>=3,('Flat creature material',name,band)
+ elif h!=w:assert Path(str(p)+'.mcmeta').exists(),('Missing animation metadata',name)
  if Path(str(p)+'.mcmeta').exists():json.loads(Path(str(p)+'.mcmeta').read_text())
 assert not list((A/'textures/art').glob('*.png')),'Retired illustrated atlases must not ship'
 icons=[]

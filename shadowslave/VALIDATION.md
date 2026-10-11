@@ -1,5 +1,9 @@
 # Validation — 0.6.0-rework.1
 
+## 0.6.0-rework.2 material update
+
+Offline checks pass for the new 64x128 creature skins, four painted material regions per skin, unchanged asset credits and the articulated rigs. The replacement GitHub build and baked-face pixel sampling check are pending. The results below describe the previous release only.
+
 Verified on 2026-10-12 with Minecraft 1.21.1, NeoForge 21.1.256, Java 21 and Gradle 9.2.1 on GitHub Actions.
 
 ## Build and runtime checks

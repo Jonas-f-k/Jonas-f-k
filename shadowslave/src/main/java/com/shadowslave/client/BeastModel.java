@@ -16,7 +16,7 @@ public final class BeastModel extends EntityModel<AbstractClientPlayer> {
   private final ModelPart[] forms=new ModelPart[7];
   private int selected;
   public BeastModel(ModelPart root){this.root=root;for(int i=0;i<7;i++)forms[i]=root.getChild("beast_"+i);}
-  public static LayerDefinition createLayer(){var mesh=new MeshDefinition();for(int i=0;i<7;i++)CreatureRig.build(mesh.getRoot(),"beast_"+i,IDS[i],i,4);return LayerDefinition.create(mesh,64,64);}
+  public static LayerDefinition createLayer(){var mesh=new MeshDefinition();for(int i=0;i<7;i++)CreatureRig.build(mesh.getRoot(),"beast_"+i,IDS[i],i,4);return LayerDefinition.create(mesh,CreatureRig.TEXTURE_WIDTH,CreatureRig.TEXTURE_HEIGHT);}
   public void animate(int form,float swing,float amount,float age,float yaw,float pitch,float strike,boolean flying,boolean breathing){
     selected=Math.clamp(form,0,6);root.getAllParts().forEach(ModelPart::resetPose);
     for(int i=0;i<7;i++)forms[i].visible=i==selected;

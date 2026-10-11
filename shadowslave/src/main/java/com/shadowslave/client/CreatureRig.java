@@ -7,11 +7,34 @@ import net.minecraft.util.Mth;
 /** Native, hierarchical rigs. All dimensions are in model pixels, not world blocks. */
 public final class CreatureRig {
   private CreatureRig() {}
+  /** Four 64x32 material regions: skin, flexible joints, raised plates, hard tips. */
+  public static final int TEXTURE_WIDTH = 64, TEXTURE_HEIGHT = 128;
   private static CubeListBuilder box(float x,float y,float z,float w,float h,float d) {
     return CubeListBuilder.create().texOffs(0,0).addBox(x,y,z,w,h,d);
   }
+  private static CubeListBuilder surface(String name,float x,float y,float z,float w,float h,float d) {
+    int band = 0;
+    if (name.startsWith("leg_") || name.startsWith("arm_") || name.equals("knee")
+        || name.equals("elbow") || name.equals("hand") || name.startsWith("finger_")
+        || name.equals("jaw") || name.equals("segment") || name.equals("tail")) band = 1;
+    if (name.contains("plate") || name.contains("carapace") || name.contains("pauldron")
+        || name.contains("shield") || name.contains("ridge") || name.contains("band")
+        || name.contains("mane") || name.contains("feather") || name.contains("petal")
+        || name.contains("moss") || name.contains("veil") || name.equals("cap")
+        || name.equals("base") || name.contains("mantle") || name.equals("fin")) band = 2;
+    if (name.contains("horn") || name.contains("fang") || name.contains("claw")
+        || name.contains("tusk") || name.contains("tooth") || name.contains("weapon")
+        || name.contains("spine") || name.contains("crown") || name.contains("tine")
+        || name.contains("beak") || name.contains("shard") || name.contains("prism")
+        || name.equals("tip") || name.equals("point") || name.contains("skeletal")) band = 3;
+    int spanX = (int)Math.ceil(2*(w+d)), spanY = (int)Math.ceil(h+d);
+    int hash = name.hashCode();
+    int u = Math.floorMod(hash, Math.max(1, TEXTURE_WIDTH-spanX+1));
+    int v = band*32 + Math.floorMod(hash/31, Math.max(1, 32-spanY+1));
+    return CubeListBuilder.create().texOffs(u,v).addBox(x,y,z,w,h,d);
+  }
   private static PartDefinition part(PartDefinition p,String name,float x,float y,float z,float w,float h,float d,float px,float py,float pz) {
-    return p.addOrReplaceChild(name,box(x,y,z,w,h,d),PartPose.offset(px,py,pz));
+    return p.addOrReplaceChild(name,surface(name,x,y,z,w,h,d),PartPose.offset(px,py,pz));
   }
   private static PartDefinition empty(PartDefinition p,String name) {
     return p.addOrReplaceChild(name,CubeListBuilder.create(),PartPose.ZERO);
@@ -26,9 +49,9 @@ public final class CreatureRig {
   private static void limb(PartDefinition rig,int i,float x,float y,float z,float length,boolean insect,boolean hoof) {
     int sign=x<0?-1:1;
     var upper=part(rig,"leg_"+i,-1,0,-1,2,length*.52f,2,x,y,z);
-    if(insect) upper=rig.addOrReplaceChild("leg_"+i,box(-.65f,0,-.65f,1.3f,length*.52f,1.3f),PartPose.offsetAndRotation(x,y,z,0,0,-sign*.85f));
+    if(insect) upper=rig.addOrReplaceChild("leg_"+i,surface("leg_"+i,-.65f,0,-.65f,1.3f,length*.52f,1.3f),PartPose.offsetAndRotation(x,y,z,0,0,-sign*.85f));
     var lower=part(upper,"knee",-.7f,0,-.8f,1.4f,length*.5f,1.6f,0,length*.49f,0);
-    lower.addOrReplaceChild("foot",box(hoof?-1.1f:-1.4f,0,-2.6f,hoof?2.2f:2.8f,1.4f,3.5f),PartPose.offset(0,length*.46f,0));
+    lower.addOrReplaceChild("foot",surface("plate_foot",hoof?-1.1f:-1.4f,0,-2.6f,hoof?2.2f:2.8f,1.4f,3.5f),PartPose.offset(0,length*.46f,0));
     if(!hoof)for(int c=0;c<3;c++)part(lower,"claw_"+c,-1.3f+c*.9f,.7f,-3.4f,.5f,.7f,1.4f,0,length*.46f,0);
   }
   private static void arm(PartDefinition rig,int sign,boolean blade,boolean massive) {
@@ -183,7 +206,7 @@ public final class CreatureRig {
     for(int i=0;i<6;i++) {
       float a=i*Mth.PI/3;
       var petal=part(h,"petal_"+i,-1.4f,-4,-.5f,2.8f,5,1,(float)Math.sin(a)*2,0,(float)Math.cos(a)*2);
-      petal= h.addOrReplaceChild("petal_"+i,box(-1.4f,-4,-.5f,2.8f,5,1),PartPose.offsetAndRotation((float)Math.sin(a)*2,0,(float)Math.cos(a)*2,-.6f,a,0));
+      petal= h.addOrReplaceChild("petal_"+i,surface("petal_"+i,-1.4f,-4,-.5f,2.8f,5,1),PartPose.offsetAndRotation((float)Math.sin(a)*2,0,(float)Math.cos(a)*2,-.6f,a,0));
       for(int t=0;t<2;t++)part(petal,"thorn_"+t,-.3f,-3+t*2,-1,.6f,1,1,0,0,0);
     }
     for(int i=0;i<4;i++)limb(f,i,(i%2==0?-1:1)*2,15,i<2?-2:2,7,true,false);

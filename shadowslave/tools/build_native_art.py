@@ -18,7 +18,8 @@ regions={'frostglass_taiga':3,'aurora_fields':6,'amethyst_heights':5,'hollow_mou
 def rect(x,y,w,h,c):return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" fill="{c}"/>'
 def poly(points,c):return f'<polygon points="{points}" fill="{c}"/>'
 def export(name,size,parts):
- svg=f'<svg xmlns="http://www.w3.org/2000/svg" width="{size}" height="{size}" viewBox="0 0 {size} {size}" shape-rendering="crispEdges">'+''.join(parts)+'</svg>'
+ w,h=size if isinstance(size,tuple) else (size,size)
+ svg=f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" shape-rendering="crispEdges">'+''.join(parts)+'</svg>'
  source=SRC/(name.replace('/','_')+'.svg');source.write_text(svg)
  dest=A/'textures'/f'{name}.png';dest.parent.mkdir(parents=True,exist_ok=True)
  cairosvg.svg2png(bytestring=svg.encode(),write_to=str(dest))
@@ -61,20 +62,32 @@ for entry in manifest:
   export(name,32,parts);continue
  if name.startswith('entity/'):
   n=int(token.split('_')[-1]);family=families[n] if token.startswith('species_') else n%7
-  dark,mid,light,accent=palettes[family];parts=[rect(0,0,64,64,dark)]
-  ident=species_ids[n] if token.startswith('species_') else ['dragon','wolf','leviathan','colossus','stag','griffin','wyvern','trim'][n%8]
+  ident=species_ids[n] if token.startswith('species_') else (['dragon','moonveil_wraith','leviathan','colossus','stag','griffin','wyvern'][n%7] if token.startswith('nightmare_') else ['dragon','wolf','leviathan','colossus','stag','griffin','wyvern','trim'][n%8])
+  dark,mid,light,accent=palettes[family]
+  if ident=='forsaken_knight':dark,mid,light,accent=['#1b2029','#414c60','#9eafc3','#c49770']
+  elif ident=='stone_saint':dark,mid,light,accent=['#222a32','#56626d','#a4b4bf','#a6ba91']
+  elif ident.startswith('carapace_'):dark,mid,light,accent=['#35272a','#805b52','#c79978','#d7b896']
+  elif ident in ['dragon','cinder_hound']:dark,mid,light,accent=['#30272b','#6d4542','#b66d51','#e8bc79']
+  parts=[]
   furry=any(k in ident for k in ['wolf','hound','hart','ravager','stalker'])
   woody=any(k in ident for k in ['tree','stag','briar','flower'])
   metallic=any(k in ident for k in ['iron','knight','saint','colossus','stone','carapace','mimic'])
-  for y in range(0,64,8):
-   for x in range(-4,64,12):
-    xx=x+(4 if y%16 else 0)
-    if furry:parts += [poly(f'{xx},{y} {xx+9},{y} {xx+7},{y+5} {xx+3},{y+8}',mid),rect(xx+2,y+1,5,1,light)]
-    elif woody:parts += [rect(xx,y,3,8,mid),rect(xx+3,y,1,6,light),rect(xx+7,y+3,3,5,mid)]
-    elif metallic:parts += [rect(xx,y+1,10,6,mid),rect(xx+1,y+1,8,1,light),rect(xx+1,y+5,8,1,dark)]
-    else:parts += [poly(f'{xx},{y+1} {xx+10},{y+1} {xx+8},{y+6} {xx+2},{y+6}',mid),rect(xx+2,y+1,6,1,light)]
-  for i in range(4):parts.append(rect((seed//(i+1))%28+4,8+i*12,4,2,accent))
-  export(name,64,parts);continue
+  # Match CreatureRig's explicit material bands, including small joints and tips.
+  # Details cover each region; no anatomical part relies on a tiny shared corner.
+  for band,base in enumerate([mid,dark,light,light if metallic else accent]):
+   offset=band*32;parts.append(rect(0,offset,64,32,base))
+   for yy in range(0,32,4):
+    for x in range(0,64,6):
+     y=offset+yy;xx=x+(2 if yy%8 else 0)
+     if band==1:parts += [rect(x,y,5,1,mid),rect(x+2,y+2,2,1,dark),rect(x+4,y+3,1,1,light)]
+     elif band==3:parts += [rect(x,y+2,5,1,accent if metallic else mid),rect(x+1,y,1,2,'#d9dfdf' if metallic else '#eadbc1')]
+     elif furry:parts += [poly(f'{xx},{y} {xx+4},{y} {xx+3},{y+3} {xx+1},{y+4}',dark if band==0 else mid),rect(xx+1,y,2,1,light if band==0 else accent)]
+     elif woody:parts += [rect(xx,y,1,4,dark if band==0 else mid),rect(xx+2,y+1,1,2,accent)]
+     elif metallic:parts += [rect(x,y,6,1,dark if band==0 else mid),rect(x,y,1,4,dark if band==0 else mid),rect(x+1,y+1,4,1,light if band==0 else '#cad5dc')]
+     else:parts += [poly(f'{xx},{y} {xx+4},{y} {xx+3},{y+3} {xx+1},{y+3}',dark if band==0 else mid),rect(xx+1,y,2,1,light if band==0 else accent)]
+   if band==2:
+    for i in range(5):parts += [rect((seed//(i+1))%58+2,offset+3+i*5,2,2,accent)]
+  export(name,(64,128),parts);continue
  if name.startswith('armor/'):
   index=int(token.split('_')[-1]);m=cat[index];c=f'#{m["color"]:06x}';a=f'#{m["trim"]:06x}'
   parts=[rect(0,0,64,64,c)]

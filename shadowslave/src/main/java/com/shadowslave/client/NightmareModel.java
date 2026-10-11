@@ -29,7 +29,7 @@ public final class NightmareModel extends EntityModel<NightmareCreature> {
       CreatureRig.build(root,"species_"+i,s.id(),s.family(),s.cores());
     }
     for(int i=0;i<7;i++)CreatureRig.build(root,"legacy_"+i,LEGACY[i],i,3);
-    return LayerDefinition.create(mesh,64,64);
+    return LayerDefinition.create(mesh,CreatureRig.TEXTURE_WIDTH,CreatureRig.TEXTURE_HEIGHT);
   }
   /** Kept separate from entity state so all species and windup poses can be verified on the CPU. */
   public void animate(int index,int family,float swing,float stride,float age,float yaw,float pitch,float strike,boolean charging) {

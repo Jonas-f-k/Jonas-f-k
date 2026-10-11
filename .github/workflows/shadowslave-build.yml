@@ -41,6 +41,6 @@ jobs:
       - name: Upload compiled mod
         uses: actions/upload-artifact@v4
         with:
-          name: shadowslave-0.6.0-rework.1
-          path: shadowslave/build/libs/shadowslave-0.6.0-rework.1.jar
+          name: shadowslave-0.6.0-rework.2
+          path: shadowslave/build/libs/shadowslave-0.6.0-rework.2.jar
           if-no-files-found: error
