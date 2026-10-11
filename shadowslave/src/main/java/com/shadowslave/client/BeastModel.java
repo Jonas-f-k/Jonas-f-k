@@ -10,7 +10,7 @@ import net.minecraft.client.player.AbstractClientPlayer;
 
 /** Seven distinct anatomies with hierarchical knees, wing fingers, jaws and tail chains. */
 public final class BeastModel extends EntityModel<AbstractClientPlayer> {
-  public static final ModelLayerLocation LAYER=new ModelLayerLocation(ShadowSlaveMod.id("beasts"),"main");
+  public static final ModelLayerLocation LAYER=new ModelLayerLocation(net.minecraft.resources.ResourceLocation.fromNamespaceAndPath(ShadowSlaveMod.ID,"beasts"),"main");
   private static final String[] IDS={"dragon","wolf","leviathan","colossus","stag","griffin","wyvern"};
   private final ModelPart root;
   private final ModelPart[] forms=new ModelPart[7];

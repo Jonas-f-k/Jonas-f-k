@@ -9,7 +9,7 @@ import net.minecraft.client.model.geom.builders.*;
 
 /** One complete articulated rig per species and a safe rig for each legacy trial family. */
 public final class NightmareModel extends EntityModel<NightmareCreature> {
-  public static final ModelLayerLocation LAYER=new ModelLayerLocation(ShadowSlaveMod.id("nightmare"),"main");
+  public static final ModelLayerLocation LAYER=new ModelLayerLocation(net.minecraft.resources.ResourceLocation.fromNamespaceAndPath(ShadowSlaveMod.ID,"nightmare"),"main");
   private static final String[] LEGACY={"dragon","moonveil_wraith","leviathan","colossus","stag","griffin","wyvern"};
   private final ModelPart root;
   private final ModelPart[] species=new ModelPart[CreatureEcology.ALL.size()], legacy=new ModelPart[7];

@@ -19,6 +19,8 @@ public class ClientModelCheck {
  }
  private static void geometry(ModelPart root){var out=new UV();root.visit(new PoseStack(),(pose,path,index,cube)->cube.compile(pose,out,0,0,0xFFFFFFFF));}
  public static void main(String[] args)throws Exception{
+  net.minecraft.SharedConstants.tryDetectVersion();
+  net.minecraft.server.Bootstrap.bootStrap();
   var nightmare=NightmareModel.createLayer().bakeRoot();var nm=new NightmareModel(nightmare);geometry(nightmare);
   for(int species=-1;species<CreatureEcology.ALL.size();species++)for(int family=0;family<(species<0?7:1);family++)for(boolean charge:new boolean[]{false,true})for(float hit:new float[]{0,.5f,1}){
    nm.animate(species,family,4,.8f,100,25,-18,hit,charge);check(nightmare);
