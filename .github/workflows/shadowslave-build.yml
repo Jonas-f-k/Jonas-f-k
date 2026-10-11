@@ -19,10 +19,16 @@ jobs:
           distribution: temurin
           java-version: '21'
       - uses: gradle/actions/setup-gradle@v4
+        with:
+          cache-read-only: false
+      - name: Install asset checker dependency
+        run: python -m pip install pillow
       - name: Compile and run GameTests
         run: bash gradlew --no-daemon clean build prepareClientRun runGameTestServer
       - name: Check client model geometry
         run: python tools/verify_client_models.py
+      - name: Check native resources and world math
+        run: python tools/verify_offline.py
       - name: Upload build logs
         if: always()
         uses: actions/upload-artifact@v4

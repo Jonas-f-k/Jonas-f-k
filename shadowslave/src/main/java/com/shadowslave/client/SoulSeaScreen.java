@@ -634,7 +634,7 @@ public final class SoulSeaScreen extends Screen {
       SpellTheme.core(g,left+18,y+4,11,1,SpellTheme.accent(s.family()));
       String name=s.name()+" · "+com.shadowslave.entity.CreatureEcology.RANKS[s.rank()]+" "+com.shadowslave.entity.CreatureEcology.CLASSES[s.cores()];
       g.drawString(font,font.plainSubstrByWidth(name,w-54),left+38,y,SpellTheme.TEXT,false);
-      String info=s.regions().replace('_',' ').replace(','," / ")+" · "+s.behavior().replace('_',' ');
+      String info=s.regions().replace('_',' ').replace(","," / ")+" · "+s.behavior().replace('_',' ');
       g.drawString(font,font.plainSubstrByWidth(info,w-54),left+38,y+12,0x99AFBF,false);
     }
     g.drawString(font,(page+1)+" / "+((all.size()+rows-1)/rows),left+80,top+h-23,0xAEBFC4,false);
