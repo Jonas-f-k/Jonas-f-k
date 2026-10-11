@@ -1,6 +1,6 @@
 # Creature catalogue — 0.6.0-rework.1
 
-Dimensions are width × height in blocks and drive collision, rendering and targeting. All species are 25% wider and 30% taller than 0.4. See `LORE_RESEARCH.md` for sources and uncertainty; Matriarch classification is inferred, and Soul Devouring Tree uses the early Shore-era rank. Combat is an original game adaptation. Every species now has a complete articulated rig and its own native pixel material. Geometry validation distinguishes all 32 species; Minecraft baking/playtesting remains required.
+Dimensions are width × height in blocks and drive collision, rendering and targeting. All species are 25% wider and 30% taller than 0.4. See `LORE_RESEARCH.md` for sources and uncertainty; Matriarch classification is inferred, and Soul Devouring Tree uses the early Shore-era rank. Combat is an original game adaptation. Every species now has a complete articulated rig and its own native pixel material. Geometry validation distinguishes all 32 species; Real Minecraft model baking passed; interactive visual playtesting remains required.
 
 | Species ID | Rank / class | Body | Dimensions | Affinity/behavior | Regions | Origin |
 |---|---|---|---|---|---|---|

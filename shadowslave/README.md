@@ -4,7 +4,9 @@ Combined source rework for **Minecraft 1.21.1 · NeoForge 21.1.256 · Java 21**.
 
 The uploaded `0.6.0-alpha-source` ZIP is the gameplay foundation. The uploaded Markdown and development-goal text are reference specifications. Their historical build/test claims are not evidence that this source revision passes those checks. See `VALIDATION.md` for this revision's actual results.
 
-This deliverable is source. A playable JAR has not been produced in this environment: its network policy blocks the NeoForge dependency server. The offline checks passed; Minecraft compilation, GameTests and in-game/shader checks still need the commands below once dependencies are available.
+A compiled JAR is available from the successful [GitHub build](https://github.com/Jonas-f-k/Jonas-f-k/actions/runs/38183545392). [Download the compiled mod ZIP](https://github.com/Jonas-f-k/Jonas-f-k/actions/runs/38183545392/artifacts/11718721513), extract it, and put `shadowslave-0.6.0-rework.1.jar` in the `mods` folder of a Minecraft 1.21.1 / NeoForge 21.1.256 profile. GitHub may ask you to sign in before downloading an Actions artifact.
+
+The build passed all 29 required server GameTests, real Minecraft client-model/UV checks, native resource checks and the offline world/effect checks. Graphical gameplay, shader appearance and multiplayer/modpack checks still require local testing. The original local build environment remains network-restricted; GitHub Actions produced the verified JAR.
 
 ## Main changes
 

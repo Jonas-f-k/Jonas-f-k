@@ -208,7 +208,7 @@ Run biome searches in the Dream Realm. Existing generated terrain does not chang
 
 ## Rework.1 visual review
 
-This is a source revision; first compile using the current README. Previous test results in supplied documents do not apply to it.
+Use the verified JAR linked in the current README, or compile the source yourself. Previous test results in supplied documents do not apply to it; current results are in VALIDATION.md.
 
 Open **O** and inspect all six tabs, especially Bestiary and Soul Core. Set several GUI scales and resize the window. In Memories, search while moving the caret and check filtered paging, equipped rank labels, weapon manifestation and token actions. On the HUD, check all four cooldown slots, core fill and equipped icons.
 

@@ -1,6 +1,6 @@
 # Rendering and shader checks
 
-This source targets Minecraft 1.21.1 / NeoForge 21.1.256. A shader mod is optional. This revision has not been compiled or graphically playtested in this environment.
+This source targets Minecraft 1.21.1 / NeoForge 21.1.256. A shader mod is optional. This revision compiled successfully on GitHub Actions and passed server GameTests and real client model checks. Interactive graphics and optional shader stacks remain untested.
 
 Native pixel albedos, entity normals and Minecraft's lightmap provide ordinary shading. Eyes and equipped trims have emissive layers. Spell geometry uses `RenderType.lightning()` after weather, matching its built-in render target, with built-in depth testing and translucency; the mod does not replace shaders, alter the projection, force camera shake or install a shader pack. Effects and warnings remain server-triggered; shading is cosmetic.
 
