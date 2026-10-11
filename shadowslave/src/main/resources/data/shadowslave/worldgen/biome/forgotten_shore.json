@@ -1,0 +1,49 @@
+{
+  "has_precipitation": false,
+  "temperature": 0.8,
+  "downfall": 0.0,
+  "effects": {
+    "sky_color": 10200502,
+    "fog_color": 11974844,
+    "water_color": 3037788,
+    "water_fog_color": 1586230,
+    "grass_color": 8501580,
+    "foliage_color": 7252044,
+    "mood_sound": {
+      "sound": "minecraft:ambient.cave",
+      "tick_delay": 6000,
+      "block_search_extent": 8,
+      "offset": 2.0
+    },
+    "additions_sound": {
+      "sound": "minecraft:ambient.soul_sand_valley.additions",
+      "tick_chance": 0.002
+    }
+  },
+  "carvers": {},
+  "features": [
+    [],
+    [
+      "shadowslave:realm_waters"
+    ],
+    [
+      "shadowslave:rubble_forgotten_shore",
+      "shadowslave:bones_forgotten_shore"
+    ],
+    [],
+    [],
+    [
+      "shadowslave:dream_ruin"
+    ],
+    [],
+    [],
+    [],
+    [
+      "shadowslave:dead_forgotten_shore",
+      "shadowslave:flowers_forgotten_shore"
+    ],
+    []
+  ],
+  "spawners": {},
+  "spawn_costs": {}
+}

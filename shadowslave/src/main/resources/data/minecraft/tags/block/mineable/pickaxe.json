@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "shadowslave:ash_stone",
+    "shadowslave:ash_bricks",
+    "shadowslave:fractured_stone",
+    "shadowslave:ash_tiles",
+    "shadowslave:sanctuary_limestone",
+    "shadowslave:aged_bronze",
+    "shadowslave:amber_glass",
+    "shadowslave:silver_rune",
+    "shadowslave:petrified_bark",
+    "shadowslave:black_iron",
+    "shadowslave:fossil_bone",
+    "shadowslave:ember_obsidian",
+    "shadowslave:drowned_stone",
+    "shadowslave:amber_lantern",
+    "shadowslave:ash_slab",
+    "shadowslave:ash_stairs"
+  ]
+}

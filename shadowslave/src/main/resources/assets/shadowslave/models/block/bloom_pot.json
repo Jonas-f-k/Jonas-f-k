@@ -1,0 +1,197 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "particle": "shadowslave:block/runic_timber",
+    "wood": "shadowslave:block/runic_timber",
+    "brass": "shadowslave:block/moon_brass",
+    "light": "shadowslave:block/amber_glass",
+    "stone": "shadowslave:block/pale_marble",
+    "crystal": "shadowslave:block/emerald_crystal",
+    "purple": "shadowslave:block/amethyst_crystal",
+    "cloth": "shadowslave:block/navy_cloth",
+    "pot": "shadowslave:block/peach_bricks",
+    "flower": "shadowslave:block/pink_leaves"
+  },
+  "elements": [
+    {
+      "from": [4, 0, 4],
+      "to": [12, 6, 12],
+      "faces": {
+        "up": {
+          "texture": "#pot",
+          "uv": [4, 4, 12, 12]
+        },
+        "down": {
+          "texture": "#pot",
+          "uv": [4, 4, 12, 12]
+        },
+        "north": {
+          "texture": "#pot",
+          "uv": [4, 10, 12, 16]
+        },
+        "south": {
+          "texture": "#pot",
+          "uv": [4, 10, 12, 16]
+        },
+        "east": {
+          "texture": "#pot",
+          "uv": [4, 10, 12, 16]
+        },
+        "west": {
+          "texture": "#pot",
+          "uv": [4, 10, 12, 16]
+        }
+      }
+    },
+    {
+      "from": [3, 5, 3],
+      "to": [13, 7, 13],
+      "faces": {
+        "up": {
+          "texture": "#pot",
+          "uv": [3, 3, 13, 13]
+        },
+        "down": {
+          "texture": "#pot",
+          "uv": [3, 3, 13, 13]
+        },
+        "north": {
+          "texture": "#pot",
+          "uv": [3, 9, 13, 11]
+        },
+        "south": {
+          "texture": "#pot",
+          "uv": [3, 9, 13, 11]
+        },
+        "east": {
+          "texture": "#pot",
+          "uv": [3, 9, 13, 11]
+        },
+        "west": {
+          "texture": "#pot",
+          "uv": [3, 9, 13, 11]
+        }
+      }
+    },
+    {
+      "from": [7, 6, 7],
+      "to": [9, 12, 9],
+      "faces": {
+        "up": {
+          "texture": "#wood",
+          "uv": [7, 7, 9, 9]
+        },
+        "down": {
+          "texture": "#wood",
+          "uv": [7, 7, 9, 9]
+        },
+        "north": {
+          "texture": "#wood",
+          "uv": [7, 4, 9, 10]
+        },
+        "south": {
+          "texture": "#wood",
+          "uv": [7, 4, 9, 10]
+        },
+        "east": {
+          "texture": "#wood",
+          "uv": [7, 4, 9, 10]
+        },
+        "west": {
+          "texture": "#wood",
+          "uv": [7, 4, 9, 10]
+        }
+      }
+    },
+    {
+      "from": [3, 11, 5],
+      "to": [13, 13, 11],
+      "faces": {
+        "up": {
+          "texture": "#flower",
+          "uv": [3, 5, 13, 11]
+        },
+        "down": {
+          "texture": "#flower",
+          "uv": [3, 5, 13, 11]
+        },
+        "north": {
+          "texture": "#flower",
+          "uv": [3, 3, 13, 5]
+        },
+        "south": {
+          "texture": "#flower",
+          "uv": [3, 3, 13, 5]
+        },
+        "east": {
+          "texture": "#flower",
+          "uv": [5, 3, 11, 5]
+        },
+        "west": {
+          "texture": "#flower",
+          "uv": [5, 3, 11, 5]
+        }
+      }
+    },
+    {
+      "from": [5, 10, 3],
+      "to": [11, 12, 13],
+      "faces": {
+        "up": {
+          "texture": "#flower",
+          "uv": [5, 3, 11, 13]
+        },
+        "down": {
+          "texture": "#flower",
+          "uv": [5, 3, 11, 13]
+        },
+        "north": {
+          "texture": "#flower",
+          "uv": [5, 4, 11, 6]
+        },
+        "south": {
+          "texture": "#flower",
+          "uv": [5, 4, 11, 6]
+        },
+        "east": {
+          "texture": "#flower",
+          "uv": [3, 4, 13, 6]
+        },
+        "west": {
+          "texture": "#flower",
+          "uv": [3, 4, 13, 6]
+        }
+      }
+    },
+    {
+      "from": [7, 13, 7],
+      "to": [9, 15, 9],
+      "faces": {
+        "up": {
+          "texture": "#light",
+          "uv": [7, 7, 9, 9]
+        },
+        "down": {
+          "texture": "#light",
+          "uv": [7, 7, 9, 9]
+        },
+        "north": {
+          "texture": "#light",
+          "uv": [7, 1, 9, 3]
+        },
+        "south": {
+          "texture": "#light",
+          "uv": [7, 1, 9, 3]
+        },
+        "east": {
+          "texture": "#light",
+          "uv": [7, 1, 9, 3]
+        },
+        "west": {
+          "texture": "#light",
+          "uv": [7, 1, 9, 3]
+        }
+      }
+    }
+  ]
+}

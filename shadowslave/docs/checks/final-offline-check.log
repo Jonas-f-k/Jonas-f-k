@@ -1,0 +1,6 @@
+PASS: 321 models, 280 native sprites, 128 distinct transparent Memory icons, full-cube grass, cutout leaves, 62 credited asset hashes. Vanilla names not resolved without client JAR.
+RealmMapCheck: seeds=60 land fraction in 4000x4000 window: 0.43..0.51
+world-generation data OK: 50 features, 18 biomes, no feature-order cycles
+PASS: 39 articulated rigs, 1798 boxes inside 64px UV limits, 64764 finite animated joint poses, 32 unique species geometry signatures. Geometry harness only; Minecraft bake still required.
+PASS: 7017 seeded islands; 5737 connected MST links; all five shapes; empty space below floating belt.
+PASS: all 49 family/effect combinations; 86292 finite, bounded quads; invalid radii rejected.

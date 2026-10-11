@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "min": 2,
+        "max": 5
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bread"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:arrow"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:torch"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_nugget"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_count",
+          "count": {
+            "type": "minecraft:uniform",
+            "min": 2,
+            "max": 8
+          }
+        }
+      ]
+    }
+  ]
+}

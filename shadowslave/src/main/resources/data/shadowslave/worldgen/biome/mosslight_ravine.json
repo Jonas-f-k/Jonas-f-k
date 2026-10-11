@@ -1,0 +1,38 @@
+{
+  "has_precipitation": false,
+  "temperature": 0.8,
+  "downfall": 0.0,
+  "effects": {
+    "sky_color": 9551308,
+    "fog_color": 11849141,
+    "water_color": 4168316,
+    "water_fog_color": 2253127,
+    "grass_color": 8501580,
+    "foliage_color": 7252044
+  },
+  "carvers": {},
+  "features": [
+    [],
+    [
+      "shadowslave:realm_waters"
+    ],
+    [
+      "shadowslave:rubble_mosslight_ravine"
+    ],
+    [],
+    [],
+    [
+      "shadowslave:dream_ruin"
+    ],
+    [],
+    [],
+    [],
+    [
+      "shadowslave:trees_mosslight_ravine",
+      "shadowslave:flowers_mosslight_ravine"
+    ],
+    []
+  ],
+  "spawners": {},
+  "spawn_costs": {}
+}

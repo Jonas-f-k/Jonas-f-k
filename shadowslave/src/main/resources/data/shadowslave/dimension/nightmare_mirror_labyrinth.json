@@ -1,0 +1,18 @@
+{
+  "type": "shadowslave:dream",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "shadowslave:nightmare_void",
+      "lakes": false,
+      "features": false,
+      "layers": [
+        {
+          "height": 1,
+          "block": "minecraft:air"
+        }
+      ],
+      "structure_overrides": []
+    }
+  }
+}

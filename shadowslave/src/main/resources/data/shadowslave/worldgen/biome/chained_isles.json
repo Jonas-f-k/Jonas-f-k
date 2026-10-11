@@ -1,0 +1,39 @@
+{
+  "has_precipitation": false,
+  "temperature": 0.8,
+  "downfall": 0.0,
+  "effects": {
+    "sky_color": 10932204,
+    "fog_color": 13558505,
+    "water_color": 5214133,
+    "water_fog_color": 2775672,
+    "grass_color": 8501580,
+    "foliage_color": 7252044
+  },
+  "carvers": {},
+  "features": [
+    [],
+    [
+      "shadowslave:realm_waters"
+    ],
+    [
+      "shadowslave:rubble_chained_isles"
+    ],
+    [],
+    [],
+    [
+      "shadowslave:island_chains",
+      "shadowslave:dream_ruin"
+    ],
+    [],
+    [],
+    [],
+    [
+      "shadowslave:trees_chained_isles",
+      "shadowslave:flowers_chained_isles"
+    ],
+    []
+  ],
+  "spawners": {},
+  "spawn_costs": {}
+}

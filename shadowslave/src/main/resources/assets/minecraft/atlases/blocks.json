@@ -1,0 +1,1124 @@
+{
+  "sources": [
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/ash_stone"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/ash_bricks"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/fractured_stone"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/ash_tiles"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/sanctuary_limestone"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/aged_bronze"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/amber_glass"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/silver_rune"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/ashen_soil"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/ashen_grass"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/sanctuary_moss"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/petrified_bark"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/black_iron"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/fossil_bone"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/ember_obsidian"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/drowned_stone"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/meadow_grass"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/blossom_grass"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/lavender_grass"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/autumn_litter"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/turquoise_moss"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/frost_grass"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/scarlet_litter"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/warm_sand"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/dream_loam"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/rose_clay"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/snow_soil"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/golden_sandstone"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/blue_shale"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/crystal_rock"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/red_sandstone"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/pale_marble"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/emerald_leaves"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/pink_leaves"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/lavender_leaves"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/golden_leaves"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/cyan_leaves"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/teal_leaves"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/frost_leaves"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/crimson_leaves"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/dream_oak"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/dream_birch"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/blue_bark"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/rose_bark"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/redwood_bark"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/runic_timber"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/honey_planks"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/plum_planks"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/emerald_crystal"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/amethyst_crystal"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/cyan_crystal"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/rose_crystal"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/peach_bricks"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/mossy_ruin_stone"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/moon_brass"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/navy_cloth"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/silver_plate"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/charcoal_plate"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/leaf_plate"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/plum_cloth"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/gold_plate"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/ice_plate"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/scarlet_plate"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/pearl_plate"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/ashen_shroud"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/awakened_mantle"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/nightweave"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/briar_sovereign"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/silver_castellan"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/sunkeeper_regalia"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/frostbound_sentinel"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/blossom_pilgrim"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/tidal_warden"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/amethyst_oracle"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/scarlet_revenant"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/mossbound_keeper"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/dune_nomad"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/aurora_raiment"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/clockwork_vow"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/ivory_seraph"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/tide_crown"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/lantern_eye"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/bramble_antlers"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/moonlit_visor"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/sunpetal_circlet"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/glacier_helm"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/foxglove_hood"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/raven_mask"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/citrine_diadem"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/coral_headdress"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/winter_owl_mask"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/astral_halo"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/iron_heart"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/rosewood_cuirass"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/glasswing_mantle"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/dawnscale_vest"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/frostglass_aegis"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/cinder_breastplate"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/jade_carapace"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/moonwoven_coat"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/coral_harness"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/golden_hour_tunic"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/violet_star_robe"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/pilgrim_pauldrons"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/thorn_greaves"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/dusksteel_tassets"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/lotus_leggings"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/glacier_cuisses"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/amberleaf_wraps"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/rosepetal_skirt"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/dune_strider_chaps"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/warden_plates"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/prism_legguards"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/tidewoven_kilt"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/ravenfeather_trousers"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/moonstone_guards"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/silent_steps"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/starwalker"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/briar_treads"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/sunlit_sandals"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/frosthoof_boots"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/blossom_slippers"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/coral_sabatons"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/emberstride"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/mosswalker_boots"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/cloudstep_shoes"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/dune_skippers"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/amethyst_heels"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/soul_edge"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/mirror_knife"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/hollow_fang"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/dawncleaver"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/briar_crescent"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/glacier_pike"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/rose_rapier"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/cinder_maul"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/moonhook"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/tidal_trident"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/amber_hatchet"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/raven_scythe"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/sunpetal_saber"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/jade_halberd"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/amethyst_glaive"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/ivory_lance"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/coral_cutlass"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/starfall_hammer"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/dune_falchion"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/winter_fang"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/glasswing_dagger"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/rootbound_club"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/scarlet_cleaver"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/aurora_staff"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/clockwork_spear"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/mossbite_axe"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/pearl_stiletto"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/violet_greatsword"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/honeycomb_mace"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/thorn_whipblade"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/obsidian_kris"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/silver_requiem"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/fading_ember"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/divine_spark"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/cinder_sigil"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/sunseed_locket"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/moonlit_ring"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/briar_brooch"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/glacier_tear"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/blossom_bell"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/coral_rosary"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/amber_hourglass"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/raven_medallion"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/jade_scarab"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/amethyst_heart"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/ivory_feather_pin"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/dune_compass"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/aurora_knot"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/shard_lantern"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/drowned_pearl"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/feather_of_dusk"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/dream_atlas"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/sunwell_flask"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/moonseed_pouch"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/briar_key"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/frostbound_compass"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/blossom_fan"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/coral_conch"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/amber_music_box"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/raven_quill"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/jade_chalice"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/amethyst_lens"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/ivory_scroll"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:item/memories/warm_hearth_candle"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:entity/nightmare_0"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:entity/nightmare_1"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:entity/nightmare_2"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:entity/nightmare_3"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:entity/nightmare_4"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:entity/nightmare_5"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:entity/nightmare_6"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:armor/material_0"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:armor/material_1"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:armor/material_2"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:armor/material_3"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:armor/material_4"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:armor/material_5"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:armor/material_6"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:armor/material_7"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:armor/material_8"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:armor/material_9"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:armor/material_10"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:armor/material_11"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:armor/material_12"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:armor/material_13"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:armor/material_14"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:armor/material_15"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:flora/flower_0"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:flora/flower_1"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:flora/flower_2"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:flora/flower_3"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:flora/flower_4"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:flora/flower_5"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:flora/flower_6"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:flora/flower_7"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:flora/flower_8"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:flora/flower_9"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:flora/flower_10"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:flora/flower_11"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:flora/flower_12"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:flora/flower_13"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:flora/flower_14"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:flora/flower_15"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:entity/species_0"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:entity/species_1"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:entity/species_2"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:entity/species_3"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:entity/species_4"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:entity/species_5"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:entity/species_6"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:entity/species_7"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:entity/species_8"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:entity/species_9"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:entity/species_10"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:entity/species_11"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:entity/species_12"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:entity/species_13"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:entity/species_14"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:entity/species_15"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:entity/species_16"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:entity/species_17"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:entity/species_18"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:entity/species_19"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:entity/species_20"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:entity/species_21"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:entity/species_22"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:entity/species_23"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:entity/species_24"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:entity/species_25"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:entity/species_26"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:entity/species_27"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:entity/species_28"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:entity/species_29"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:entity/species_30"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:entity/species_31"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:entity/beast_0"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:entity/beast_1"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:entity/beast_2"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:entity/beast_3"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:entity/beast_4"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:entity/beast_5"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:entity/beast_6"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:entity/beast_7"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/ashen_grass_side"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/meadow_grass_side"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/blossom_grass_side"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/lavender_grass_side"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/frost_grass_side"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/scarlet_litter_side"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/autumn_litter_side"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/turquoise_moss_side"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/sanctuary_moss_side"
+    }
+  ]
+}

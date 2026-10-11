@@ -1,0 +1,40 @@
+name: Build Shadow Slave
+on:
+  push:
+    branches: [shadowslave/rework-0.6.0]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    defaults:
+      run:
+        working-directory: shadowslave
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - uses: gradle/actions/setup-gradle@v4
+      - name: Compile and run GameTests
+        run: bash gradlew --no-daemon clean build prepareClientRun runGameTestServer
+      - name: Check client model geometry
+        run: python tools/verify_client_models.py
+      - name: Upload build logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: shadowslave-build-logs
+          path: |
+            shadowslave/build/reports/
+            shadowslave/run/logs/
+          if-no-files-found: ignore
+      - name: Upload compiled mod
+        uses: actions/upload-artifact@v4
+        with:
+          name: shadowslave-0.6.0-rework.1
+          path: shadowslave/build/libs/shadowslave-0.6.0-rework.1.jar
+          if-no-files-found: error

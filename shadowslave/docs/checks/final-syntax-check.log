@@ -1,0 +1,1 @@
+PASS: 57 Java source files parse as Java 21. This is syntax validation, not Minecraft API compilation.

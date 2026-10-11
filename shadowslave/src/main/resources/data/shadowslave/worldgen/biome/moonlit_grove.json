@@ -1,0 +1,46 @@
+{
+  "has_precipitation": false,
+  "temperature": 0.8,
+  "downfall": 0.0,
+  "effects": {
+    "sky_color": 7442090,
+    "fog_color": 7969951,
+    "water_color": 2846592,
+    "water_fog_color": 1392460,
+    "grass_color": 8501580,
+    "foliage_color": 7252044,
+    "particle": {
+      "probability": 0.004,
+      "options": {
+        "type": "minecraft:end_rod"
+      }
+    },
+    "additions_sound": {
+      "sound": "minecraft:ambient.warped_forest.additions",
+      "tick_chance": 0.003
+    }
+  },
+  "carvers": {},
+  "features": [
+    [],
+    [
+      "shadowslave:realm_waters"
+    ],
+    [],
+    [],
+    [],
+    [
+      "shadowslave:dream_ruin"
+    ],
+    [],
+    [],
+    [],
+    [
+      "shadowslave:trees_moonlit_grove",
+      "shadowslave:flowers_moonlit_grove"
+    ],
+    []
+  ],
+  "spawners": {},
+  "spawn_costs": {}
+}

@@ -1,0 +1,46 @@
+{
+  "has_precipitation": false,
+  "temperature": 0.8,
+  "downfall": 0.0,
+  "effects": {
+    "sky_color": 11895449,
+    "fog_color": 13148063,
+    "water_color": 10830415,
+    "water_fog_color": 7087152,
+    "grass_color": 8501580,
+    "foliage_color": 7252044,
+    "particle": {
+      "probability": 0.006,
+      "options": {
+        "type": "minecraft:crimson_spore"
+      }
+    },
+    "additions_sound": {
+      "sound": "minecraft:ambient.crimson_forest.additions",
+      "tick_chance": 0.003
+    }
+  },
+  "carvers": {},
+  "features": [
+    [],
+    [
+      "shadowslave:realm_waters"
+    ],
+    [],
+    [],
+    [],
+    [
+      "shadowslave:dream_ruin"
+    ],
+    [],
+    [],
+    [],
+    [
+      "shadowslave:trees_scarlet_wilds",
+      "shadowslave:flowers_scarlet_wilds"
+    ],
+    []
+  ],
+  "spawners": {},
+  "spawn_costs": {}
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "shadowslave:ash_bricks"
+    }
+  },
+  "result": {
+    "id": "shadowslave:ash_tiles",
+    "count": 4
+  }
+}

@@ -1,0 +1,99 @@
+hadow Slave Minecraft Mod — Latest Development Goals (0.6.0 Rework)
+Your last major request, on October 11, 2026, was to combine your two Shadow Slave 0.6.0 versions into one substantially improved Minecraft mod.
+You preferred 0.6.0-alpha-source as the main foundation, while incorporating the best implementations from the other version.
+Your guiding principle was:
+Beautiful things work better.
+
+The objective was to create a visually impressive, mechanically detailed, lore-accurate Shadow Slave experience that still feels like Minecraft.
+1. Main development requirements
+Transformations and creature models
+- Completely redesign all seven Aspect transformations using your supplied reference images.
+- Give every transformation its own body structure, proportions, animations, and hitbox.
+- Avoid using nearly identical player-shaped transformations with different textures.
+- Incorporate the examples of fantasy creatures, monsters, armor, and transformations you provided.
+- Create unique Nightmare Creature models based on your images, including enormous ancient horrors, beasts, and region-specific enemies.
+- Ensure creatures' appearances, attacks, and sizes reflect their rank and class.
+Soul-core saturation and combat
+- Make spell attacks visually larger as soul-core saturation increases.
+- Scale effects, attack intensity, Essence, health, and relevant cooldown mechanics with progression.
+- Preserve the seven Divine soul cores and their progression.
+- Make higher-rank abilities visibly more powerful.
+- Improve impact effects, particles, magic, animations, and combat readability.
+Cinematic graphics and shaders
+- Integrate shader-compatible visual effects.
+- Improve lighting, atmospheric effects, fog, glowing eyes, and magical abilities.
+- Use cinematic presentation for bosses and important transformations.
+- Keep effects functional across appropriate Minecraft graphics settings.
+Dream Realm redesign
+- Replace overly smooth terrain textures.
+- Use a clean, distinct Minecraft pixel-art aesthetic inspired by Botania.
+- Avoid grainy textures and excessive visual noise.
+- Give different Dream Realm regions distinctive biomes, vegetation, structures, colors, and atmosphere.
+- Build more impressive Citadels, ruins, and other real explorable structures.
+- Improve the Chained Isles with multiple interconnected floating islands.
+2. Gameplay and world systems
+Your earlier requests were also supposed to remain part of the combined version.
+System	Requested implementation
+First Nightmare	Seven possible Nightmare families, with a larger, more complex environment
+Divine Aspects	Unlockable by defeating the special Nightmare boss
+Boss locations	Multiple possible spawn locations for each Nightmare's boss
+Dream Realm	Procedurally generated biomes with region-specific creatures
+Progression	Dormant through higher ranks, with soul-core saturation and creature classes
+Memories	Distinct weapons and armor, with quality and drop rates tied to enemies
+Armor	Detailed visual equipment with real protective attributes
+Awakening	First Gateway return unlocks the next stage of abilities
+Testing	Developer commands to test Aspects, ranks, creatures, transformations, and progression
+One important original mechanic was that ordinary Minecraft armor should provide little protection against Nightmare Creature magical damage, making Memories central to survival.
+
+3. Reference links you wanted used
+These were the key sources from your previous requests.
+Textures and visual design
+Reference	Intended use
+Malcolm Riley — Unused Textures	Very important. Pixel-art textures for blocks, items, GUI elements, and animations
+Botania — GitHub	Natural, colorful Minecraft-style world design
+Botania — CurseForge	Visual inspiration and gameplay presentation
+Blockbench	Custom creature models and transformation animations
+Sketchfab	3D models, anatomical references, and fantasy creatures
+Malcolm Riley's repository was particularly important because it contains reusable Minecraft-style texture assets under CC BY 4.0. 
+
+GitHub
++1
+
+
+
+Creatures, armor, and rendering
+You also referenced these resources or projects:
+- Better Mob Models — Creature geometry and variations.
+- Better Leaves — Natural foliage and environmental presentation.
+- Programmer Art Fix — Minecraft texture consistency.
+- 3D Armor / Painted 3D Armor — More elaborate armor shapes and texture work.
+- All the Horrors — Horror creature inspiration.
+- McTo3D — Minecraft model conversion and 3D workflows.
+Relevant resource platforms:
+Modrinth
+CurseForge
+GitHub
+SourceForge
+
+I can recover the names of these references, but not every exact original project URL.
+Procedural terrain and structures
+These open-source mod repositories were discussed earlier as implementation references:
+Project	What to learn from it
+The Aether	Fantasy dimensions and floating terrain
+Twilight Forest	Bosses, dungeons, and structures
+The Bumblezone	Custom dimension generation
+Tropicraft	Distinct environmental design
+TerraBlender	Biome generation techniques
+Lithostitched	World-generation and structure functionality
+4. What the finished version was supposed to deliver
+The final combined source would target:
+Minecraft 1.21.1 · NeoForge · Java 21
+The intended deliverables were a complete source ZIP, a compiled playable JAR, test commands, and documentation.
+The project should preserve all functioning systems from the stronger 0.6.0 foundation while improving transformations, creature variety, combat scaling, shader-compatible graphics, world generation, and structures.
+The most important requirements were:
+1. Preserve working gameplay and fix existing crashes.
+2. Fully rework the seven transformation models and hitboxes.
+3. Make Nightmare Creatures visibly unique and increasingly terrifying.
+4. Scale magical attacks with soul-core saturation.
+5. Build a beautiful, Minecraft-consistent Dream Realm with custom biomes, structures, and cinematic effects.
+The most recent request was essentially a comprehensive visual and mechanical overhaul of 0.6.0, using both versions and all your supplied references. That remains the target specification rather than a verified completed release.

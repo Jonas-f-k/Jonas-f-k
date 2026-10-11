@@ -1,0 +1,45 @@
+{
+  "has_precipitation": false,
+  "temperature": 0.8,
+  "downfall": 0.0,
+  "effects": {
+    "sky_color": 11777001,
+    "fog_color": 13945828,
+    "water_color": 9071280,
+    "water_fog_color": 5585788,
+    "grass_color": 8501580,
+    "foliage_color": 7252044,
+    "particle": {
+      "probability": 0.006,
+      "options": {
+        "type": "minecraft:end_rod"
+      }
+    }
+  },
+  "carvers": {},
+  "features": [
+    [],
+    [
+      "shadowslave:realm_waters"
+    ],
+    [
+      "shadowslave:rubble_amethyst_heights",
+      "shadowslave:spires_amethyst_heights"
+    ],
+    [],
+    [],
+    [
+      "shadowslave:dream_ruin"
+    ],
+    [],
+    [],
+    [],
+    [
+      "shadowslave:trees_amethyst_heights",
+      "shadowslave:flowers_amethyst_heights"
+    ],
+    []
+  ],
+  "spawners": {},
+  "spawn_costs": {}
+}

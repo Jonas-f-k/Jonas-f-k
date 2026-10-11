@@ -1,0 +1,38 @@
+{
+  "has_precipitation": true,
+  "temperature": -0.5,
+  "downfall": 0.5,
+  "effects": {
+    "sky_color": 11327466,
+    "fog_color": 13821675,
+    "water_color": 9287384,
+    "water_fog_color": 5208992,
+    "grass_color": 8501580,
+    "foliage_color": 7252044
+  },
+  "carvers": {},
+  "features": [
+    [],
+    [
+      "shadowslave:realm_waters"
+    ],
+    [
+      "shadowslave:rubble_frostglass_taiga"
+    ],
+    [],
+    [],
+    [
+      "shadowslave:dream_ruin"
+    ],
+    [],
+    [],
+    [],
+    [
+      "shadowslave:trees_frostglass_taiga",
+      "shadowslave:flowers_frostglass_taiga"
+    ],
+    []
+  ],
+  "spawners": {},
+  "spawn_costs": {}
+}

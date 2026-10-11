@@ -1,0 +1,36 @@
+{
+  "feature": "shadowslave:trees_frostglass_taiga",
+  "placement": [
+    {
+      "type": "minecraft:noise_threshold_count",
+      "noise_level": -0.25,
+      "below_noise": 3,
+      "above_noise": 11
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:heightmap",
+      "heightmap": "WORLD_SURFACE_WG"
+    },
+    {
+      "type": "minecraft:biome"
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:matching_blocks",
+        "offset": [
+          0,
+          -1,
+          0
+        ],
+        "blocks": [
+          "shadowslave:frost_grass",
+          "shadowslave:snow_soil"
+        ]
+      }
+    }
+  ]
+}

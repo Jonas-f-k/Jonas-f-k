@@ -1,0 +1,776 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "shadowslave:item/memories/ashen_shroud"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "shadowslave:design": 1
+      },
+      "model": "shadowslave:item/memories/ashen_shroud"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 2
+      },
+      "model": "shadowslave:item/memories/awakened_mantle"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 3
+      },
+      "model": "shadowslave:item/memories/nightweave"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 4
+      },
+      "model": "shadowslave:item/memories/briar_sovereign"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 5
+      },
+      "model": "shadowslave:item/memories/silver_castellan"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 6
+      },
+      "model": "shadowslave:item/memories/sunkeeper_regalia"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 7
+      },
+      "model": "shadowslave:item/memories/frostbound_sentinel"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 8
+      },
+      "model": "shadowslave:item/memories/blossom_pilgrim"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 9
+      },
+      "model": "shadowslave:item/memories/tidal_warden"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 10
+      },
+      "model": "shadowslave:item/memories/amethyst_oracle"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 11
+      },
+      "model": "shadowslave:item/memories/scarlet_revenant"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 12
+      },
+      "model": "shadowslave:item/memories/mossbound_keeper"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 13
+      },
+      "model": "shadowslave:item/memories/dune_nomad"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 14
+      },
+      "model": "shadowslave:item/memories/aurora_raiment"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 15
+      },
+      "model": "shadowslave:item/memories/clockwork_vow"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 16
+      },
+      "model": "shadowslave:item/memories/ivory_seraph"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 17
+      },
+      "model": "shadowslave:item/memories/tide_crown"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 18
+      },
+      "model": "shadowslave:item/memories/lantern_eye"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 19
+      },
+      "model": "shadowslave:item/memories/bramble_antlers"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 20
+      },
+      "model": "shadowslave:item/memories/moonlit_visor"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 21
+      },
+      "model": "shadowslave:item/memories/sunpetal_circlet"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 22
+      },
+      "model": "shadowslave:item/memories/glacier_helm"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 23
+      },
+      "model": "shadowslave:item/memories/foxglove_hood"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 24
+      },
+      "model": "shadowslave:item/memories/raven_mask"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 25
+      },
+      "model": "shadowslave:item/memories/citrine_diadem"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 26
+      },
+      "model": "shadowslave:item/memories/coral_headdress"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 27
+      },
+      "model": "shadowslave:item/memories/winter_owl_mask"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 28
+      },
+      "model": "shadowslave:item/memories/astral_halo"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 29
+      },
+      "model": "shadowslave:item/memories/iron_heart"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 30
+      },
+      "model": "shadowslave:item/memories/rosewood_cuirass"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 31
+      },
+      "model": "shadowslave:item/memories/glasswing_mantle"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 32
+      },
+      "model": "shadowslave:item/memories/dawnscale_vest"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 33
+      },
+      "model": "shadowslave:item/memories/frostglass_aegis"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 34
+      },
+      "model": "shadowslave:item/memories/cinder_breastplate"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 35
+      },
+      "model": "shadowslave:item/memories/jade_carapace"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 36
+      },
+      "model": "shadowslave:item/memories/moonwoven_coat"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 37
+      },
+      "model": "shadowslave:item/memories/coral_harness"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 38
+      },
+      "model": "shadowslave:item/memories/golden_hour_tunic"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 39
+      },
+      "model": "shadowslave:item/memories/violet_star_robe"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 40
+      },
+      "model": "shadowslave:item/memories/pilgrim_pauldrons"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 41
+      },
+      "model": "shadowslave:item/memories/thorn_greaves"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 42
+      },
+      "model": "shadowslave:item/memories/dusksteel_tassets"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 43
+      },
+      "model": "shadowslave:item/memories/lotus_leggings"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 44
+      },
+      "model": "shadowslave:item/memories/glacier_cuisses"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 45
+      },
+      "model": "shadowslave:item/memories/amberleaf_wraps"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 46
+      },
+      "model": "shadowslave:item/memories/rosepetal_skirt"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 47
+      },
+      "model": "shadowslave:item/memories/dune_strider_chaps"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 48
+      },
+      "model": "shadowslave:item/memories/warden_plates"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 49
+      },
+      "model": "shadowslave:item/memories/prism_legguards"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 50
+      },
+      "model": "shadowslave:item/memories/tidewoven_kilt"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 51
+      },
+      "model": "shadowslave:item/memories/ravenfeather_trousers"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 52
+      },
+      "model": "shadowslave:item/memories/moonstone_guards"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 53
+      },
+      "model": "shadowslave:item/memories/silent_steps"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 54
+      },
+      "model": "shadowslave:item/memories/starwalker"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 55
+      },
+      "model": "shadowslave:item/memories/briar_treads"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 56
+      },
+      "model": "shadowslave:item/memories/sunlit_sandals"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 57
+      },
+      "model": "shadowslave:item/memories/frosthoof_boots"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 58
+      },
+      "model": "shadowslave:item/memories/blossom_slippers"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 59
+      },
+      "model": "shadowslave:item/memories/coral_sabatons"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 60
+      },
+      "model": "shadowslave:item/memories/emberstride"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 61
+      },
+      "model": "shadowslave:item/memories/mosswalker_boots"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 62
+      },
+      "model": "shadowslave:item/memories/cloudstep_shoes"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 63
+      },
+      "model": "shadowslave:item/memories/dune_skippers"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 64
+      },
+      "model": "shadowslave:item/memories/amethyst_heels"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 65
+      },
+      "model": "shadowslave:item/memories/soul_edge"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 66
+      },
+      "model": "shadowslave:item/memories/mirror_knife"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 67
+      },
+      "model": "shadowslave:item/memories/hollow_fang"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 68
+      },
+      "model": "shadowslave:item/memories/dawncleaver"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 69
+      },
+      "model": "shadowslave:item/memories/briar_crescent"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 70
+      },
+      "model": "shadowslave:item/memories/glacier_pike"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 71
+      },
+      "model": "shadowslave:item/memories/rose_rapier"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 72
+      },
+      "model": "shadowslave:item/memories/cinder_maul"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 73
+      },
+      "model": "shadowslave:item/memories/moonhook"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 74
+      },
+      "model": "shadowslave:item/memories/tidal_trident"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 75
+      },
+      "model": "shadowslave:item/memories/amber_hatchet"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 76
+      },
+      "model": "shadowslave:item/memories/raven_scythe"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 77
+      },
+      "model": "shadowslave:item/memories/sunpetal_saber"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 78
+      },
+      "model": "shadowslave:item/memories/jade_halberd"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 79
+      },
+      "model": "shadowslave:item/memories/amethyst_glaive"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 80
+      },
+      "model": "shadowslave:item/memories/ivory_lance"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 81
+      },
+      "model": "shadowslave:item/memories/coral_cutlass"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 82
+      },
+      "model": "shadowslave:item/memories/starfall_hammer"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 83
+      },
+      "model": "shadowslave:item/memories/dune_falchion"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 84
+      },
+      "model": "shadowslave:item/memories/winter_fang"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 85
+      },
+      "model": "shadowslave:item/memories/glasswing_dagger"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 86
+      },
+      "model": "shadowslave:item/memories/rootbound_club"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 87
+      },
+      "model": "shadowslave:item/memories/scarlet_cleaver"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 88
+      },
+      "model": "shadowslave:item/memories/aurora_staff"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 89
+      },
+      "model": "shadowslave:item/memories/clockwork_spear"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 90
+      },
+      "model": "shadowslave:item/memories/mossbite_axe"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 91
+      },
+      "model": "shadowslave:item/memories/pearl_stiletto"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 92
+      },
+      "model": "shadowslave:item/memories/violet_greatsword"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 93
+      },
+      "model": "shadowslave:item/memories/honeycomb_mace"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 94
+      },
+      "model": "shadowslave:item/memories/thorn_whipblade"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 95
+      },
+      "model": "shadowslave:item/memories/obsidian_kris"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 96
+      },
+      "model": "shadowslave:item/memories/silver_requiem"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 97
+      },
+      "model": "shadowslave:item/memories/fading_ember"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 98
+      },
+      "model": "shadowslave:item/memories/divine_spark"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 99
+      },
+      "model": "shadowslave:item/memories/cinder_sigil"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 100
+      },
+      "model": "shadowslave:item/memories/sunseed_locket"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 101
+      },
+      "model": "shadowslave:item/memories/moonlit_ring"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 102
+      },
+      "model": "shadowslave:item/memories/briar_brooch"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 103
+      },
+      "model": "shadowslave:item/memories/glacier_tear"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 104
+      },
+      "model": "shadowslave:item/memories/blossom_bell"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 105
+      },
+      "model": "shadowslave:item/memories/coral_rosary"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 106
+      },
+      "model": "shadowslave:item/memories/amber_hourglass"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 107
+      },
+      "model": "shadowslave:item/memories/raven_medallion"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 108
+      },
+      "model": "shadowslave:item/memories/jade_scarab"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 109
+      },
+      "model": "shadowslave:item/memories/amethyst_heart"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 110
+      },
+      "model": "shadowslave:item/memories/ivory_feather_pin"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 111
+      },
+      "model": "shadowslave:item/memories/dune_compass"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 112
+      },
+      "model": "shadowslave:item/memories/aurora_knot"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 113
+      },
+      "model": "shadowslave:item/memories/shard_lantern"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 114
+      },
+      "model": "shadowslave:item/memories/drowned_pearl"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 115
+      },
+      "model": "shadowslave:item/memories/feather_of_dusk"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 116
+      },
+      "model": "shadowslave:item/memories/dream_atlas"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 117
+      },
+      "model": "shadowslave:item/memories/sunwell_flask"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 118
+      },
+      "model": "shadowslave:item/memories/moonseed_pouch"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 119
+      },
+      "model": "shadowslave:item/memories/briar_key"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 120
+      },
+      "model": "shadowslave:item/memories/frostbound_compass"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 121
+      },
+      "model": "shadowslave:item/memories/blossom_fan"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 122
+      },
+      "model": "shadowslave:item/memories/coral_conch"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 123
+      },
+      "model": "shadowslave:item/memories/amber_music_box"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 124
+      },
+      "model": "shadowslave:item/memories/raven_quill"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 125
+      },
+      "model": "shadowslave:item/memories/jade_chalice"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 126
+      },
+      "model": "shadowslave:item/memories/amethyst_lens"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 127
+      },
+      "model": "shadowslave:item/memories/ivory_scroll"
+    },
+    {
+      "predicate": {
+        "shadowslave:design": 128
+      },
+      "model": "shadowslave:item/memories/warm_hearth_candle"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "top": "shadowslave:block/blossom_grass",
+    "side": "shadowslave:block/blossom_grass_side",
+    "bottom": "shadowslave:block/dream_loam"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "has_precipitation": false,
+  "temperature": 0.8,
+  "downfall": 0.0,
+  "effects": {
+    "sky_color": 8294317,
+    "fog_color": 9871016,
+    "water_color": 4284540,
+    "water_fog_color": 2570314,
+    "grass_color": 8501580,
+    "foliage_color": 7252044,
+    "mood_sound": {
+      "sound": "minecraft:ambient.cave",
+      "tick_delay": 6000,
+      "block_search_extent": 8,
+      "offset": 2.0
+    }
+  },
+  "carvers": {},
+  "features": [
+    [],
+    [
+      "shadowslave:realm_waters"
+    ],
+    [
+      "shadowslave:rubble_hollow_mountains"
+    ],
+    [],
+    [],
+    [
+      "shadowslave:dream_ruin"
+    ],
+    [],
+    [],
+    [],
+    [
+      "shadowslave:dead_hollow_mountains",
+      "shadowslave:flowers_hollow_mountains"
+    ],
+    []
+  ],
+  "spawners": {},
+  "spawn_costs": {}
+}

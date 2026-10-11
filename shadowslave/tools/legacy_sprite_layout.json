@@ -1,0 +1,2441 @@
+[
+  {
+    "source": "world_material_atlas",
+    "sprite": "block/ash_stone",
+    "x": 0,
+    "y": 0,
+    "width": 157,
+    "height": 157,
+    "size": 16
+  },
+  {
+    "source": "world_material_atlas",
+    "sprite": "block/ash_bricks",
+    "x": 157,
+    "y": 0,
+    "width": 157,
+    "height": 157,
+    "size": 16
+  },
+  {
+    "source": "world_material_atlas",
+    "sprite": "block/fractured_stone",
+    "x": 314,
+    "y": 0,
+    "width": 156,
+    "height": 157,
+    "size": 16
+  },
+  {
+    "source": "world_material_atlas",
+    "sprite": "block/ash_tiles",
+    "x": 470,
+    "y": 0,
+    "width": 157,
+    "height": 157,
+    "size": 16
+  },
+  {
+    "source": "world_material_atlas",
+    "sprite": "block/sanctuary_limestone",
+    "x": 627,
+    "y": 0,
+    "width": 157,
+    "height": 157,
+    "size": 16
+  },
+  {
+    "source": "world_material_atlas",
+    "sprite": "block/aged_bronze",
+    "x": 784,
+    "y": 0,
+    "width": 156,
+    "height": 157,
+    "size": 16
+  },
+  {
+    "source": "world_material_atlas",
+    "sprite": "block/amber_glass",
+    "x": 940,
+    "y": 0,
+    "width": 157,
+    "height": 157,
+    "size": 16
+  },
+  {
+    "source": "world_material_atlas",
+    "sprite": "block/silver_rune",
+    "x": 1097,
+    "y": 0,
+    "width": 157,
+    "height": 157,
+    "size": 16
+  },
+  {
+    "source": "world_material_atlas",
+    "sprite": "block/ashen_soil",
+    "x": 0,
+    "y": 157,
+    "width": 157,
+    "height": 157,
+    "size": 16
+  },
+  {
+    "source": "world_material_atlas",
+    "sprite": "block/ashen_grass",
+    "x": 157,
+    "y": 157,
+    "width": 157,
+    "height": 157,
+    "size": 16
+  },
+  {
+    "source": "world_material_atlas",
+    "sprite": "block/sanctuary_moss",
+    "x": 314,
+    "y": 157,
+    "width": 156,
+    "height": 157,
+    "size": 16
+  },
+  {
+    "source": "world_material_atlas",
+    "sprite": "block/petrified_bark",
+    "x": 470,
+    "y": 157,
+    "width": 157,
+    "height": 157,
+    "size": 16
+  },
+  {
+    "source": "world_material_atlas",
+    "sprite": "block/black_iron",
+    "x": 627,
+    "y": 157,
+    "width": 157,
+    "height": 157,
+    "size": 16
+  },
+  {
+    "source": "world_material_atlas",
+    "sprite": "block/fossil_bone",
+    "x": 784,
+    "y": 157,
+    "width": 156,
+    "height": 157,
+    "size": 16
+  },
+  {
+    "source": "world_material_atlas",
+    "sprite": "block/ember_obsidian",
+    "x": 940,
+    "y": 157,
+    "width": 157,
+    "height": 157,
+    "size": 16
+  },
+  {
+    "source": "world_material_atlas",
+    "sprite": "block/drowned_stone",
+    "x": 1097,
+    "y": 157,
+    "width": 157,
+    "height": 157,
+    "size": 16
+  },
+  {
+    "source": "world_material_atlas",
+    "sprite": "block/meadow_grass",
+    "x": 0,
+    "y": 314,
+    "width": 157,
+    "height": 156,
+    "size": 16
+  },
+  {
+    "source": "world_material_atlas",
+    "sprite": "block/blossom_grass",
+    "x": 157,
+    "y": 314,
+    "width": 157,
+    "height": 156,
+    "size": 16
+  },
+  {
+    "source": "world_material_atlas",
+    "sprite": "block/lavender_grass",
+    "x": 314,
+    "y": 314,
+    "width": 156,
+    "height": 156,
+    "size": 16
+  },
+  {
+    "source": "world_material_atlas",
+    "sprite": "block/autumn_litter",
+    "x": 470,
+    "y": 314,
+    "width": 157,
+    "height": 156,
+    "size": 16
+  },
+  {
+    "source": "world_material_atlas",
+    "sprite": "block/turquoise_moss",
+    "x": 627,
+    "y": 314,
+    "width": 157,
+    "height": 156,
+    "size": 16
+  },
+  {
+    "source": "world_material_atlas",
+    "sprite": "block/frost_grass",
+    "x": 784,
+    "y": 314,
+    "width": 156,
+    "height": 156,
+    "size": 16
+  },
+  {
+    "source": "world_material_atlas",
+    "sprite": "block/scarlet_litter",
+    "x": 940,
+    "y": 314,
+    "width": 157,
+    "height": 156,
+    "size": 16
+  },
+  {
+    "source": "world_material_atlas",
+    "sprite": "block/warm_sand",
+    "x": 1097,
+    "y": 314,
+    "width": 157,
+    "height": 156,
+    "size": 16
+  },
+  {
+    "source": "world_material_atlas",
+    "sprite": "block/dream_loam",
+    "x": 0,
+    "y": 470,
+    "width": 157,
+    "height": 157,
+    "size": 16
+  },
+  {
+    "source": "world_material_atlas",
+    "sprite": "block/rose_clay",
+    "x": 157,
+    "y": 470,
+    "width": 157,
+    "height": 157,
+    "size": 16
+  },
+  {
+    "source": "world_material_atlas",
+    "sprite": "block/snow_soil",
+    "x": 314,
+    "y": 470,
+    "width": 156,
+    "height": 157,
+    "size": 16
+  },
+  {
+    "source": "world_material_atlas",
+    "sprite": "block/golden_sandstone",
+    "x": 470,
+    "y": 470,
+    "width": 157,
+    "height": 157,
+    "size": 16
+  },
+  {
+    "source": "world_material_atlas",
+    "sprite": "block/blue_shale",
+    "x": 627,
+    "y": 470,
+    "width": 157,
+    "height": 157,
+    "size": 16
+  },
+  {
+    "source": "world_material_atlas",
+    "sprite": "block/crystal_rock",
+    "x": 784,
+    "y": 470,
+    "width": 156,
+    "height": 157,
+    "size": 16
+  },
+  {
+    "source": "world_material_atlas",
+    "sprite": "block/red_sandstone",
+    "x": 940,
+    "y": 470,
+    "width": 157,
+    "height": 157,
+    "size": 16
+  },
+  {
+    "source": "world_material_atlas",
+    "sprite": "block/pale_marble",
+    "x": 1097,
+    "y": 470,
+    "width": 157,
+    "height": 157,
+    "size": 16
+  },
+  {
+    "source": "world_material_atlas",
+    "sprite": "block/emerald_leaves",
+    "x": 0,
+    "y": 627,
+    "width": 157,
+    "height": 157,
+    "size": 16
+  },
+  {
+    "source": "world_material_atlas",
+    "sprite": "block/pink_leaves",
+    "x": 157,
+    "y": 627,
+    "width": 157,
+    "height": 157,
+    "size": 16
+  },
+  {
+    "source": "world_material_atlas",
+    "sprite": "block/lavender_leaves",
+    "x": 314,
+    "y": 627,
+    "width": 156,
+    "height": 157,
+    "size": 16
+  },
+  {
+    "source": "world_material_atlas",
+    "sprite": "block/golden_leaves",
+    "x": 470,
+    "y": 627,
+    "width": 157,
+    "height": 157,
+    "size": 16
+  },
+  {
+    "source": "world_material_atlas",
+    "sprite": "block/cyan_leaves",
+    "x": 627,
+    "y": 627,
+    "width": 157,
+    "height": 157,
+    "size": 16
+  },
+  {
+    "source": "world_material_atlas",
+    "sprite": "block/teal_leaves",
+    "x": 784,
+    "y": 627,
+    "width": 156,
+    "height": 157,
+    "size": 16
+  },
+  {
+    "source": "world_material_atlas",
+    "sprite": "block/frost_leaves",
+    "x": 940,
+    "y": 627,
+    "width": 157,
+    "height": 157,
+    "size": 16
+  },
+  {
+    "source": "world_material_atlas",
+    "sprite": "block/crimson_leaves",
+    "x": 1097,
+    "y": 627,
+    "width": 157,
+    "height": 157,
+    "size": 16
+  },
+  {
+    "source": "world_material_atlas",
+    "sprite": "block/dream_oak",
+    "x": 0,
+    "y": 784,
+    "width": 157,
+    "height": 156,
+    "size": 16
+  },
+  {
+    "source": "world_material_atlas",
+    "sprite": "block/dream_birch",
+    "x": 157,
+    "y": 784,
+    "width": 157,
+    "height": 156,
+    "size": 16
+  },
+  {
+    "source": "world_material_atlas",
+    "sprite": "block/blue_bark",
+    "x": 314,
+    "y": 784,
+    "width": 156,
+    "height": 156,
+    "size": 16
+  },
+  {
+    "source": "world_material_atlas",
+    "sprite": "block/rose_bark",
+    "x": 470,
+    "y": 784,
+    "width": 157,
+    "height": 156,
+    "size": 16
+  },
+  {
+    "source": "world_material_atlas",
+    "sprite": "block/redwood_bark",
+    "x": 627,
+    "y": 784,
+    "width": 157,
+    "height": 156,
+    "size": 16
+  },
+  {
+    "source": "world_material_atlas",
+    "sprite": "block/runic_timber",
+    "x": 784,
+    "y": 784,
+    "width": 156,
+    "height": 156,
+    "size": 16
+  },
+  {
+    "source": "world_material_atlas",
+    "sprite": "block/honey_planks",
+    "x": 940,
+    "y": 784,
+    "width": 157,
+    "height": 156,
+    "size": 16
+  },
+  {
+    "source": "world_material_atlas",
+    "sprite": "block/plum_planks",
+    "x": 1097,
+    "y": 784,
+    "width": 157,
+    "height": 156,
+    "size": 16
+  },
+  {
+    "source": "world_material_atlas",
+    "sprite": "block/emerald_crystal",
+    "x": 0,
+    "y": 940,
+    "width": 157,
+    "height": 157,
+    "size": 16
+  },
+  {
+    "source": "world_material_atlas",
+    "sprite": "block/amethyst_crystal",
+    "x": 157,
+    "y": 940,
+    "width": 157,
+    "height": 157,
+    "size": 16
+  },
+  {
+    "source": "world_material_atlas",
+    "sprite": "block/cyan_crystal",
+    "x": 314,
+    "y": 940,
+    "width": 156,
+    "height": 157,
+    "size": 16
+  },
+  {
+    "source": "world_material_atlas",
+    "sprite": "block/rose_crystal",
+    "x": 470,
+    "y": 940,
+    "width": 157,
+    "height": 157,
+    "size": 16
+  },
+  {
+    "source": "world_material_atlas",
+    "sprite": "block/peach_bricks",
+    "x": 627,
+    "y": 940,
+    "width": 157,
+    "height": 157,
+    "size": 16
+  },
+  {
+    "source": "world_material_atlas",
+    "sprite": "block/mossy_ruin_stone",
+    "x": 784,
+    "y": 940,
+    "width": 156,
+    "height": 157,
+    "size": 16
+  },
+  {
+    "source": "world_material_atlas",
+    "sprite": "block/moon_brass",
+    "x": 940,
+    "y": 940,
+    "width": 157,
+    "height": 157,
+    "size": 16
+  },
+  {
+    "source": "world_material_atlas",
+    "sprite": "block/navy_cloth",
+    "x": 1097,
+    "y": 940,
+    "width": 157,
+    "height": 157,
+    "size": 16
+  },
+  {
+    "source": "world_material_atlas",
+    "sprite": "block/silver_plate",
+    "x": 0,
+    "y": 1097,
+    "width": 157,
+    "height": 157,
+    "size": 16
+  },
+  {
+    "source": "world_material_atlas",
+    "sprite": "block/charcoal_plate",
+    "x": 157,
+    "y": 1097,
+    "width": 157,
+    "height": 157,
+    "size": 16
+  },
+  {
+    "source": "world_material_atlas",
+    "sprite": "block/leaf_plate",
+    "x": 314,
+    "y": 1097,
+    "width": 156,
+    "height": 157,
+    "size": 16
+  },
+  {
+    "source": "world_material_atlas",
+    "sprite": "block/plum_cloth",
+    "x": 470,
+    "y": 1097,
+    "width": 157,
+    "height": 157,
+    "size": 16
+  },
+  {
+    "source": "world_material_atlas",
+    "sprite": "block/gold_plate",
+    "x": 627,
+    "y": 1097,
+    "width": 157,
+    "height": 157,
+    "size": 16
+  },
+  {
+    "source": "world_material_atlas",
+    "sprite": "block/ice_plate",
+    "x": 784,
+    "y": 1097,
+    "width": 156,
+    "height": 157,
+    "size": 16
+  },
+  {
+    "source": "world_material_atlas",
+    "sprite": "block/scarlet_plate",
+    "x": 940,
+    "y": 1097,
+    "width": 157,
+    "height": 157,
+    "size": 16
+  },
+  {
+    "source": "world_material_atlas",
+    "sprite": "block/pearl_plate",
+    "x": 1097,
+    "y": 1097,
+    "width": 157,
+    "height": 157,
+    "size": 16
+  },
+  {
+    "source": "memory_armor_atlas",
+    "sprite": "item/memories/ashen_shroud",
+    "x": 0,
+    "y": 0,
+    "width": 157,
+    "height": 200,
+    "size": 32
+  },
+  {
+    "source": "memory_armor_atlas",
+    "sprite": "item/memories/awakened_mantle",
+    "x": 157,
+    "y": 0,
+    "width": 157,
+    "height": 200,
+    "size": 32
+  },
+  {
+    "source": "memory_armor_atlas",
+    "sprite": "item/memories/nightweave",
+    "x": 314,
+    "y": 0,
+    "width": 156,
+    "height": 200,
+    "size": 32
+  },
+  {
+    "source": "memory_armor_atlas",
+    "sprite": "item/memories/briar_sovereign",
+    "x": 470,
+    "y": 0,
+    "width": 157,
+    "height": 200,
+    "size": 32
+  },
+  {
+    "source": "memory_armor_atlas",
+    "sprite": "item/memories/silver_castellan",
+    "x": 627,
+    "y": 0,
+    "width": 157,
+    "height": 200,
+    "size": 32
+  },
+  {
+    "source": "memory_armor_atlas",
+    "sprite": "item/memories/sunkeeper_regalia",
+    "x": 784,
+    "y": 0,
+    "width": 156,
+    "height": 200,
+    "size": 32
+  },
+  {
+    "source": "memory_armor_atlas",
+    "sprite": "item/memories/frostbound_sentinel",
+    "x": 940,
+    "y": 0,
+    "width": 157,
+    "height": 200,
+    "size": 32
+  },
+  {
+    "source": "memory_armor_atlas",
+    "sprite": "item/memories/blossom_pilgrim",
+    "x": 1097,
+    "y": 0,
+    "width": 157,
+    "height": 200,
+    "size": 32
+  },
+  {
+    "source": "memory_armor_atlas",
+    "sprite": "item/memories/tidal_warden",
+    "x": 0,
+    "y": 200,
+    "width": 157,
+    "height": 199,
+    "size": 32
+  },
+  {
+    "source": "memory_armor_atlas",
+    "sprite": "item/memories/amethyst_oracle",
+    "x": 157,
+    "y": 200,
+    "width": 157,
+    "height": 199,
+    "size": 32
+  },
+  {
+    "source": "memory_armor_atlas",
+    "sprite": "item/memories/scarlet_revenant",
+    "x": 314,
+    "y": 200,
+    "width": 156,
+    "height": 199,
+    "size": 32
+  },
+  {
+    "source": "memory_armor_atlas",
+    "sprite": "item/memories/mossbound_keeper",
+    "x": 470,
+    "y": 200,
+    "width": 157,
+    "height": 199,
+    "size": 32
+  },
+  {
+    "source": "memory_armor_atlas",
+    "sprite": "item/memories/dune_nomad",
+    "x": 627,
+    "y": 200,
+    "width": 157,
+    "height": 199,
+    "size": 32
+  },
+  {
+    "source": "memory_armor_atlas",
+    "sprite": "item/memories/aurora_raiment",
+    "x": 784,
+    "y": 200,
+    "width": 156,
+    "height": 199,
+    "size": 32
+  },
+  {
+    "source": "memory_armor_atlas",
+    "sprite": "item/memories/clockwork_vow",
+    "x": 940,
+    "y": 200,
+    "width": 157,
+    "height": 199,
+    "size": 32
+  },
+  {
+    "source": "memory_armor_atlas",
+    "sprite": "item/memories/ivory_seraph",
+    "x": 1097,
+    "y": 200,
+    "width": 157,
+    "height": 199,
+    "size": 32
+  },
+  {
+    "source": "memory_armor_atlas",
+    "sprite": "item/memories/tide_crown",
+    "x": 0,
+    "y": 399,
+    "width": 157,
+    "height": 147,
+    "size": 32
+  },
+  {
+    "source": "memory_armor_atlas",
+    "sprite": "item/memories/lantern_eye",
+    "x": 157,
+    "y": 399,
+    "width": 157,
+    "height": 147,
+    "size": 32
+  },
+  {
+    "source": "memory_armor_atlas",
+    "sprite": "item/memories/bramble_antlers",
+    "x": 314,
+    "y": 399,
+    "width": 156,
+    "height": 147,
+    "size": 32
+  },
+  {
+    "source": "memory_armor_atlas",
+    "sprite": "item/memories/moonlit_visor",
+    "x": 470,
+    "y": 399,
+    "width": 157,
+    "height": 147,
+    "size": 32
+  },
+  {
+    "source": "memory_armor_atlas",
+    "sprite": "item/memories/sunpetal_circlet",
+    "x": 627,
+    "y": 399,
+    "width": 157,
+    "height": 147,
+    "size": 32
+  },
+  {
+    "source": "memory_armor_atlas",
+    "sprite": "item/memories/glacier_helm",
+    "x": 784,
+    "y": 399,
+    "width": 156,
+    "height": 147,
+    "size": 32
+  },
+  {
+    "source": "memory_armor_atlas",
+    "sprite": "item/memories/foxglove_hood",
+    "x": 940,
+    "y": 399,
+    "width": 157,
+    "height": 147,
+    "size": 32
+  },
+  {
+    "source": "memory_armor_atlas",
+    "sprite": "item/memories/raven_mask",
+    "x": 1097,
+    "y": 399,
+    "width": 157,
+    "height": 147,
+    "size": 32
+  },
+  {
+    "source": "memory_armor_atlas",
+    "sprite": "item/memories/citrine_diadem",
+    "x": 0,
+    "y": 546,
+    "width": 157,
+    "height": 133,
+    "size": 32
+  },
+  {
+    "source": "memory_armor_atlas",
+    "sprite": "item/memories/coral_headdress",
+    "x": 157,
+    "y": 546,
+    "width": 157,
+    "height": 133,
+    "size": 32
+  },
+  {
+    "source": "memory_armor_atlas",
+    "sprite": "item/memories/winter_owl_mask",
+    "x": 314,
+    "y": 546,
+    "width": 156,
+    "height": 133,
+    "size": 32
+  },
+  {
+    "source": "memory_armor_atlas",
+    "sprite": "item/memories/astral_halo",
+    "x": 470,
+    "y": 546,
+    "width": 157,
+    "height": 133,
+    "size": 32
+  },
+  {
+    "source": "memory_armor_atlas",
+    "sprite": "item/memories/iron_heart",
+    "x": 627,
+    "y": 546,
+    "width": 157,
+    "height": 133,
+    "size": 32
+  },
+  {
+    "source": "memory_armor_atlas",
+    "sprite": "item/memories/rosewood_cuirass",
+    "x": 784,
+    "y": 546,
+    "width": 156,
+    "height": 133,
+    "size": 32
+  },
+  {
+    "source": "memory_armor_atlas",
+    "sprite": "item/memories/glasswing_mantle",
+    "x": 940,
+    "y": 546,
+    "width": 157,
+    "height": 133,
+    "size": 32
+  },
+  {
+    "source": "memory_armor_atlas",
+    "sprite": "item/memories/dawnscale_vest",
+    "x": 1097,
+    "y": 546,
+    "width": 157,
+    "height": 133,
+    "size": 32
+  },
+  {
+    "source": "memory_armor_atlas",
+    "sprite": "item/memories/frostglass_aegis",
+    "x": 0,
+    "y": 679,
+    "width": 157,
+    "height": 148,
+    "size": 32
+  },
+  {
+    "source": "memory_armor_atlas",
+    "sprite": "item/memories/cinder_breastplate",
+    "x": 157,
+    "y": 679,
+    "width": 157,
+    "height": 148,
+    "size": 32
+  },
+  {
+    "source": "memory_armor_atlas",
+    "sprite": "item/memories/jade_carapace",
+    "x": 314,
+    "y": 679,
+    "width": 156,
+    "height": 148,
+    "size": 32
+  },
+  {
+    "source": "memory_armor_atlas",
+    "sprite": "item/memories/moonwoven_coat",
+    "x": 470,
+    "y": 679,
+    "width": 157,
+    "height": 148,
+    "size": 32
+  },
+  {
+    "source": "memory_armor_atlas",
+    "sprite": "item/memories/coral_harness",
+    "x": 627,
+    "y": 679,
+    "width": 157,
+    "height": 148,
+    "size": 32
+  },
+  {
+    "source": "memory_armor_atlas",
+    "sprite": "item/memories/golden_hour_tunic",
+    "x": 784,
+    "y": 679,
+    "width": 156,
+    "height": 148,
+    "size": 32
+  },
+  {
+    "source": "memory_armor_atlas",
+    "sprite": "item/memories/violet_star_robe",
+    "x": 940,
+    "y": 679,
+    "width": 157,
+    "height": 148,
+    "size": 32
+  },
+  {
+    "source": "memory_armor_atlas",
+    "sprite": "item/memories/pilgrim_pauldrons",
+    "x": 1097,
+    "y": 679,
+    "width": 157,
+    "height": 148,
+    "size": 32
+  },
+  {
+    "source": "memory_armor_atlas",
+    "sprite": "item/memories/thorn_greaves",
+    "x": 0,
+    "y": 827,
+    "width": 157,
+    "height": 147,
+    "size": 32
+  },
+  {
+    "source": "memory_armor_atlas",
+    "sprite": "item/memories/dusksteel_tassets",
+    "x": 157,
+    "y": 827,
+    "width": 157,
+    "height": 147,
+    "size": 32
+  },
+  {
+    "source": "memory_armor_atlas",
+    "sprite": "item/memories/lotus_leggings",
+    "x": 314,
+    "y": 827,
+    "width": 156,
+    "height": 147,
+    "size": 32
+  },
+  {
+    "source": "memory_armor_atlas",
+    "sprite": "item/memories/glacier_cuisses",
+    "x": 470,
+    "y": 827,
+    "width": 157,
+    "height": 147,
+    "size": 32
+  },
+  {
+    "source": "memory_armor_atlas",
+    "sprite": "item/memories/amberleaf_wraps",
+    "x": 627,
+    "y": 827,
+    "width": 157,
+    "height": 147,
+    "size": 32
+  },
+  {
+    "source": "memory_armor_atlas",
+    "sprite": "item/memories/rosepetal_skirt",
+    "x": 784,
+    "y": 827,
+    "width": 156,
+    "height": 147,
+    "size": 32
+  },
+  {
+    "source": "memory_armor_atlas",
+    "sprite": "item/memories/dune_strider_chaps",
+    "x": 940,
+    "y": 827,
+    "width": 157,
+    "height": 147,
+    "size": 32
+  },
+  {
+    "source": "memory_armor_atlas",
+    "sprite": "item/memories/warden_plates",
+    "x": 1097,
+    "y": 827,
+    "width": 157,
+    "height": 147,
+    "size": 32
+  },
+  {
+    "source": "memory_armor_atlas",
+    "sprite": "item/memories/prism_legguards",
+    "x": 0,
+    "y": 974,
+    "width": 157,
+    "height": 134,
+    "size": 32
+  },
+  {
+    "source": "memory_armor_atlas",
+    "sprite": "item/memories/tidewoven_kilt",
+    "x": 157,
+    "y": 974,
+    "width": 157,
+    "height": 134,
+    "size": 32
+  },
+  {
+    "source": "memory_armor_atlas",
+    "sprite": "item/memories/ravenfeather_trousers",
+    "x": 314,
+    "y": 974,
+    "width": 156,
+    "height": 134,
+    "size": 32
+  },
+  {
+    "source": "memory_armor_atlas",
+    "sprite": "item/memories/moonstone_guards",
+    "x": 470,
+    "y": 974,
+    "width": 157,
+    "height": 134,
+    "size": 32
+  },
+  {
+    "source": "memory_armor_atlas",
+    "sprite": "item/memories/silent_steps",
+    "x": 627,
+    "y": 974,
+    "width": 157,
+    "height": 134,
+    "size": 32
+  },
+  {
+    "source": "memory_armor_atlas",
+    "sprite": "item/memories/starwalker",
+    "x": 784,
+    "y": 974,
+    "width": 156,
+    "height": 134,
+    "size": 32
+  },
+  {
+    "source": "memory_armor_atlas",
+    "sprite": "item/memories/briar_treads",
+    "x": 940,
+    "y": 974,
+    "width": 157,
+    "height": 134,
+    "size": 32
+  },
+  {
+    "source": "memory_armor_atlas",
+    "sprite": "item/memories/sunlit_sandals",
+    "x": 1097,
+    "y": 974,
+    "width": 157,
+    "height": 134,
+    "size": 32
+  },
+  {
+    "source": "memory_armor_atlas",
+    "sprite": "item/memories/frosthoof_boots",
+    "x": 0,
+    "y": 1108,
+    "width": 157,
+    "height": 146,
+    "size": 32
+  },
+  {
+    "source": "memory_armor_atlas",
+    "sprite": "item/memories/blossom_slippers",
+    "x": 157,
+    "y": 1108,
+    "width": 157,
+    "height": 146,
+    "size": 32
+  },
+  {
+    "source": "memory_armor_atlas",
+    "sprite": "item/memories/coral_sabatons",
+    "x": 314,
+    "y": 1108,
+    "width": 156,
+    "height": 146,
+    "size": 32
+  },
+  {
+    "source": "memory_armor_atlas",
+    "sprite": "item/memories/emberstride",
+    "x": 470,
+    "y": 1108,
+    "width": 157,
+    "height": 146,
+    "size": 32
+  },
+  {
+    "source": "memory_armor_atlas",
+    "sprite": "item/memories/mosswalker_boots",
+    "x": 627,
+    "y": 1108,
+    "width": 157,
+    "height": 146,
+    "size": 32
+  },
+  {
+    "source": "memory_armor_atlas",
+    "sprite": "item/memories/cloudstep_shoes",
+    "x": 784,
+    "y": 1108,
+    "width": 156,
+    "height": 146,
+    "size": 32
+  },
+  {
+    "source": "memory_armor_atlas",
+    "sprite": "item/memories/dune_skippers",
+    "x": 940,
+    "y": 1108,
+    "width": 157,
+    "height": 146,
+    "size": 32
+  },
+  {
+    "source": "memory_armor_atlas",
+    "sprite": "item/memories/amethyst_heels",
+    "x": 1097,
+    "y": 1108,
+    "width": 157,
+    "height": 146,
+    "size": 32
+  },
+  {
+    "source": "memory_relic_atlas",
+    "sprite": "item/memories/soul_edge",
+    "x": 0,
+    "y": 0,
+    "width": 157,
+    "height": 157,
+    "size": 32
+  },
+  {
+    "source": "memory_relic_atlas",
+    "sprite": "item/memories/mirror_knife",
+    "x": 157,
+    "y": 0,
+    "width": 157,
+    "height": 157,
+    "size": 32
+  },
+  {
+    "source": "memory_relic_atlas",
+    "sprite": "item/memories/hollow_fang",
+    "x": 314,
+    "y": 0,
+    "width": 156,
+    "height": 157,
+    "size": 32
+  },
+  {
+    "source": "memory_relic_atlas",
+    "sprite": "item/memories/dawncleaver",
+    "x": 470,
+    "y": 0,
+    "width": 157,
+    "height": 157,
+    "size": 32
+  },
+  {
+    "source": "memory_relic_atlas",
+    "sprite": "item/memories/briar_crescent",
+    "x": 627,
+    "y": 0,
+    "width": 157,
+    "height": 157,
+    "size": 32
+  },
+  {
+    "source": "memory_relic_atlas",
+    "sprite": "item/memories/glacier_pike",
+    "x": 784,
+    "y": 0,
+    "width": 156,
+    "height": 157,
+    "size": 32
+  },
+  {
+    "source": "memory_relic_atlas",
+    "sprite": "item/memories/rose_rapier",
+    "x": 940,
+    "y": 0,
+    "width": 157,
+    "height": 157,
+    "size": 32
+  },
+  {
+    "source": "memory_relic_atlas",
+    "sprite": "item/memories/cinder_maul",
+    "x": 1097,
+    "y": 0,
+    "width": 157,
+    "height": 157,
+    "size": 32
+  },
+  {
+    "source": "memory_relic_atlas",
+    "sprite": "item/memories/moonhook",
+    "x": 0,
+    "y": 157,
+    "width": 157,
+    "height": 157,
+    "size": 32
+  },
+  {
+    "source": "memory_relic_atlas",
+    "sprite": "item/memories/tidal_trident",
+    "x": 157,
+    "y": 157,
+    "width": 157,
+    "height": 157,
+    "size": 32
+  },
+  {
+    "source": "memory_relic_atlas",
+    "sprite": "item/memories/amber_hatchet",
+    "x": 314,
+    "y": 157,
+    "width": 156,
+    "height": 157,
+    "size": 32
+  },
+  {
+    "source": "memory_relic_atlas",
+    "sprite": "item/memories/raven_scythe",
+    "x": 470,
+    "y": 157,
+    "width": 157,
+    "height": 157,
+    "size": 32
+  },
+  {
+    "source": "memory_relic_atlas",
+    "sprite": "item/memories/sunpetal_saber",
+    "x": 627,
+    "y": 157,
+    "width": 157,
+    "height": 157,
+    "size": 32
+  },
+  {
+    "source": "memory_relic_atlas",
+    "sprite": "item/memories/jade_halberd",
+    "x": 784,
+    "y": 157,
+    "width": 156,
+    "height": 157,
+    "size": 32
+  },
+  {
+    "source": "memory_relic_atlas",
+    "sprite": "item/memories/amethyst_glaive",
+    "x": 940,
+    "y": 157,
+    "width": 157,
+    "height": 157,
+    "size": 32
+  },
+  {
+    "source": "memory_relic_atlas",
+    "sprite": "item/memories/ivory_lance",
+    "x": 1097,
+    "y": 157,
+    "width": 157,
+    "height": 157,
+    "size": 32
+  },
+  {
+    "source": "memory_relic_atlas",
+    "sprite": "item/memories/coral_cutlass",
+    "x": 0,
+    "y": 314,
+    "width": 157,
+    "height": 156,
+    "size": 32
+  },
+  {
+    "source": "memory_relic_atlas",
+    "sprite": "item/memories/starfall_hammer",
+    "x": 157,
+    "y": 314,
+    "width": 157,
+    "height": 156,
+    "size": 32
+  },
+  {
+    "source": "memory_relic_atlas",
+    "sprite": "item/memories/dune_falchion",
+    "x": 314,
+    "y": 314,
+    "width": 156,
+    "height": 156,
+    "size": 32
+  },
+  {
+    "source": "memory_relic_atlas",
+    "sprite": "item/memories/winter_fang",
+    "x": 470,
+    "y": 314,
+    "width": 157,
+    "height": 156,
+    "size": 32
+  },
+  {
+    "source": "memory_relic_atlas",
+    "sprite": "item/memories/glasswing_dagger",
+    "x": 627,
+    "y": 314,
+    "width": 157,
+    "height": 156,
+    "size": 32
+  },
+  {
+    "source": "memory_relic_atlas",
+    "sprite": "item/memories/rootbound_club",
+    "x": 784,
+    "y": 314,
+    "width": 156,
+    "height": 156,
+    "size": 32
+  },
+  {
+    "source": "memory_relic_atlas",
+    "sprite": "item/memories/scarlet_cleaver",
+    "x": 940,
+    "y": 314,
+    "width": 157,
+    "height": 156,
+    "size": 32
+  },
+  {
+    "source": "memory_relic_atlas",
+    "sprite": "item/memories/aurora_staff",
+    "x": 1097,
+    "y": 314,
+    "width": 157,
+    "height": 156,
+    "size": 32
+  },
+  {
+    "source": "memory_relic_atlas",
+    "sprite": "item/memories/clockwork_spear",
+    "x": 0,
+    "y": 470,
+    "width": 157,
+    "height": 157,
+    "size": 32
+  },
+  {
+    "source": "memory_relic_atlas",
+    "sprite": "item/memories/mossbite_axe",
+    "x": 157,
+    "y": 470,
+    "width": 157,
+    "height": 157,
+    "size": 32
+  },
+  {
+    "source": "memory_relic_atlas",
+    "sprite": "item/memories/pearl_stiletto",
+    "x": 314,
+    "y": 470,
+    "width": 156,
+    "height": 157,
+    "size": 32
+  },
+  {
+    "source": "memory_relic_atlas",
+    "sprite": "item/memories/violet_greatsword",
+    "x": 470,
+    "y": 470,
+    "width": 157,
+    "height": 157,
+    "size": 32
+  },
+  {
+    "source": "memory_relic_atlas",
+    "sprite": "item/memories/honeycomb_mace",
+    "x": 627,
+    "y": 470,
+    "width": 157,
+    "height": 157,
+    "size": 32
+  },
+  {
+    "source": "memory_relic_atlas",
+    "sprite": "item/memories/thorn_whipblade",
+    "x": 784,
+    "y": 470,
+    "width": 156,
+    "height": 157,
+    "size": 32
+  },
+  {
+    "source": "memory_relic_atlas",
+    "sprite": "item/memories/obsidian_kris",
+    "x": 940,
+    "y": 470,
+    "width": 157,
+    "height": 157,
+    "size": 32
+  },
+  {
+    "source": "memory_relic_atlas",
+    "sprite": "item/memories/silver_requiem",
+    "x": 1097,
+    "y": 470,
+    "width": 157,
+    "height": 157,
+    "size": 32
+  },
+  {
+    "source": "memory_relic_atlas",
+    "sprite": "item/memories/fading_ember",
+    "x": 0,
+    "y": 627,
+    "width": 157,
+    "height": 157,
+    "size": 32
+  },
+  {
+    "source": "memory_relic_atlas",
+    "sprite": "item/memories/divine_spark",
+    "x": 157,
+    "y": 627,
+    "width": 157,
+    "height": 157,
+    "size": 32
+  },
+  {
+    "source": "memory_relic_atlas",
+    "sprite": "item/memories/cinder_sigil",
+    "x": 314,
+    "y": 627,
+    "width": 156,
+    "height": 157,
+    "size": 32
+  },
+  {
+    "source": "memory_relic_atlas",
+    "sprite": "item/memories/sunseed_locket",
+    "x": 470,
+    "y": 627,
+    "width": 157,
+    "height": 157,
+    "size": 32
+  },
+  {
+    "source": "memory_relic_atlas",
+    "sprite": "item/memories/moonlit_ring",
+    "x": 627,
+    "y": 627,
+    "width": 157,
+    "height": 157,
+    "size": 32
+  },
+  {
+    "source": "memory_relic_atlas",
+    "sprite": "item/memories/briar_brooch",
+    "x": 784,
+    "y": 627,
+    "width": 156,
+    "height": 157,
+    "size": 32
+  },
+  {
+    "source": "memory_relic_atlas",
+    "sprite": "item/memories/glacier_tear",
+    "x": 940,
+    "y": 627,
+    "width": 157,
+    "height": 157,
+    "size": 32
+  },
+  {
+    "source": "memory_relic_atlas",
+    "sprite": "item/memories/blossom_bell",
+    "x": 1097,
+    "y": 627,
+    "width": 157,
+    "height": 157,
+    "size": 32
+  },
+  {
+    "source": "memory_relic_atlas",
+    "sprite": "item/memories/coral_rosary",
+    "x": 0,
+    "y": 784,
+    "width": 157,
+    "height": 156,
+    "size": 32
+  },
+  {
+    "source": "memory_relic_atlas",
+    "sprite": "item/memories/amber_hourglass",
+    "x": 157,
+    "y": 784,
+    "width": 157,
+    "height": 156,
+    "size": 32
+  },
+  {
+    "source": "memory_relic_atlas",
+    "sprite": "item/memories/raven_medallion",
+    "x": 314,
+    "y": 784,
+    "width": 156,
+    "height": 156,
+    "size": 32
+  },
+  {
+    "source": "memory_relic_atlas",
+    "sprite": "item/memories/jade_scarab",
+    "x": 470,
+    "y": 784,
+    "width": 157,
+    "height": 156,
+    "size": 32
+  },
+  {
+    "source": "memory_relic_atlas",
+    "sprite": "item/memories/amethyst_heart",
+    "x": 627,
+    "y": 784,
+    "width": 157,
+    "height": 156,
+    "size": 32
+  },
+  {
+    "source": "memory_relic_atlas",
+    "sprite": "item/memories/ivory_feather_pin",
+    "x": 784,
+    "y": 784,
+    "width": 156,
+    "height": 156,
+    "size": 32
+  },
+  {
+    "source": "memory_relic_atlas",
+    "sprite": "item/memories/dune_compass",
+    "x": 940,
+    "y": 784,
+    "width": 157,
+    "height": 156,
+    "size": 32
+  },
+  {
+    "source": "memory_relic_atlas",
+    "sprite": "item/memories/aurora_knot",
+    "x": 1097,
+    "y": 784,
+    "width": 157,
+    "height": 156,
+    "size": 32
+  },
+  {
+    "source": "memory_relic_atlas",
+    "sprite": "item/memories/shard_lantern",
+    "x": 0,
+    "y": 940,
+    "width": 157,
+    "height": 157,
+    "size": 32
+  },
+  {
+    "source": "memory_relic_atlas",
+    "sprite": "item/memories/drowned_pearl",
+    "x": 157,
+    "y": 940,
+    "width": 157,
+    "height": 157,
+    "size": 32
+  },
+  {
+    "source": "memory_relic_atlas",
+    "sprite": "item/memories/feather_of_dusk",
+    "x": 314,
+    "y": 940,
+    "width": 156,
+    "height": 157,
+    "size": 32
+  },
+  {
+    "source": "memory_relic_atlas",
+    "sprite": "item/memories/dream_atlas",
+    "x": 470,
+    "y": 940,
+    "width": 157,
+    "height": 157,
+    "size": 32
+  },
+  {
+    "source": "memory_relic_atlas",
+    "sprite": "item/memories/sunwell_flask",
+    "x": 627,
+    "y": 940,
+    "width": 157,
+    "height": 157,
+    "size": 32
+  },
+  {
+    "source": "memory_relic_atlas",
+    "sprite": "item/memories/moonseed_pouch",
+    "x": 784,
+    "y": 940,
+    "width": 156,
+    "height": 157,
+    "size": 32
+  },
+  {
+    "source": "memory_relic_atlas",
+    "sprite": "item/memories/briar_key",
+    "x": 940,
+    "y": 940,
+    "width": 157,
+    "height": 157,
+    "size": 32
+  },
+  {
+    "source": "memory_relic_atlas",
+    "sprite": "item/memories/frostbound_compass",
+    "x": 1097,
+    "y": 940,
+    "width": 157,
+    "height": 157,
+    "size": 32
+  },
+  {
+    "source": "memory_relic_atlas",
+    "sprite": "item/memories/blossom_fan",
+    "x": 0,
+    "y": 1097,
+    "width": 157,
+    "height": 157,
+    "size": 32
+  },
+  {
+    "source": "memory_relic_atlas",
+    "sprite": "item/memories/coral_conch",
+    "x": 157,
+    "y": 1097,
+    "width": 157,
+    "height": 157,
+    "size": 32
+  },
+  {
+    "source": "memory_relic_atlas",
+    "sprite": "item/memories/amber_music_box",
+    "x": 314,
+    "y": 1097,
+    "width": 156,
+    "height": 157,
+    "size": 32
+  },
+  {
+    "source": "memory_relic_atlas",
+    "sprite": "item/memories/raven_quill",
+    "x": 470,
+    "y": 1097,
+    "width": 157,
+    "height": 157,
+    "size": 32
+  },
+  {
+    "source": "memory_relic_atlas",
+    "sprite": "item/memories/jade_chalice",
+    "x": 627,
+    "y": 1097,
+    "width": 157,
+    "height": 157,
+    "size": 32
+  },
+  {
+    "source": "memory_relic_atlas",
+    "sprite": "item/memories/amethyst_lens",
+    "x": 784,
+    "y": 1097,
+    "width": 156,
+    "height": 157,
+    "size": 32
+  },
+  {
+    "source": "memory_relic_atlas",
+    "sprite": "item/memories/ivory_scroll",
+    "x": 940,
+    "y": 1097,
+    "width": 157,
+    "height": 157,
+    "size": 32
+  },
+  {
+    "source": "memory_relic_atlas",
+    "sprite": "item/memories/warm_hearth_candle",
+    "x": 1097,
+    "y": 1097,
+    "width": 157,
+    "height": 157,
+    "size": 32
+  },
+  {
+    "source": "nightmare_material_atlas",
+    "sprite": "entity/nightmare_0",
+    "x": 0,
+    "y": 0,
+    "width": 314,
+    "height": 314,
+    "size": 32
+  },
+  {
+    "source": "nightmare_material_atlas",
+    "sprite": "entity/nightmare_1",
+    "x": 314,
+    "y": 0,
+    "width": 313,
+    "height": 314,
+    "size": 32
+  },
+  {
+    "source": "nightmare_material_atlas",
+    "sprite": "entity/nightmare_2",
+    "x": 627,
+    "y": 0,
+    "width": 313,
+    "height": 314,
+    "size": 32
+  },
+  {
+    "source": "nightmare_material_atlas",
+    "sprite": "entity/nightmare_3",
+    "x": 940,
+    "y": 0,
+    "width": 314,
+    "height": 314,
+    "size": 32
+  },
+  {
+    "source": "nightmare_material_atlas",
+    "sprite": "entity/nightmare_4",
+    "x": 0,
+    "y": 314,
+    "width": 314,
+    "height": 313,
+    "size": 32
+  },
+  {
+    "source": "nightmare_material_atlas",
+    "sprite": "entity/nightmare_5",
+    "x": 314,
+    "y": 314,
+    "width": 313,
+    "height": 313,
+    "size": 32
+  },
+  {
+    "source": "nightmare_material_atlas",
+    "sprite": "entity/nightmare_6",
+    "x": 627,
+    "y": 314,
+    "width": 313,
+    "height": 313,
+    "size": 32
+  },
+  {
+    "source": "wearable_material_atlas",
+    "sprite": "armor/material_0",
+    "x": 0,
+    "y": 0,
+    "width": 314,
+    "height": 314,
+    "size": 16
+  },
+  {
+    "source": "wearable_material_atlas",
+    "sprite": "armor/material_1",
+    "x": 314,
+    "y": 0,
+    "width": 313,
+    "height": 314,
+    "size": 16
+  },
+  {
+    "source": "wearable_material_atlas",
+    "sprite": "armor/material_2",
+    "x": 627,
+    "y": 0,
+    "width": 313,
+    "height": 314,
+    "size": 16
+  },
+  {
+    "source": "wearable_material_atlas",
+    "sprite": "armor/material_3",
+    "x": 940,
+    "y": 0,
+    "width": 314,
+    "height": 314,
+    "size": 16
+  },
+  {
+    "source": "wearable_material_atlas",
+    "sprite": "armor/material_4",
+    "x": 0,
+    "y": 314,
+    "width": 314,
+    "height": 313,
+    "size": 16
+  },
+  {
+    "source": "wearable_material_atlas",
+    "sprite": "armor/material_5",
+    "x": 314,
+    "y": 314,
+    "width": 313,
+    "height": 313,
+    "size": 16
+  },
+  {
+    "source": "wearable_material_atlas",
+    "sprite": "armor/material_6",
+    "x": 627,
+    "y": 314,
+    "width": 313,
+    "height": 313,
+    "size": 16
+  },
+  {
+    "source": "wearable_material_atlas",
+    "sprite": "armor/material_7",
+    "x": 940,
+    "y": 314,
+    "width": 314,
+    "height": 313,
+    "size": 16
+  },
+  {
+    "source": "wearable_material_atlas",
+    "sprite": "armor/material_8",
+    "x": 0,
+    "y": 627,
+    "width": 314,
+    "height": 313,
+    "size": 16
+  },
+  {
+    "source": "wearable_material_atlas",
+    "sprite": "armor/material_9",
+    "x": 314,
+    "y": 627,
+    "width": 313,
+    "height": 313,
+    "size": 16
+  },
+  {
+    "source": "wearable_material_atlas",
+    "sprite": "armor/material_10",
+    "x": 627,
+    "y": 627,
+    "width": 313,
+    "height": 313,
+    "size": 16
+  },
+  {
+    "source": "wearable_material_atlas",
+    "sprite": "armor/material_11",
+    "x": 940,
+    "y": 627,
+    "width": 314,
+    "height": 313,
+    "size": 16
+  },
+  {
+    "source": "wearable_material_atlas",
+    "sprite": "armor/material_12",
+    "x": 0,
+    "y": 940,
+    "width": 314,
+    "height": 314,
+    "size": 16
+  },
+  {
+    "source": "wearable_material_atlas",
+    "sprite": "armor/material_13",
+    "x": 314,
+    "y": 940,
+    "width": 313,
+    "height": 314,
+    "size": 16
+  },
+  {
+    "source": "wearable_material_atlas",
+    "sprite": "armor/material_14",
+    "x": 627,
+    "y": 940,
+    "width": 313,
+    "height": 314,
+    "size": 16
+  },
+  {
+    "source": "wearable_material_atlas",
+    "sprite": "armor/material_15",
+    "x": 940,
+    "y": 940,
+    "width": 314,
+    "height": 314,
+    "size": 16
+  },
+  {
+    "source": "botanical_atlas",
+    "sprite": "flora/flower_0",
+    "x": 0,
+    "y": 0,
+    "width": 314,
+    "height": 314,
+    "size": 32
+  },
+  {
+    "source": "botanical_atlas",
+    "sprite": "flora/flower_1",
+    "x": 314,
+    "y": 0,
+    "width": 313,
+    "height": 314,
+    "size": 32
+  },
+  {
+    "source": "botanical_atlas",
+    "sprite": "flora/flower_2",
+    "x": 627,
+    "y": 0,
+    "width": 313,
+    "height": 314,
+    "size": 32
+  },
+  {
+    "source": "botanical_atlas",
+    "sprite": "flora/flower_3",
+    "x": 940,
+    "y": 0,
+    "width": 314,
+    "height": 314,
+    "size": 32
+  },
+  {
+    "source": "botanical_atlas",
+    "sprite": "flora/flower_4",
+    "x": 0,
+    "y": 314,
+    "width": 314,
+    "height": 313,
+    "size": 32
+  },
+  {
+    "source": "botanical_atlas",
+    "sprite": "flora/flower_5",
+    "x": 314,
+    "y": 314,
+    "width": 313,
+    "height": 313,
+    "size": 32
+  },
+  {
+    "source": "botanical_atlas",
+    "sprite": "flora/flower_6",
+    "x": 627,
+    "y": 314,
+    "width": 313,
+    "height": 313,
+    "size": 32
+  },
+  {
+    "source": "botanical_atlas",
+    "sprite": "flora/flower_7",
+    "x": 940,
+    "y": 314,
+    "width": 314,
+    "height": 313,
+    "size": 32
+  },
+  {
+    "source": "botanical_atlas",
+    "sprite": "flora/flower_8",
+    "x": 0,
+    "y": 627,
+    "width": 314,
+    "height": 313,
+    "size": 32
+  },
+  {
+    "source": "botanical_atlas",
+    "sprite": "flora/flower_9",
+    "x": 314,
+    "y": 627,
+    "width": 313,
+    "height": 313,
+    "size": 32
+  },
+  {
+    "source": "botanical_atlas",
+    "sprite": "flora/flower_10",
+    "x": 627,
+    "y": 627,
+    "width": 313,
+    "height": 313,
+    "size": 32
+  },
+  {
+    "source": "botanical_atlas",
+    "sprite": "flora/flower_11",
+    "x": 940,
+    "y": 627,
+    "width": 314,
+    "height": 313,
+    "size": 32
+  },
+  {
+    "source": "botanical_atlas",
+    "sprite": "flora/flower_12",
+    "x": 0,
+    "y": 940,
+    "width": 314,
+    "height": 314,
+    "size": 32
+  },
+  {
+    "source": "botanical_atlas",
+    "sprite": "flora/flower_13",
+    "x": 314,
+    "y": 940,
+    "width": 313,
+    "height": 314,
+    "size": 32
+  },
+  {
+    "source": "botanical_atlas",
+    "sprite": "flora/flower_14",
+    "x": 627,
+    "y": 940,
+    "width": 313,
+    "height": 314,
+    "size": 32
+  },
+  {
+    "source": "botanical_atlas",
+    "sprite": "flora/flower_15",
+    "x": 940,
+    "y": 940,
+    "width": 314,
+    "height": 314,
+    "size": 32
+  },
+  {
+    "source": "creature_material_atlas",
+    "sprite": "entity/species_0",
+    "x": 0,
+    "y": 0,
+    "width": 222,
+    "height": 222,
+    "size": 16
+  },
+  {
+    "source": "creature_material_atlas",
+    "sprite": "entity/species_1",
+    "x": 222,
+    "y": 0,
+    "width": 222,
+    "height": 222,
+    "size": 16
+  },
+  {
+    "source": "creature_material_atlas",
+    "sprite": "entity/species_2",
+    "x": 444,
+    "y": 0,
+    "width": 221,
+    "height": 222,
+    "size": 16
+  },
+  {
+    "source": "creature_material_atlas",
+    "sprite": "entity/species_3",
+    "x": 665,
+    "y": 0,
+    "width": 222,
+    "height": 222,
+    "size": 16
+  },
+  {
+    "source": "creature_material_atlas",
+    "sprite": "entity/species_4",
+    "x": 887,
+    "y": 0,
+    "width": 222,
+    "height": 222,
+    "size": 16
+  },
+  {
+    "source": "creature_material_atlas",
+    "sprite": "entity/species_5",
+    "x": 1109,
+    "y": 0,
+    "width": 221,
+    "height": 222,
+    "size": 16
+  },
+  {
+    "source": "creature_material_atlas",
+    "sprite": "entity/species_6",
+    "x": 1330,
+    "y": 0,
+    "width": 222,
+    "height": 222,
+    "size": 16
+  },
+  {
+    "source": "creature_material_atlas",
+    "sprite": "entity/species_7",
+    "x": 1552,
+    "y": 0,
+    "width": 222,
+    "height": 222,
+    "size": 16
+  },
+  {
+    "source": "creature_material_atlas",
+    "sprite": "entity/species_8",
+    "x": 0,
+    "y": 222,
+    "width": 222,
+    "height": 222,
+    "size": 16
+  },
+  {
+    "source": "creature_material_atlas",
+    "sprite": "entity/species_9",
+    "x": 222,
+    "y": 222,
+    "width": 222,
+    "height": 222,
+    "size": 16
+  },
+  {
+    "source": "creature_material_atlas",
+    "sprite": "entity/species_10",
+    "x": 444,
+    "y": 222,
+    "width": 221,
+    "height": 222,
+    "size": 16
+  },
+  {
+    "source": "creature_material_atlas",
+    "sprite": "entity/species_11",
+    "x": 665,
+    "y": 222,
+    "width": 222,
+    "height": 222,
+    "size": 16
+  },
+  {
+    "source": "creature_material_atlas",
+    "sprite": "entity/species_12",
+    "x": 887,
+    "y": 222,
+    "width": 222,
+    "height": 222,
+    "size": 16
+  },
+  {
+    "source": "creature_material_atlas",
+    "sprite": "entity/species_13",
+    "x": 1109,
+    "y": 222,
+    "width": 221,
+    "height": 222,
+    "size": 16
+  },
+  {
+    "source": "creature_material_atlas",
+    "sprite": "entity/species_14",
+    "x": 1330,
+    "y": 222,
+    "width": 222,
+    "height": 222,
+    "size": 16
+  },
+  {
+    "source": "creature_material_atlas",
+    "sprite": "entity/species_15",
+    "x": 1552,
+    "y": 222,
+    "width": 222,
+    "height": 222,
+    "size": 16
+  },
+  {
+    "source": "creature_material_atlas",
+    "sprite": "entity/species_16",
+    "x": 0,
+    "y": 444,
+    "width": 222,
+    "height": 221,
+    "size": 16
+  },
+  {
+    "source": "creature_material_atlas",
+    "sprite": "entity/species_17",
+    "x": 222,
+    "y": 444,
+    "width": 222,
+    "height": 221,
+    "size": 16
+  },
+  {
+    "source": "creature_material_atlas",
+    "sprite": "entity/species_18",
+    "x": 444,
+    "y": 444,
+    "width": 221,
+    "height": 221,
+    "size": 16
+  },
+  {
+    "source": "creature_material_atlas",
+    "sprite": "entity/species_19",
+    "x": 665,
+    "y": 444,
+    "width": 222,
+    "height": 221,
+    "size": 16
+  },
+  {
+    "source": "creature_material_atlas",
+    "sprite": "entity/species_20",
+    "x": 887,
+    "y": 444,
+    "width": 222,
+    "height": 221,
+    "size": 16
+  },
+  {
+    "source": "creature_material_atlas",
+    "sprite": "entity/species_21",
+    "x": 1109,
+    "y": 444,
+    "width": 221,
+    "height": 221,
+    "size": 16
+  },
+  {
+    "source": "creature_material_atlas",
+    "sprite": "entity/species_22",
+    "x": 1330,
+    "y": 444,
+    "width": 222,
+    "height": 221,
+    "size": 16
+  },
+  {
+    "source": "creature_material_atlas",
+    "sprite": "entity/species_23",
+    "x": 1552,
+    "y": 444,
+    "width": 222,
+    "height": 221,
+    "size": 16
+  },
+  {
+    "source": "creature_material_atlas",
+    "sprite": "entity/species_24",
+    "x": 0,
+    "y": 665,
+    "width": 222,
+    "height": 222,
+    "size": 16
+  },
+  {
+    "source": "creature_material_atlas",
+    "sprite": "entity/species_25",
+    "x": 222,
+    "y": 665,
+    "width": 222,
+    "height": 222,
+    "size": 16
+  },
+  {
+    "source": "creature_material_atlas",
+    "sprite": "entity/species_26",
+    "x": 444,
+    "y": 665,
+    "width": 221,
+    "height": 222,
+    "size": 16
+  },
+  {
+    "source": "creature_material_atlas",
+    "sprite": "entity/species_27",
+    "x": 665,
+    "y": 665,
+    "width": 222,
+    "height": 222,
+    "size": 16
+  },
+  {
+    "source": "creature_material_atlas",
+    "sprite": "entity/species_28",
+    "x": 887,
+    "y": 665,
+    "width": 222,
+    "height": 222,
+    "size": 16
+  },
+  {
+    "source": "creature_material_atlas",
+    "sprite": "entity/species_29",
+    "x": 1109,
+    "y": 665,
+    "width": 221,
+    "height": 222,
+    "size": 16
+  },
+  {
+    "source": "creature_material_atlas",
+    "sprite": "entity/species_30",
+    "x": 1330,
+    "y": 665,
+    "width": 222,
+    "height": 222,
+    "size": 16
+  },
+  {
+    "source": "creature_material_atlas",
+    "sprite": "entity/species_31",
+    "x": 1552,
+    "y": 665,
+    "width": 222,
+    "height": 222,
+    "size": 16
+  },
+  {
+    "source": "beast_material_atlas",
+    "sprite": "entity/beast_0",
+    "x": 0,
+    "y": 0,
+    "width": 444,
+    "height": 444,
+    "size": 32
+  },
+  {
+    "source": "beast_material_atlas",
+    "sprite": "entity/beast_1",
+    "x": 444,
+    "y": 0,
+    "width": 443,
+    "height": 444,
+    "size": 32
+  },
+  {
+    "source": "beast_material_atlas",
+    "sprite": "entity/beast_2",
+    "x": 887,
+    "y": 0,
+    "width": 443,
+    "height": 444,
+    "size": 32
+  },
+  {
+    "source": "beast_material_atlas",
+    "sprite": "entity/beast_3",
+    "x": 1330,
+    "y": 0,
+    "width": 444,
+    "height": 444,
+    "size": 32
+  },
+  {
+    "source": "beast_material_atlas",
+    "sprite": "entity/beast_4",
+    "x": 0,
+    "y": 444,
+    "width": 444,
+    "height": 443,
+    "size": 32
+  },
+  {
+    "source": "beast_material_atlas",
+    "sprite": "entity/beast_5",
+    "x": 444,
+    "y": 444,
+    "width": 443,
+    "height": 443,
+    "size": 32
+  },
+  {
+    "source": "beast_material_atlas",
+    "sprite": "entity/beast_6",
+    "x": 887,
+    "y": 444,
+    "width": 443,
+    "height": 443,
+    "size": 32
+  },
+  {
+    "source": "beast_material_atlas",
+    "sprite": "entity/beast_7",
+    "x": 1330,
+    "y": 444,
+    "width": 444,
+    "height": 443,
+    "size": 32
+  }
+]

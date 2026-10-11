@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "shadowslave:block/ash_slab"
+    },
+    "type=top": {
+      "model": "shadowslave:block/ash_slab_top"
+    },
+    "type=double": {
+      "model": "shadowslave:block/ash_tiles"
+    }
+  }
+}

@@ -1,0 +1,617 @@
+{
+  "dimensions": {
+    "minecraft:overworld": {
+      "type": "minecraft:overworld",
+      "generator": {
+        "type": "minecraft:flat",
+        "settings": {
+          "biome": "minecraft:plains",
+          "features": false,
+          "lakes": false,
+          "layers": [
+            {
+              "block": "minecraft:bedrock",
+              "height": 1
+            },
+            {
+              "block": "minecraft:dirt",
+              "height": 2
+            },
+            {
+              "block": "minecraft:grass_block",
+              "height": 1
+            }
+          ],
+          "structure_overrides": [
+            "minecraft:strongholds",
+            "minecraft:villages"
+          ]
+        }
+      }
+    },
+    "minecraft:the_end": {
+      "type": "minecraft:the_end",
+      "generator": {
+        "type": "minecraft:noise",
+        "biome_source": {
+          "type": "minecraft:the_end"
+        },
+        "settings": "minecraft:end"
+      }
+    },
+    "minecraft:the_nether": {
+      "type": "minecraft:the_nether",
+      "generator": {
+        "type": "minecraft:noise",
+        "biome_source": {
+          "type": "minecraft:multi_noise",
+          "preset": "minecraft:nether"
+        },
+        "settings": "minecraft:nether"
+      }
+    },
+    "shadowslave:dream_realm": {
+      "type": "shadowslave:dream_realm",
+      "generator": {
+        "type": "minecraft:noise",
+        "settings": "shadowslave:dream",
+        "biome_source": {
+          "type": "minecraft:multi_noise",
+          "biomes": [
+            {
+              "biome": "shadowslave:frostglass_taiga",
+              "parameters": {
+                "temperature": -0.8,
+                "humidity": -0.6,
+                "continentalness": [
+                  -1,
+                  1
+                ],
+                "erosion": [
+                  -1,
+                  1
+                ],
+                "depth": [
+                  -1,
+                  1
+                ],
+                "weirdness": [
+                  -1,
+                  0.35
+                ],
+                "offset": 0
+              }
+            },
+            {
+              "biome": "shadowslave:hollow_mountains",
+              "parameters": {
+                "temperature": -0.8,
+                "humidity": 0,
+                "continentalness": [
+                  -1,
+                  1
+                ],
+                "erosion": [
+                  -1,
+                  1
+                ],
+                "depth": [
+                  -1,
+                  1
+                ],
+                "weirdness": [
+                  -1,
+                  0.35
+                ],
+                "offset": 0
+              }
+            },
+            {
+              "biome": "shadowslave:aurora_fields",
+              "parameters": {
+                "temperature": -0.8,
+                "humidity": 0.6,
+                "continentalness": [
+                  -1,
+                  1
+                ],
+                "erosion": [
+                  -1,
+                  1
+                ],
+                "depth": [
+                  -1,
+                  1
+                ],
+                "weirdness": [
+                  -1,
+                  0.35
+                ],
+                "offset": 0
+              }
+            },
+            {
+              "biome": "shadowslave:death_zone",
+              "parameters": {
+                "temperature": -0.4,
+                "humidity": -0.6,
+                "continentalness": [
+                  -1,
+                  1
+                ],
+                "erosion": [
+                  -1,
+                  1
+                ],
+                "depth": [
+                  -1,
+                  1
+                ],
+                "weirdness": [
+                  -1,
+                  0.35
+                ],
+                "offset": 0
+              }
+            },
+            {
+              "biome": "shadowslave:azure_woods",
+              "parameters": {
+                "temperature": -0.4,
+                "humidity": 0,
+                "continentalness": [
+                  -1,
+                  1
+                ],
+                "erosion": [
+                  -1,
+                  1
+                ],
+                "depth": [
+                  -1,
+                  1
+                ],
+                "weirdness": [
+                  -1,
+                  0.35
+                ],
+                "offset": 0
+              }
+            },
+            {
+              "biome": "shadowslave:moonlit_grove",
+              "parameters": {
+                "temperature": -0.4,
+                "humidity": 0.6,
+                "continentalness": [
+                  -1,
+                  1
+                ],
+                "erosion": [
+                  -1,
+                  1
+                ],
+                "depth": [
+                  -1,
+                  1
+                ],
+                "weirdness": [
+                  -1,
+                  0.35
+                ],
+                "offset": 0
+              }
+            },
+            {
+              "biome": "shadowslave:forgotten_shore",
+              "parameters": {
+                "temperature": 0,
+                "humidity": -0.6,
+                "continentalness": [
+                  -1,
+                  1
+                ],
+                "erosion": [
+                  -1,
+                  1
+                ],
+                "depth": [
+                  -1,
+                  1
+                ],
+                "weirdness": [
+                  -1,
+                  0.35
+                ],
+                "offset": 0
+              }
+            },
+            {
+              "biome": "shadowslave:blossom_vale",
+              "parameters": {
+                "temperature": 0,
+                "humidity": 0,
+                "continentalness": [
+                  -1,
+                  1
+                ],
+                "erosion": [
+                  -1,
+                  1
+                ],
+                "depth": [
+                  -1,
+                  1
+                ],
+                "weirdness": [
+                  -1,
+                  0.35
+                ],
+                "offset": 0
+              }
+            },
+            {
+              "biome": "shadowslave:mosslight_ravine",
+              "parameters": {
+                "temperature": 0,
+                "humidity": 0.6,
+                "continentalness": [
+                  -1,
+                  1
+                ],
+                "erosion": [
+                  -1,
+                  1
+                ],
+                "depth": [
+                  -1,
+                  1
+                ],
+                "weirdness": [
+                  -1,
+                  0.35
+                ],
+                "offset": 0
+              }
+            },
+            {
+              "biome": "shadowslave:amethyst_heights",
+              "parameters": {
+                "temperature": 0.4,
+                "humidity": -0.6,
+                "continentalness": [
+                  -1,
+                  1
+                ],
+                "erosion": [
+                  -1,
+                  1
+                ],
+                "depth": [
+                  -1,
+                  1
+                ],
+                "weirdness": [
+                  -1,
+                  0.35
+                ],
+                "offset": 0
+              }
+            },
+            {
+              "biome": "shadowslave:golden_grove",
+              "parameters": {
+                "temperature": 0.4,
+                "humidity": 0,
+                "continentalness": [
+                  -1,
+                  1
+                ],
+                "erosion": [
+                  -1,
+                  1
+                ],
+                "depth": [
+                  -1,
+                  1
+                ],
+                "weirdness": [
+                  -1,
+                  0.35
+                ],
+                "offset": 0
+              }
+            },
+            {
+              "biome": "shadowslave:verdant_gardens",
+              "parameters": {
+                "temperature": 0.4,
+                "humidity": 0.6,
+                "continentalness": [
+                  -1,
+                  1
+                ],
+                "erosion": [
+                  -1,
+                  1
+                ],
+                "depth": [
+                  -1,
+                  1
+                ],
+                "weirdness": [
+                  -1,
+                  0.35
+                ],
+                "offset": 0
+              }
+            },
+            {
+              "biome": "shadowslave:nightmare_desert",
+              "parameters": {
+                "temperature": 0.8,
+                "humidity": -0.6,
+                "continentalness": [
+                  -1,
+                  1
+                ],
+                "erosion": [
+                  -1,
+                  1
+                ],
+                "depth": [
+                  -1,
+                  1
+                ],
+                "weirdness": [
+                  -1,
+                  0.35
+                ],
+                "offset": 0
+              }
+            },
+            {
+              "biome": "shadowslave:sunpetal_meadows",
+              "parameters": {
+                "temperature": 0.8,
+                "humidity": 0,
+                "continentalness": [
+                  -1,
+                  1
+                ],
+                "erosion": [
+                  -1,
+                  1
+                ],
+                "depth": [
+                  -1,
+                  1
+                ],
+                "weirdness": [
+                  -1,
+                  0.35
+                ],
+                "offset": 0
+              }
+            },
+            {
+              "biome": "shadowslave:scarlet_wilds",
+              "parameters": {
+                "temperature": 0.8,
+                "humidity": 0.6,
+                "continentalness": [
+                  -1,
+                  1
+                ],
+                "erosion": [
+                  -1,
+                  1
+                ],
+                "depth": [
+                  -1,
+                  1
+                ],
+                "weirdness": [
+                  -1,
+                  0.35
+                ],
+                "offset": 0
+              }
+            },
+            {
+              "biome": "shadowslave:ember_haven",
+              "parameters": {
+                "temperature": 0.2,
+                "humidity": 0.3,
+                "continentalness": [
+                  -1,
+                  1
+                ],
+                "erosion": [
+                  -1,
+                  1
+                ],
+                "depth": [
+                  -1,
+                  1
+                ],
+                "weirdness": [
+                  -1,
+                  0.35
+                ],
+                "offset": 0
+              }
+            },
+            {
+              "biome": "shadowslave:chained_isles",
+              "parameters": {
+                "temperature": [
+                  -1,
+                  1
+                ],
+                "humidity": [
+                  -1,
+                  1
+                ],
+                "continentalness": [
+                  -1,
+                  1
+                ],
+                "erosion": [
+                  -1,
+                  1
+                ],
+                "depth": [
+                  -1,
+                  1
+                ],
+                "weirdness": [
+                  0.35,
+                  1
+                ],
+                "offset": 0
+              }
+            }
+          ]
+        }
+      }
+    },
+    "shadowslave:nightmare_lost_shadows": {
+      "type": "shadowslave:dream",
+      "generator": {
+        "type": "minecraft:flat",
+        "settings": {
+          "biome": "shadowslave:nightmare_void",
+          "lakes": false,
+          "features": false,
+          "layers": [
+            {
+              "height": 1,
+              "block": "minecraft:air"
+            }
+          ],
+          "structure_overrides": []
+        }
+      }
+    },
+    "shadowslave:nightmare_ashen_basilica": {
+      "type": "shadowslave:dream",
+      "generator": {
+        "type": "minecraft:flat",
+        "settings": {
+          "biome": "shadowslave:nightmare_void",
+          "lakes": false,
+          "features": false,
+          "layers": [
+            {
+              "height": 1,
+              "block": "minecraft:air"
+            }
+          ],
+          "structure_overrides": []
+        }
+      }
+    },
+    "shadowslave:nightmare_drowned_archive": {
+      "type": "shadowslave:dream",
+      "generator": {
+        "type": "minecraft:flat",
+        "settings": {
+          "biome": "shadowslave:nightmare_void",
+          "lakes": false,
+          "features": false,
+          "layers": [
+            {
+              "height": 1,
+              "block": "minecraft:air"
+            }
+          ],
+          "structure_overrides": []
+        }
+      }
+    },
+    "shadowslave:nightmare_broken_citadel": {
+      "type": "shadowslave:dream",
+      "generator": {
+        "type": "minecraft:flat",
+        "settings": {
+          "biome": "shadowslave:nightmare_void",
+          "lakes": false,
+          "features": false,
+          "layers": [
+            {
+              "height": 1,
+              "block": "minecraft:air"
+            }
+          ],
+          "structure_overrides": []
+        }
+      }
+    },
+    "shadowslave:nightmare_thornbound_garden": {
+      "type": "shadowslave:dream",
+      "generator": {
+        "type": "minecraft:flat",
+        "settings": {
+          "biome": "shadowslave:nightmare_void",
+          "lakes": false,
+          "features": false,
+          "layers": [
+            {
+              "height": 1,
+              "block": "minecraft:air"
+            }
+          ],
+          "structure_overrides": []
+        }
+      }
+    },
+    "shadowslave:nightmare_mirror_labyrinth": {
+      "type": "shadowslave:dream",
+      "generator": {
+        "type": "minecraft:flat",
+        "settings": {
+          "biome": "shadowslave:nightmare_void",
+          "lakes": false,
+          "features": false,
+          "layers": [
+            {
+              "height": 1,
+              "block": "minecraft:air"
+            }
+          ],
+          "structure_overrides": []
+        }
+      }
+    },
+    "shadowslave:nightmare_starfallen_wastes": {
+      "type": "shadowslave:dream",
+      "generator": {
+        "type": "minecraft:flat",
+        "settings": {
+          "biome": "shadowslave:nightmare_void",
+          "lakes": false,
+          "features": false,
+          "layers": [
+            {
+              "height": 1,
+              "block": "minecraft:air"
+            }
+          ],
+          "structure_overrides": []
+        }
+      }
+    },
+    "shadowslave:archipelago_test": {
+      "type": "shadowslave:dream_realm",
+      "generator": {
+        "type": "minecraft:noise",
+        "settings": "shadowslave:archipelago_test",
+        "biome_source": {
+          "type": "minecraft:fixed",
+          "biome": "shadowslave:chained_isles"
+        }
+      }
+    }
+  }
+}

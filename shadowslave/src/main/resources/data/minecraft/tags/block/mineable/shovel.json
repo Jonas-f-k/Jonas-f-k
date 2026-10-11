@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "shadowslave:ashen_soil",
+    "shadowslave:ashen_grass",
+    "shadowslave:meadow_grass",
+    "shadowslave:blossom_grass",
+    "shadowslave:lavender_grass",
+    "shadowslave:autumn_litter",
+    "shadowslave:frost_grass",
+    "shadowslave:scarlet_litter",
+    "shadowslave:warm_sand",
+    "shadowslave:dream_loam",
+    "shadowslave:snow_soil"
+  ]
+}

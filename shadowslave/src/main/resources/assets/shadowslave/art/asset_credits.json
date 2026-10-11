@@ -1,0 +1,318 @@
+{
+  "author": "Malcolm Riley",
+  "project": "https://github.com/malcolmriley/unused-textures",
+  "revision": "9218cb8997bf1dc83617bd7748acf44a16c19c42",
+  "license": "CC BY 4.0",
+  "assets": [
+    {
+      "sprite": "block/ash_bricks",
+      "source": "blocks/sturdy_bricks.png",
+      "sha256": "57fddfba044f4a7dfae4ceb95be745e6276f7f7fcc9fa452b705897092fbdd17"
+    },
+    {
+      "sprite": "block/ash_tiles",
+      "source": "blocks/sturdy_brick_tiles.png",
+      "sha256": "6080104bd3203ac51d76b270c3742b5c3406eea20d501c9096920dfcf267d595"
+    },
+    {
+      "sprite": "block/silver_rune",
+      "source": "blocks/block_metal_aurichalcum_rune_4.png",
+      "sha256": "8d13941d8d1c69f65cbc78ac7d2adb4d405b5f0b88f8d92d8155de4f96396fb4"
+    },
+    {
+      "sprite": "block/petrified_bark",
+      "source": "blocks/log_cronetree_sides.png",
+      "sha256": "b6ee508c4a5848e3d605e87fab37ec073b76a486964943f38a5b64b4320d9574"
+    },
+    {
+      "sprite": "block/fossil_bone",
+      "source": "blocks/ore_stone_bones.png",
+      "sha256": "89942733c5855dc9e483657b0d18b03c19fd74d1270c75e608af8ab50e5c1bb4"
+    },
+    {
+      "sprite": "block/honey_planks",
+      "source": "blocks/plank_plywood.png",
+      "sha256": "51e7ee26424c7f7297018741f62b7febb3267075e1bda8044247e714d84d23a5"
+    },
+    {
+      "sprite": "block/mossy_ruin_stone",
+      "source": "blocks/stone_tiles_small_mossy.png",
+      "sha256": "290fda0a454d70ad3737014f3609be47a06f20058c56e7a468706ce63e1c8041"
+    },
+    {
+      "sprite": "item/memories/tide_crown",
+      "source": "items/armor_helmet_adamantium.png",
+      "sha256": "7cf208d5739c0fb69295388a26a90697293d80423999465bb4ba683c5e26060d"
+    },
+    {
+      "sprite": "item/memories/lantern_eye",
+      "source": "items/armor_helmet_bronze.png",
+      "sha256": "47970ab7ef00dea52b1349f8f642f3db5d06b704066ecb66c017bc46e7fee36a"
+    },
+    {
+      "sprite": "item/memories/bramble_antlers",
+      "source": "items/armor_helmet_lead.png",
+      "sha256": "2e37d786b74230728f0cc0319a1e28252b4d8881c37e16834d8213038781cd64"
+    },
+    {
+      "sprite": "item/memories/moonlit_visor",
+      "source": "items/armor_helmet_pewter.png",
+      "sha256": "e4662939a83772ff7057878473754de8ff31e05962a650d59e755dc2e86a40d8"
+    },
+    {
+      "sprite": "item/memories/sunpetal_circlet",
+      "source": "items/armor_helmet_steel.png",
+      "sha256": "2e118d940429d0a3dd7f1143e94c3cfd8b6da495f55db416aa36c6105d5e7181"
+    },
+    {
+      "sprite": "item/memories/glacier_helm",
+      "source": "items/armor_helmet_superalloy.png",
+      "sha256": "5baca9633295b2eb014f8215434c086afbc3ab9278d621ef3402f6086e33346d"
+    },
+    {
+      "sprite": "item/memories/foxglove_hood",
+      "source": "items/armor_helmet_tin.png",
+      "sha256": "ff66cc8638c218f4d1daf376de2b793b141cef0273553bd69eda55b004bb8e13"
+    },
+    {
+      "sprite": "item/memories/raven_mask",
+      "source": "items/armor_helmet_wicker.png",
+      "sha256": "9485c37c8e6f509a8a7039329dff22d97273d5441eb29192f7ca8373df2f8b05"
+    },
+    {
+      "sprite": "item/memories/iron_heart",
+      "source": "items/armor_chest_adamantium.png",
+      "sha256": "2f84d2df828c46e7b6305dc34cbdbd050484b6aeacd25ce193ec5810d15051d1"
+    },
+    {
+      "sprite": "item/memories/rosewood_cuirass",
+      "source": "items/armor_chest_bronze.png",
+      "sha256": "9487927a30735827753cde0a77a135bce5f893b90b7d7d0e5d26c16c73b5d3c3"
+    },
+    {
+      "sprite": "item/memories/glasswing_mantle",
+      "source": "items/armor_chest_copper.png",
+      "sha256": "69bf21087b8155ff73fcbe2038063669734d72b434e98ae51030fc434f0486ed"
+    },
+    {
+      "sprite": "item/memories/dawnscale_vest",
+      "source": "items/armor_chest_lead.png",
+      "sha256": "b650fc6dd876a3ebc9e2d293558a0fee3dc8753f73cc5e50646f17a20fe28863"
+    },
+    {
+      "sprite": "item/memories/frostglass_aegis",
+      "source": "items/armor_chest_pewter.png",
+      "sha256": "0b7641d96878fdd9b7ea86cb3a124fabef10d4d551bbf8160decc23d68fef5e7"
+    },
+    {
+      "sprite": "item/memories/cinder_breastplate",
+      "source": "items/armor_chest_steel.png",
+      "sha256": "76fa5c27258d757d50b3a4e57e8fec9020c27f01821b96e781cfbfdd90592a2c"
+    },
+    {
+      "sprite": "item/memories/jade_carapace",
+      "source": "items/armor_chest_superalloy.png",
+      "sha256": "0b0b9a17f03df575ad6ed389eecdecddef6dc8f48fd9aa2bc2eed891feada6ed"
+    },
+    {
+      "sprite": "item/memories/moonwoven_coat",
+      "source": "items/armor_chest_tin.png",
+      "sha256": "10d8e49c1ab4c30ac6102b7780320a3d4f0db22a29c9d2d2a6852033d0d8a4d7"
+    },
+    {
+      "sprite": "item/memories/coral_harness",
+      "source": "items/armor_chest_wicker.png",
+      "sha256": "32bb16afce57315b4ff9ccdf8f1cf0d0e4d059e4bdd15d499c4711dab533d7af"
+    },
+    {
+      "sprite": "item/memories/thorn_greaves",
+      "source": "items/armor_legs_adamantium.png",
+      "sha256": "757c4035390edd4c789db5b891d14ce8cdca6a8ed79b49c203dd2d7f6a07055f"
+    },
+    {
+      "sprite": "item/memories/dusksteel_tassets",
+      "source": "items/armor_legs_bronze.png",
+      "sha256": "f44740d1a61eaf9da1491ee8dbc1d5fddb650895d8c0dfc1a472309fee531469"
+    },
+    {
+      "sprite": "item/memories/lotus_leggings",
+      "source": "items/armor_legs_copper.png",
+      "sha256": "219eec4eb3109c65923d4c3c87f76fd43821f4d942839704c71d0b869de45f0c"
+    },
+    {
+      "sprite": "item/memories/glacier_cuisses",
+      "source": "items/armor_legs_lead.png",
+      "sha256": "5d34dd1576e2851e8d4cb26d61da9bf9970aa00e1a0a049a3bae3e4bc716eece"
+    },
+    {
+      "sprite": "item/memories/amberleaf_wraps",
+      "source": "items/armor_legs_pewter.png",
+      "sha256": "0da2c5d15772cbd560871ee14533c33807cd6de1137c1a5b42ad0880e43bf74f"
+    },
+    {
+      "sprite": "item/memories/rosepetal_skirt",
+      "source": "items/armor_legs_steel.png",
+      "sha256": "ad0ff348cd1d432e9355746a16dff545598038be7484350747195404291a5ac9"
+    },
+    {
+      "sprite": "item/memories/dune_strider_chaps",
+      "source": "items/armor_legs_superalloy.png",
+      "sha256": "079a85edc86008b3ffc6296f75204a59a997bd9f7d772c8edec0040a576393c1"
+    },
+    {
+      "sprite": "item/memories/warden_plates",
+      "source": "items/armor_legs_tin.png",
+      "sha256": "c7ab75519a6b62cd5e17d8b31d9c08056c1de4bdbd059d54224742e899bf4a5b"
+    },
+    {
+      "sprite": "item/memories/prism_legguards",
+      "source": "items/armor_legs_wicker.png",
+      "sha256": "64e5ee08490d6ad23e9adc6d9b5ff2a4ac38abbcba75e0e8d93775bb4201fc5b"
+    },
+    {
+      "sprite": "item/memories/silent_steps",
+      "source": "items/armor_boots_adamantium.png",
+      "sha256": "1dcaaee59dd1627bd7ed648a3b8c0ef7053f86c52d8989bc7086713f8844ea06"
+    },
+    {
+      "sprite": "item/memories/starwalker",
+      "source": "items/armor_boots_bronze.png",
+      "sha256": "b14bdd9ee71c41281aa1d5d1207f3f4f88544c8e3e55c8594ba75674ec9cda8a"
+    },
+    {
+      "sprite": "item/memories/briar_treads",
+      "source": "items/armor_boots_copper.png",
+      "sha256": "e3db57b2940ac596ef62d98b32bee4e1a860a2d1188a628bfb8b29fdb8086569"
+    },
+    {
+      "sprite": "item/memories/sunlit_sandals",
+      "source": "items/armor_boots_lead.png",
+      "sha256": "81bdc64f91bd11ca254f2c02810f8bcfbe45bbd9cdabdb4ef77f67a87d89e801"
+    },
+    {
+      "sprite": "item/memories/frosthoof_boots",
+      "source": "items/armor_boots_pewter.png",
+      "sha256": "ac610cefad0148be129b3b38d3c5a89dbd6e70a0553499a0b0bb25d00441f523"
+    },
+    {
+      "sprite": "item/memories/blossom_slippers",
+      "source": "items/armor_boots_steel.png",
+      "sha256": "0e699e8856d9f169c7e4fd236fe0381838c5f37797762536b6f1c699861751c2"
+    },
+    {
+      "sprite": "item/memories/coral_sabatons",
+      "source": "items/armor_boots_superalloy.png",
+      "sha256": "e9e32ee8a910a82c61fe16e0a63ac135727315e430ce66bfb5bd16d1837f81a3"
+    },
+    {
+      "sprite": "item/memories/emberstride",
+      "source": "items/armor_boots_tin.png",
+      "sha256": "20ad0717a5b9f802c0eafcf7cbea3053f5d4bf45c562ce7e8fef41ed01879a8e"
+    },
+    {
+      "sprite": "item/memories/mosswalker_boots",
+      "source": "items/armor_boots_wicker.png",
+      "sha256": "f43f9f14bb807202977e170bf760a5ee857fbe200a16d733b97869d494d51b16"
+    },
+    {
+      "sprite": "item/memories/soul_edge",
+      "source": "items/tool_greatsword_adamantium.png",
+      "sha256": "1af11ac0ba6b85a0e779209f145806e36328fe13ffdfa1e9e70696a51a24a3e7"
+    },
+    {
+      "sprite": "item/memories/mirror_knife",
+      "source": "items/tool_greatsword_aurichalchum.png",
+      "sha256": "9730d675f5b1db39a73f24ad5fac4b27d2238a3aa1167faaa0f906de4e164229"
+    },
+    {
+      "sprite": "item/memories/hollow_fang",
+      "source": "items/tool_greatsword_bronze.png",
+      "sha256": "81fdc981342896f35c538292b8aa915119c8e2187ab7b2d1b0de2ded22a38875"
+    },
+    {
+      "sprite": "item/memories/dawncleaver",
+      "source": "items/tool_greatsword_copper.png",
+      "sha256": "5894a09b6579ee2efa4581a068384d0c1ac406f6356817a59d12939a8d4e81ea"
+    },
+    {
+      "sprite": "item/memories/briar_crescent",
+      "source": "items/tool_greatsword_diamond.png",
+      "sha256": "4f34765966bfd915a194448b51b8f36a5a8234aebe3d914738af5f90210f4d56"
+    },
+    {
+      "sprite": "item/memories/glacier_pike",
+      "source": "items/tool_greatsword_galvorn.png",
+      "sha256": "d152c2c8b1e7f0e801256caaa16a998f4449b7010a54ac5415740ac34a94a4f5"
+    },
+    {
+      "sprite": "item/memories/rose_rapier",
+      "source": "items/tool_greatsword_gold.png",
+      "sha256": "c8b95bd7b0315a9f100c92aaa2a092fd86b465b20fd2c630365d5812673f64fc"
+    },
+    {
+      "sprite": "item/memories/cinder_maul",
+      "source": "items/tool_greatsword_iron.png",
+      "sha256": "fe2fa2984a98516c32331e6b5d72a5e82343bc663f086ae5f9a1d17333e08cc0"
+    },
+    {
+      "sprite": "item/memories/moonhook",
+      "source": "items/tool_greatsword_ithildin.png",
+      "sha256": "cf31b9c468734a1799588ba417ac5b7cb64464227d4f5eb1f16d8f7f90610245"
+    },
+    {
+      "sprite": "item/memories/tidal_trident",
+      "source": "items/tool_greatsword_meteoriciron.png",
+      "sha256": "6623ba80a9161e59ece4472d947ef9958c2463a39a237f404d2c68239e916551"
+    },
+    {
+      "sprite": "item/memories/amber_hatchet",
+      "source": "items/tool_greatsword_silver.png",
+      "sha256": "46f11f45d0ad9be47b9be9378fda4f38f6ac303e5c96e9cd83896e710563ca4f"
+    },
+    {
+      "sprite": "item/memories/raven_scythe",
+      "source": "items/tool_greatsword_steel.png",
+      "sha256": "eeeb1f0503d70a9a3a68a4d43cf71f314b927a4480572866ebf43188e500ccea"
+    },
+    {
+      "sprite": "item/memories/sunpetal_saber",
+      "source": "items/tool_greatsword_stone.png",
+      "sha256": "55222ba46ded8a5202220b376d27483d6726893b8d5967427a8b89e248aea148"
+    },
+    {
+      "sprite": "item/memories/jade_halberd",
+      "source": "items/tool_greatsword_wood.png",
+      "sha256": "d34c3dd5226238695a714ca1d4e19c498ad6ca6ff68d22e195810772ba5c4827"
+    },
+    {
+      "sprite": "item/memories/fading_ember",
+      "source": "items/artifact_corroded_copper_ring.png",
+      "sha256": "1df342ad3eb4e372c79edc7c4717eeabffa13bb8e6bf4be418d8f847317a5a14"
+    },
+    {
+      "sprite": "item/memories/divine_spark",
+      "source": "items/artifact_diamond_ring.png",
+      "sha256": "39265775ed55f7133aa528d92f83f3c26eeef6401fa26bc8cb69406ee326ff0e"
+    },
+    {
+      "sprite": "item/memories/cinder_sigil",
+      "source": "items/artifact_emerald_ring.png",
+      "sha256": "6726f6ab77468ab572194d8624f4d13e4b889d2e48544b9fae651ef389051dab"
+    },
+    {
+      "sprite": "item/memories/sunseed_locket",
+      "source": "items/artifact_plain_copper_ring.png",
+      "sha256": "8cd2eef9e9044c475bac64e9107e81d9b6a9a639a236517f075363447ee8c48d"
+    },
+    {
+      "sprite": "item/memories/shard_lantern",
+      "source": "items/artifact_dripping_orb_1.png",
+      "sha256": "54824d559d75010a79e986c425dca83c2cfff5740091c720c46822697077acfc"
+    },
+    {
+      "sprite": "item/memories/drowned_pearl",
+      "source": "items/artifact_dripping_orb_2.png",
+      "sha256": "f3e096d6b27294b3a46b896d0e8cdde6feeb09e6e1da0ff567e03e441ffea21d"
+    }
+  ]
+}

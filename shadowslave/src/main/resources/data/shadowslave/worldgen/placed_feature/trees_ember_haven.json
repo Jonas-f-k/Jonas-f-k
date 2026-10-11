@@ -1,0 +1,36 @@
+{
+  "feature": "shadowslave:trees_ember_haven",
+  "placement": [
+    {
+      "type": "minecraft:noise_threshold_count",
+      "noise_level": -0.25,
+      "below_noise": 0,
+      "above_noise": 2
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:heightmap",
+      "heightmap": "WORLD_SURFACE_WG"
+    },
+    {
+      "type": "minecraft:biome"
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:matching_blocks",
+        "offset": [
+          0,
+          -1,
+          0
+        ],
+        "blocks": [
+          "shadowslave:meadow_grass",
+          "shadowslave:blossom_grass"
+        ]
+      }
+    }
+  ]
+}

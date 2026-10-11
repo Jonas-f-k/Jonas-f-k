@@ -1,0 +1,36 @@
+{
+  "has_precipitation": false,
+  "temperature": 0.8,
+  "downfall": 0.0,
+  "effects": {
+    "sky_color": 11786726,
+    "fog_color": 15849895,
+    "water_color": 13018704,
+    "water_fog_color": 9073714,
+    "grass_color": 8501580,
+    "foliage_color": 7252044
+  },
+  "carvers": {},
+  "features": [
+    [],
+    [
+      "shadowslave:realm_waters"
+    ],
+    [],
+    [],
+    [],
+    [
+      "shadowslave:dream_ruin"
+    ],
+    [],
+    [],
+    [],
+    [
+      "shadowslave:trees_golden_grove",
+      "shadowslave:flowers_golden_grove"
+    ],
+    []
+  ],
+  "spawners": {},
+  "spawn_costs": {}
+}

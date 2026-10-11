@@ -1,0 +1,31 @@
+{
+  "has_precipitation": false,
+  "temperature": 0.5,
+  "downfall": 0.0,
+  "effects": {
+    "sky_color": 6580082,
+    "fog_color": 3825770,
+    "water_color": 668480,
+    "water_fog_color": 335914,
+    "grass_color": 8501580,
+    "foliage_color": 7252044
+  },
+  "carvers": {},
+  "features": [
+    [],
+    [
+      "shadowslave:realm_waters"
+    ],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+  ],
+  "spawners": {},
+  "spawn_costs": {}
+}

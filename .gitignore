@@ -1,0 +1,6 @@
+shadowslave/.gradle/
+shadowslave/build/
+shadowslave/run/
+shadowslave/run-data/
+**/__pycache__/
+*.class

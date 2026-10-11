@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "shadowslave:block/golden_leaves"
+  },
+  "render_type": "minecraft:cutout_mipped"
+}

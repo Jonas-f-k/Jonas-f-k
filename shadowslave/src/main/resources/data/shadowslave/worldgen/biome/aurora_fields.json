@@ -1,0 +1,42 @@
+{
+  "has_precipitation": false,
+  "temperature": 0.8,
+  "downfall": 0.0,
+  "effects": {
+    "sky_color": 9881046,
+    "fog_color": 12639449,
+    "water_color": 9206737,
+    "water_fog_color": 5917846,
+    "grass_color": 8501580,
+    "foliage_color": 7252044,
+    "particle": {
+      "probability": 0.006,
+      "options": {
+        "type": "minecraft:cherry_leaves"
+      }
+    }
+  },
+  "carvers": {},
+  "features": [
+    [],
+    [
+      "shadowslave:realm_waters"
+    ],
+    [],
+    [],
+    [],
+    [
+      "shadowslave:dream_ruin"
+    ],
+    [],
+    [],
+    [],
+    [
+      "shadowslave:trees_aurora_fields",
+      "shadowslave:flowers_aurora_fields"
+    ],
+    []
+  ],
+  "spawners": {},
+  "spawn_costs": {}
+}

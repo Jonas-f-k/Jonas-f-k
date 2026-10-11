@@ -1,0 +1,36 @@
+{
+  "has_precipitation": false,
+  "temperature": 0.8,
+  "downfall": 0.0,
+  "effects": {
+    "sky_color": 9227757,
+    "fog_color": 15722176,
+    "water_color": 6535382,
+    "water_fog_color": 3702681,
+    "grass_color": 8501580,
+    "foliage_color": 7252044
+  },
+  "carvers": {},
+  "features": [
+    [],
+    [
+      "shadowslave:realm_waters"
+    ],
+    [],
+    [],
+    [],
+    [
+      "shadowslave:dream_ruin"
+    ],
+    [],
+    [],
+    [],
+    [
+      "shadowslave:trees_sunpetal_meadows",
+      "shadowslave:flowers_sunpetal_meadows"
+    ],
+    []
+  ],
+  "spawners": {},
+  "spawn_costs": {}
+}

@@ -1,0 +1,16 @@
+SHADOW SLAVE — 0.6.0-rework.1 (QUELLCODE)
+
+Minecraft Java 1.21.1, NeoForge 21.1.256, vollständiges JDK 21.
+Diese Lieferung enthält noch keine spielbare JAR. Der Build wird hier durch
+den gesperrten NeoForge-Abhängigkeitsserver (HTTP 403) blockiert.
+Die Offline-Prüfungen sind in VALIDATION.md dokumentiert.
+
+Lokal bauen: gradlew.bat clean build prepareClientRun runGameTestServer
+Unter Linux/macOS: ./gradlew clean build prepareClientRun runGameTestServer
+Nach erfolgreichem Build: build/libs/shadowslave-0.6.0-rework.1.jar
+
+Gleiche Mod-Version auf Server und Clients installieren. Für die neue
+Weltgenerierung eine neue Testwelt verwenden; bestehende Chunks bleiben bestehen.
+Weitere Testbefehle: TESTING_COMMANDS.md. Shader-Prüfungen:
+docs/SHADER_COMPATIBILITY.md. Alte Testbehauptungen aus den hochgeladenen
+Dokumenten gelten nicht als Nachweis für diese Quellcode-Version.

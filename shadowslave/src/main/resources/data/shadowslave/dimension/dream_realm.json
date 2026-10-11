@@ -1,0 +1,30 @@
+{
+  "type": "shadowslave:dream_realm",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "shadowslave:dream",
+    "biome_source": {
+      "type": "shadowslave:dream_map",
+      "biomes": [
+        "shadowslave:dark_sea",
+        "shadowslave:ember_haven",
+        "shadowslave:sunpetal_meadows",
+        "shadowslave:verdant_gardens",
+        "shadowslave:blossom_vale",
+        "shadowslave:golden_grove",
+        "shadowslave:moonlit_grove",
+        "shadowslave:azure_woods",
+        "shadowslave:mosslight_ravine",
+        "shadowslave:aurora_fields",
+        "shadowslave:frostglass_taiga",
+        "shadowslave:amethyst_heights",
+        "shadowslave:hollow_mountains",
+        "shadowslave:death_zone",
+        "shadowslave:nightmare_desert",
+        "shadowslave:scarlet_wilds",
+        "shadowslave:forgotten_shore",
+        "shadowslave:chained_isles"
+      ]
+    }
+  }
+}
