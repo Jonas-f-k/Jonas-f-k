@@ -4,11 +4,11 @@ Combined source rework for **Minecraft 1.21.1 · NeoForge 21.1.256 · Java 21**.
 
 The uploaded `0.6.0-alpha-source` ZIP is the gameplay foundation. The uploaded Markdown and development-goal text are reference specifications. Their historical build/test claims are not evidence that this source revision passes those checks. See `VALIDATION.md` for this revision's actual results.
 
-This revision separates creature skin, flexible joints, raised plates and hard tips into four mapped material regions, with clearer species palettes and separate armor UV regions. The client checker now samples painted pixels on the actual baked model faces. Its replacement JAR is being validated in [GitHub Actions](https://github.com/Jonas-f-k/Jonas-f-k/actions).
+This revision separates creature skin, flexible joints, raised plates and hard tips into four mapped material regions, with clearer species palettes and separate armor UV regions. The client checker now samples painted pixels on the actual baked model faces.
 
-The previous compiled release is available from its successful [GitHub build](https://github.com/Jonas-f-k/Jonas-f-k/actions/runs/38183545392), as `shadowslave-0.6.0-rework.1.jar`. GitHub may ask you to sign in before downloading an Actions artifact.
+A compiled JAR is available from the successful [GitHub build](https://github.com/Jonas-f-k/Jonas-f-k/actions/runs/38184789143). [Download the compiled mod ZIP](https://github.com/Jonas-f-k/Jonas-f-k/actions/runs/38184789143/artifacts/11719321901), extract it, and put `shadowslave-0.6.0-rework.2.jar` in the `mods` folder of a Minecraft 1.21.1 / NeoForge 21.1.256 profile. Remove the earlier Shadow Slave JAR and restart Minecraft. GitHub may ask you to sign in before downloading an Actions artifact.
 
-That previous build passed all 29 required server GameTests, real Minecraft client-model/UV checks, native resource checks and the offline world/effect checks. Graphical gameplay, shader appearance and multiplayer/modpack checks still require local testing. The original local build environment remains network-restricted; GitHub Actions produces the JAR.
+This build passed all 29 required server GameTests, real Minecraft client-model/UV and painted-face checks, native resource checks and the offline world/effect checks. Graphical gameplay, shader appearance and multiplayer/modpack checks still require local testing. The original local build environment remains network-restricted; GitHub Actions produced the JAR.
 
 ## Main changes
 

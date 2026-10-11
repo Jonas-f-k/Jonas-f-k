@@ -1,8 +1,18 @@
-# Validation — 0.6.0-rework.1
+# Validation — 0.6.0-rework.2
 
 ## 0.6.0-rework.2 material update
 
-Offline checks pass for the new 64x128 creature skins, four painted material regions per skin, unchanged asset credits and the articulated rigs. The replacement GitHub build and baked-face pixel sampling check are pending. The results below describe the previous release only.
+Verified on 2026-10-11 in [GitHub Actions](https://github.com/Jonas-f-k/Jonas-f-k/actions/runs/38184789143), source commit `48b7f0cbceb49545e675683aa3d4e9e03e3c8b06`:
+
+- Compilation and all **29 required server GameTests passed**.
+- All **32 species, seven legacy rigs, seven transformations and 30 armor layers** baked successfully. **427,008 animated part poses** were finite and **119,304 texture vertices** were inside the sprite UV bounds.
+- The new baked-face checker sampled actual painted pixels on all **46 creature skins**, requiring multiple colors and separate material regions. This catches flat mappings that numeric UV-bound checks alone miss. It samples source albedos, not an OpenGL frame or a shader result.
+- Native resource checks, all four material regions per 64x128 creature skin, 62 unchanged credited asset hashes, and all existing offline terrain/effect/rig checks passed.
+- [Compiled mod ZIP](https://github.com/Jonas-f-k/Jonas-f-k/actions/runs/38184789143/artifacts/11719321901) contains `shadowslave-0.6.0-rework.2.jar`. GitHub reports the ZIP digest as `d6709110eae3ef60cfe74ff870ec012482d9e09b0fdcc8cd708e3d660f1264b0`.
+
+The material update works in existing worlds. Remove the earlier mod JAR and restart Minecraft. The user's screenshots motivated this update; visual improvement still needs a new in-game capture. No interactive client or shader playtest was performed here.
+
+## Previous 0.6.0-rework.1 results
 
 Verified on 2026-10-12 with Minecraft 1.21.1, NeoForge 21.1.256, Java 21 and Gradle 9.2.1 on GitHub Actions.
 
