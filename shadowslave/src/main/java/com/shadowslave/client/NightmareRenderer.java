@@ -40,7 +40,7 @@ public final class NightmareRenderer extends MobRenderer<NightmareCreature, Nigh
                           .getTextureAtlas(net.minecraft.world.inventory.InventoryMenu.BLOCK_ATLAS)
                           .apply(ResourceLocation.withDefaultNamespace("block/white_concrete"))
                           .wrap(buffers.getBuffer(GLOW)),
-                      mob.isEcho() ? 0xFFB8E6EF : mob.speciesId().equals("forsaken_knight") ? 0xFFDC554C : COLORS[Math.clamp(mob.family(), 0, 6)],
+                      eyeTint(mob.speciesId(),mob.family(),mob.isEcho()),
                       mob.isBoss());
           }
         });
@@ -49,6 +49,13 @@ public final class NightmareRenderer extends MobRenderer<NightmareCreature, Nigh
   @Override
   public ResourceLocation getTextureLocation(NightmareCreature entity) {
     return SKIN;
+  }
+  public static int eyeTint(String species,int family,boolean echo){
+    if(echo)return 0xFFB8E6EF;
+    return switch(species){
+      case "stone_saint","forsaken_knight","black_ravager"->0xFFDC554C;
+      default->COLORS[Math.clamp(family,0,6)];
+    };
   }
 
   @Override

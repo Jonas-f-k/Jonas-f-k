@@ -36,6 +36,10 @@ public final class BeastRendering {
         form == 0
             && com.shadowslave.network.SpellNetwork.beastAttacks.getOrDefault(p.getUUID(), 0L)
                 > p.level().getGameTime();
+    long attackUntil=com.shadowslave.network.SpellNetwork.beastAttacks.getOrDefault(p.getUUID(),0L);
+    float strike=p.getAttackAnim(partial);
+    if(!breathing&&attackUntil>p.level().getGameTime())
+      strike=Math.max(.001f,Mth.clamp(1-(attackUntil-p.level().getGameTime()-partial)/18f,0,1));
     model.animate(
         form,
         p.walkAnimation.position(partial),
@@ -43,7 +47,7 @@ public final class BeastRendering {
         p.tickCount + partial,
         yaw,
         p.getXRot(),
-        p.getAttackAnim(partial),
+        strike,
         p.getAbilities().flying || !p.onGround() && BeastForms.ALL.get(form).flies(),
         breathing);
     var pose = e.getPoseStack();

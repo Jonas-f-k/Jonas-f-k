@@ -246,6 +246,9 @@ public final class BeastForms {
       return;
     }
     d.beastCooldownUntil = now + SoulGrowth.cooldown(d, 160);
+    // Every native form receives the same tracked strike/recovery clock. Flame replaces it
+    // below with its existing forty-tick breath channel; damage and costs stay unchanged.
+    d.beastAttackUntil = now + 18;
     SpellNetwork.visual(p.serverLevel(),d.family,4,p.position(),4*SoulGrowth.reach(d),30);
     double power = 12 * SoulGrowth.ability(d), range = 9 * SoulGrowth.reach(d);
     var targets = enemies(p, range);
@@ -270,7 +273,7 @@ public final class BeastForms {
           }
         p.teleportTo(to.x, to.y, to.z);
         p.serverLevel()
-            .sendParticles(ParticleTypes.SQUID_INK, from.x, from.y + 1, from.z, 70, 2, 1, 2, .02);
+            .sendParticles(ParticleTypes.SQUID_INK, from.x, from.y + 1, from.z, 18, 2, 1, 2, .02);
       }
       case 2 -> {
         for (var e : targets) {
@@ -286,7 +289,7 @@ public final class BeastForms {
                 p.getX(),
                 p.getY() + 1,
                 p.getZ(),
-                110,
+                24,
                 range / 2,
                 1,
                 range / 2,
@@ -305,7 +308,7 @@ public final class BeastForms {
                 p.getX(),
                 p.getY() + .2,
                 p.getZ(),
-                160,
+                28,
                 range / 2,
                 .15,
                 range / 2,
@@ -329,7 +332,7 @@ public final class BeastForms {
                 p.getX(),
                 p.getY() + 1,
                 p.getZ(),
-                130,
+                22,
                 range / 2,
                 1,
                 range / 2,
@@ -349,7 +352,7 @@ public final class BeastForms {
                 p.getX(),
                 p.getY() + 2,
                 p.getZ(),
-                140,
+                24,
                 range / 2,
                 2,
                 range / 2,
@@ -368,7 +371,7 @@ public final class BeastForms {
                 p.getX(),
                 p.getY() + 3,
                 p.getZ(),
-                130,
+                20,
                 range / 2,
                 3,
                 range / 2,

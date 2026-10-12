@@ -90,4 +90,17 @@ public final class CreaturePresentationGameTests {
       h.succeed();
     });
   }
+  @GameTest(template="empty")
+  public static void allBeastAbilitiesPublishTheirAttackPose(GameTestHelper h){
+    var player=h.makeMockServerPlayerInLevel();var data=ShadowSlaveMod.soul(player);
+    data.soulRank=4;data.aspectRank=6;data.stage="saint";
+    long now=player.server.overworld().getGameTime();
+    for(int form=0;form<7;form++){
+      data.family=form;data.transformUntil=now+500;data.beastCooldownUntil=0;
+      data.beastAttackUntil=0;data.essence=10000;
+      com.shadowslave.combat.BeastForms.attack(player);
+      check(data.beastAttackUntil==now+(form==0?40:18),"Beast ability omitted its tracked pose: "+form);
+    }
+    h.succeed();
+  }
 }

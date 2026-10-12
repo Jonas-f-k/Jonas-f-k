@@ -119,7 +119,7 @@ public final class CreatureGalleryScreen extends Screen {
     if(group==0){
       creatures.animate(i,family,age*.8f,stride,age,0,0,strike,mode==2);
       creatures.renderToBuffer(pose,skin,0xF000F0,OverlayTexture.NO_OVERLAY,0xFFFFFFFF);
-      creatures.renderGlow(pose,white.wrap(buffers.getBuffer(RenderType.eyes(atlas))),SpellTheme.accent(family),false);
+      creatures.renderGlow(pose,white.wrap(buffers.getBuffer(RenderType.eyes(atlas))),NightmareRenderer.eyeTint(CreatureEcology.ALL.get(i).id(),family,false),false);
     }else{
       beasts.animate(i,age*.8f,stride,age,0,0,strike,mode==4,mode==2);
       beasts.renderToBuffer(pose,skin,0xF000F0,OverlayTexture.NO_OVERLAY,0xFFFFFFFF);

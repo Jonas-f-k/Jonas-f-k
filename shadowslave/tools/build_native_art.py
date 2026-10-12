@@ -127,7 +127,7 @@ for entry in manifest:
   ident=species_ids[n] if token.startswith('species_') else (['dragon','moonveil_wraith','leviathan','colossus','stag','griffin','wyvern'][n%7] if token.startswith('nightmare_') else ['dragon','wolf','leviathan','colossus','stag','griffin','wyvern','trim'][n%8])
   dark,mid,light,accent=palettes[family]
   if ident=='forsaken_knight':dark,mid,light,accent=['#1b2029','#414c60','#9eafc3','#c49770']
-  elif ident=='stone_saint':dark,mid,light,accent=['#222a32','#56626d','#a4b4bf','#a6ba91']
+  elif ident=='stone_saint':dark,mid,light,accent=['#151d24','#333e47','#8a98a2','#ad9a7b']
   elif ident=='carapace_demon':dark,mid,light,accent=['#323e47','#9eaeb9','#d6e2e4','#faf4dc']
   elif ident=='carapace_centurion':dark,mid,light,accent=['#211f27','#46323b','#98666b','#dfcfab']
   elif ident=='carapace_scavenger':dark,mid,light,accent=['#35272a','#805b52','#c79978','#d7b896']

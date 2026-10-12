@@ -101,9 +101,9 @@ public final class BeastRig {
           s*(n*1.4f+.2f),0,.1f,0,s*(.28f+n*.16f),0);
     }
     // Overlap at the bones gives one readable sail rather than comb-like isolated bars.
-    box(wing,"membrane_inner",JOINT,s<0?-4:0,-.12f,.1f,4,.24f,4.7f,0,0,0);
-    box(elbow,"membrane_outer",JOINT,s<0?-4.8f:0,-.1f,.1f,4.8f,.2f,4.4f,0,0,0);
-    box(elbow,"membrane_tip",JOINT,s<0?-6.2f:4.4f,-.1f,.2f,1.8f,.2f,2.8f,0,0,0);
+    box(wing,"membrane_inner",SKIN,s<0?-4:0,-.12f,.1f,4,.24f,4.7f,0,0,0);
+    box(elbow,"membrane_outer",SKIN,s<0?-4.8f:0,-.1f,.1f,4.8f,.2f,4.4f,0,0,0);
+    box(elbow,"membrane_tip",SKIN,s<0?-6.2f:4.4f,-.1f,.2f,1.8f,.2f,2.8f,0,0,0);
     if(wyvern) {
       var hook=tilted(elbow,"wrist_claw",TIP,-.5f,-2,-.5f,1,2.4f,1,0,0,0,0,0,s*.32f);
       box(hook,"claw_tip",TIP,-.35f,-.55f,-1.25f,.7f,.75f,1.5f,0,-1.7f,0);
