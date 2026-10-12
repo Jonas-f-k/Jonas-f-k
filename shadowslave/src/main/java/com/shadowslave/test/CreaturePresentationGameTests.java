@@ -92,7 +92,9 @@ public final class CreaturePresentationGameTests {
   }
   @GameTest(template="empty")
   public static void allBeastAbilitiesPublishTheirAttackPose(GameTestHelper h){
-    var player=h.makeMockServerPlayerInLevel();var data=ShadowSlaveMod.soul(player);
+    var player=new net.neoforged.neoforge.common.util.FakePlayer(h.getLevel(),
+        new com.mojang.authlib.GameProfile(UUID.randomUUID(),"BeastPoseTest"));
+    var data=ShadowSlaveMod.soul(player);
     data.soulRank=4;data.aspectRank=6;data.stage="saint";
     long now=player.server.overworld().getGameTime();
     for(int form=0;form<7;form++){
