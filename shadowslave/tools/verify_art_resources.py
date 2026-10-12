@@ -36,6 +36,8 @@ for name in names:
  if name.endswith('_leaves'):
   assert Image.open(A/'textures'/f'{name}.png').convert('RGBA').getchannel('A').getextrema()==(0,255),name
   assert json.loads((A/f'models/{name}.json').read_text())['render_type']=='minecraft:cutout_mipped'
+ if name.startswith('flora/flower_'):
+  assert Image.open(A/'textures'/f'{name}.png').convert('RGBA').getchannel('A').getextrema()==(0,255),('Opaque flower square',name)
 for name in ['ashen_grass','meadow_grass','blossom_grass','lavender_grass','frost_grass','scarlet_litter','autumn_litter','turquoise_moss','sanctuary_moss']:
  model=json.loads((A/f'models/block/{name}.json').read_text())
  assert model['parent']=='minecraft:block/cube_bottom_top' and model['textures']['bottom']=='shadowslave:block/dream_loam'

@@ -141,25 +141,36 @@ for entry in manifest:
   metallic=any(k in ident for k in ['iron','knight','saint','colossus','stone','carapace','mimic'])
   # Match CreatureRig's explicit material bands, including small joints and tips.
   # Details cover each region; no anatomical part relies on a tiny shared corner.
-  for band,base in enumerate([mid,dark,light,light if metallic else accent]):
+  plate=light if ident=='carapace_demon' else '#a44e4d' if ident=='soul_devouring_tree' else shade(mid,22 if metallic else 13)
+  for band,base in enumerate([mid,dark,plate,shade(light,-10) if metallic else accent]):
    offset=band*32;parts.append(rect(0,offset,64,32,base))
    for yy in range(0,32,4):
     for x in range(0,64,6):
      y=offset+yy;xx=x+(2 if yy%8 else 0)
-     if band==1:parts += [rect(x,y,5,1,mid),rect(x+2,y+2,2,1,dark),rect(x+4,y+3,1,1,light)]
-     elif band==3:parts += [rect(x,y+2,5,1,accent if metallic else mid),rect(x+1,y,1,2,'#d9dfdf' if metallic else '#eadbc1')]
-     elif furry:parts += [poly(f'{xx},{y} {xx+4},{y} {xx+3},{y+3} {xx+1},{y+4}',dark if band==0 else mid),rect(xx+1,y,2,1,light if band==0 else accent)]
-     elif woody:parts += [rect(xx,y,1,4,dark if band==0 else mid),rect(xx+2,y+1,1,2,accent)]
-     elif metallic:parts += [rect(x,y,6,1,dark if band==0 else mid),rect(x,y,1,4,dark if band==0 else mid),rect(x+1,y+1,4,1,light if band==0 else '#cad5dc')]
-     else:parts += [poly(f'{xx},{y} {xx+4},{y} {xx+3},{y+3} {xx+1},{y+3}',dark if band==0 else mid),rect(xx+1,y,2,1,light if band==0 else accent)]
+     if band==1:parts += [rect(x,y,3,1,shade(base,8)),rect(x+3,y+2,2,1,shade(base,-5)),rect(x+4,y+3,1,1,shade(base,13))]
+     elif band==3:parts += [rect(x,y+2,3,1,shade(base,-12)),rect(x+1,y,1,2,shade(base,10))]
+     elif furry:parts += [poly(f'{xx},{y} {xx+3},{y} {xx+2},{y+3} {xx+1},{y+4}',shade(base,-10)),rect(xx+1,y,1,1,shade(base,8))]
+     elif woody:parts += [rect(xx,y,1,4,shade(base,-13)),rect(xx+2,y+1,1,2,shade(base,9))]
+     elif metallic:parts += [rect(x+2,y+1,2,1,shade(base,-9)),rect(x+1,y+2,1,1,shade(base,7))]
+     else:parts += [poly(f'{xx},{y} {xx+3},{y} {xx+2},{y+2} {xx+1},{y+3}',shade(base,-9)),rect(xx+1,y,1,1,shade(base,7))]
    if band==2:
-    for i in range(5):parts += [rect((seed//(i+1))%58+2,offset+3+i*5,2,2,accent)]
+    for i in range(5):parts += [rect((seed//(i+1))%58+2,offset+3+i*5,1,1,shade(base,14))]
   export(name,(64,128),parts);continue
  if name.startswith('armor/'):
   index=int(token.split('_')[-1]);m=cat[index];c=f'#{m["color"]:06x}';a=f'#{m["trim"]:06x}'
   parts=[rect(0,0,64,64,c)]
   for y in range(0,64,16):parts += [rect(0,y,64,2,a),rect(0,y+14,64,2,'#25303d'),rect(4,y+4,8,7,a),rect(5,y+5,6,5,c)]
   export(name,64,parts);continue
+ if name.startswith('flora/flower_'):
+  index=int(token.split('_')[-1]);color=['#cc7292','#d9bb64','#78b6c4','#85b37a','#b095cc','#d89c67','#c4dbe1','#e1dfd0','#b66872','#d285a1','#bfb0d6','#a7cdd5','#d1b9cc','#d6ad59','#d5a3b8','#a08bbb'][index%16]
+  parts=[rect(7,6,1,10,'#4d704d'),rect(8,7,1,9,'#63815a'),rect(4,11,3,1,'#63815a'),rect(5,12,2,1,'#4d704d'),rect(9,9,3,1,'#7b9868')]
+  if index==15:
+   for y in [2,5,8]:parts += [rect(5,y,4,2,color),rect(6,y+1,2,1,shade(color,-24)),rect(5,y,2,1,shade(color,17))]
+  elif index%4==0:parts += [rect(5,3,6,4,color),rect(6,2,4,6,color),rect(5,3,2,2,shade(color,18)),rect(7,4,2,2,'#d6bf8a')]
+  elif index%4==1:parts += [rect(4,3,3,3,color),rect(9,3,3,3,color),rect(6,1,4,3,color),rect(6,6,4,2,color),rect(6,3,4,3,'#a58453'),rect(7,3,2,1,'#d6c68e')]
+  elif index%4==2:parts += [rect(6,2,4,5,color),rect(5,4,6,2,color),rect(6,2,2,2,shade(color,20)),rect(7,6,2,1,shade(color,-23))]
+  else:parts += [rect(5,4,6,2,color),rect(6,2,4,4,color),rect(7,1,2,1,shade(color,15)),rect(6,4,2,1,shade(color,22))]
+  export(name,16,parts);continue
  # Blocks / foliage / plants: compact hand-designed pixel clusters, no image-atlas sampling.
  natural=natural_tile(token,seed)
  if name.startswith('block/') and natural is not None:
@@ -206,6 +217,8 @@ for token in ['dream_oak','dream_birch','blue_bark','rose_bark','redwood_bark','
  (A/f'models/block/{token}.json').write_text(json.dumps({'parent':'minecraft:block/cube_column','textures':{'side':'shadowslave:block/'+token,'end':'shadowslave:'+name}},indent=2)+'\n')
 for m in (A/'models/block').glob('*_leaves.json'):
  data=json.loads(m.read_text());data['render_type']='minecraft:cutout_mipped';m.write_text(json.dumps(data,indent=2)+'\n')
+for m in (A/'models/block').glob('*_bloom.json'):
+ data=json.loads(m.read_text());data['render_type']='minecraft:cutout';m.write_text(json.dumps(data,indent=2)+'\n')
 (A/'art/native_sprites.json').write_text(json.dumps(textures,indent=2)+'\n')
 (R/'assets/minecraft/atlases/blocks.json').write_text(json.dumps({'sources':[{'type':'minecraft:single','resource':'shadowslave:'+n} for n in textures]},indent=2)+'\n')
 (A/'art/asset_credits.json').write_text(json.dumps({'author':'Malcolm Riley','project':'https://github.com/malcolmriley/unused-textures','revision':'9218cb8997bf1dc83617bd7748acf44a16c19c42','license':'CC BY 4.0','assets':credits},indent=2)+'\n')

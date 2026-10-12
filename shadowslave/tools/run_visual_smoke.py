@@ -27,6 +27,7 @@ CAPTURES = (
     "forms-overview.png",
     "magic-overview.png",
     "forms-strike.png",
+    "forms-flight.png",
 )
 
 
@@ -110,7 +111,7 @@ def main() -> int:
         errors.append(f"Client/Gradle exceeded {args.timeout}s")
     if process.returncode != 0:
         errors.append(f"Gradle/client exited {process.returncode}")
-    if "VISUAL_SMOKE_PASS captures=4 shader=arcane backend=OpenGL" not in logs:
+    if "VISUAL_SMOKE_PASS captures=5 shader=arcane backend=OpenGL" not in logs:
         errors.append("Actual OpenGL client did not report VISUAL_SMOKE_PASS")
     errors.extend(fatal_resource_lines(logs))
     digests = set()

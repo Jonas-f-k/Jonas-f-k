@@ -27,6 +27,8 @@ jobs:
         run: bash gradlew --no-daemon clean build prepareClientRun runGameTestServer
       - name: Check client model geometry
         run: python tools/verify_client_models.py
+      - name: Export editable models and animation tool
+        run: python tools/export_blockbench_models.py
       - name: Check native resources and world math
         run: python tools/verify_offline.py
       - name: Install software OpenGL display
@@ -50,4 +52,16 @@ jobs:
         with:
           name: shadowslave-0.6.0-rework.3
           path: shadowslave/build/libs/shadowslave-0.6.0-rework.3.jar
+          if-no-files-found: error
+      - name: Upload editable Blockbench models and licensed plugin
+        uses: actions/upload-artifact@v4
+        with:
+          name: shadowslave-blockbench-models-and-animation-tools
+          path: shadowslave/build/reports/blockbench-models/
+          if-no-files-found: error
+      - name: Upload actual Minecraft visual previews
+        uses: actions/upload-artifact@v4
+        with:
+          name: shadowslave-native-client-previews
+          path: shadowslave/build/reports/visual-smoke/*.png
           if-no-files-found: error

@@ -78,7 +78,7 @@ public final class CreatureGalleryScreen extends Screen {
   }
   private String name(int i){return group==0?CreatureEcology.ALL.get(i).name():group==1?BeastForms.ALL.get(i).name():new String[]{"Flame","Shadow","Tide","Steel","Thorn","Mirror","Gravity"}[i];}
   private void renderOverview(GuiGraphics g,float delta){
-    int columns=Math.max(1,Math.min(group==0?8:7,(width-24)/140));
+    int columns=Math.max(1,Math.min(group==0?8:4,(width-24)/(group==0?140:220)));
     int shown=Math.min(count(),columns*Math.max(1,(height-96)/140));
     int start=index/shown*shown,rows=(Math.min(shown,count()-start)+columns-1)/columns;
     int cellW=(width-24)/columns,cellH=(height-96)/rows;

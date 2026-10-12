@@ -21,9 +21,9 @@ public final class VisualSmokeTest {
   private static final Logger LOG = LogUtils.getLogger();
   private static final boolean ENABLED = Boolean.getBoolean("shadowslave.visualSmoke");
   private static final String[] NAMES = {
-    "species-overview", "forms-overview", "magic-overview", "forms-strike"
+    "species-overview", "forms-overview", "magic-overview", "forms-strike", "forms-flight"
   };
-  private static final int[] GROUPS = {0, 1, 2, 1};
+  private static final int[] GROUPS = {0, 1, 2, 1, 1};
   private static volatile boolean finished;
   private static long started;
   private static int readyTicks, settledTicks, stage;
@@ -36,7 +36,7 @@ public final class VisualSmokeTest {
     var mc = Minecraft.getInstance();
     if (started == 0) {
       started = System.nanoTime();
-      LOG.info("VISUAL_SMOKE_START: native model atlas, built-in shader, four gallery captures");
+      LOG.info("VISUAL_SMOKE_START: native model atlas, built-in shader, five gallery captures");
       Thread watchdog = new Thread(() -> {
         try {
           Thread.sleep(120_000);
@@ -75,7 +75,7 @@ public final class VisualSmokeTest {
         // Replaces title/accessibility onboarding only in the explicitly opted-in CI run.
         gallery = new CreatureGalleryScreen(mc.screen, GROUPS[stage], 0);
         gallery.setOverview(true);
-        gallery.setAnimationMode(stage == 3 ? 3 : 0);
+        gallery.setAnimationMode(stage == 4 ? 4 : stage == 3 ? 3 : 0);
         mc.setScreen(gallery);
         // Ignore stale errors from startup; the next twenty frames belong to this stage.
         for (int error = 0; error < 16 && GL11.glGetError() != GL11.GL_NO_ERROR; error++) {}
