@@ -8,5 +8,5 @@ if errorlevel 1 (
   pause
   exit /b 1
 )
-echo Finished: build\libs\shadowslave-0.1.0-alpha.jar
+echo Finished: build\libs\shadowslave-0.6.0-rework.3.jar
 pause

@@ -2,6 +2,8 @@
 
 Minecraft **1.21.1 · NeoForge 21.1.256 · Java 21**.
 
+Original mod code is open source under the [MIT license](LICENSE). You can modify it and build your own JAR. Third-party materials retain their own licenses; see [LICENSES.md](LICENSES.md).
+
 [Download the playable mod ZIP](https://github.com/Jonas-f-k/Jonas-f-k/actions/runs/38256745252/artifacts/11750373710). Extract `shadowslave-0.6.0-rework.3.jar`, replace the earlier Shadow Slave JAR in `mods`, and restart Minecraft. GitHub may require sign-in for artifact downloads.
 
 [Actual Minecraft visual captures](https://github.com/Jonas-f-k/Jonas-f-k/actions/runs/38256745252/artifacts/11750119045) · [39 editable Blockbench models and animation tool](https://github.com/Jonas-f-k/Jonas-f-k/actions/runs/38256745252/artifacts/11749954155) · [Successful build](https://github.com/Jonas-f-k/Jonas-f-k/actions/runs/38256745252)
@@ -25,6 +27,8 @@ This source compiled and passed **33 required server GameTests**, actual Minecra
 [Creatures](docs/previews/species-overview.png) · [Transformations](docs/previews/forms-overview.png) · [Flight poses](docs/previews/forms-flight.png) · [Magic](docs/previews/magic-overview.png). Documentation previews are resized native client captures. The artifact above contains the original 1280×900 images.
 
 ## Build and use
+
+For local editing, IDE setup and Windows/Linux build commands, start with [WORKING_LOCALLY.md](WORKING_LOCALLY.md).
 
 ```sh
 bash gradlew clean build prepareClientRun runGameTestServer
