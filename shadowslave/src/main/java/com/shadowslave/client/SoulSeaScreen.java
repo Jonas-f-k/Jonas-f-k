@@ -212,6 +212,8 @@ public final class SoulSeaScreen extends Screen {
             page--;
             layout();
           });
+      if(tab==4)button("View animated models",left+w-172,top+h-29,160,
+          ()->minecraft.setScreen(new CreatureGalleryScreen(this,0,page*rows)));
       button(
           "›",
           left + 40,

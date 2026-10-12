@@ -11,6 +11,7 @@ import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.*;
 import net.minecraft.server.level.*;
+import net.minecraft.world.Difficulty;
 import net.minecraft.world.level.*;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.levelgen.Heightmap;
@@ -106,6 +107,21 @@ public final class DreamRealm {
     return new BlockPos(x, Math.clamp(y, 66, 220), z);
   }
 
+  /** Natural creatures use the real ground height, including elevated floating islands. */
+  public static BlockPos naturalSpawnSurface(ServerLevel level, int x, int z) {
+    return new BlockPos(x, level.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, x, z), z);
+  }
+
+  public static boolean canAttemptNaturalSpawning(ServerPlayer p) {
+    return isDream(p.level())
+        && !p.isCreative()
+        && !p.isSpectator()
+        && ShadowSlaveMod.soul(p).initiated()
+        && p.level().getDifficulty() != Difficulty.PEACEFUL
+        && p.level().getGameRules().getBoolean(GameRules.RULE_DOMOBSPAWNING)
+        && !Sanctuary.isSafe(p.level(), p.blockPosition());
+  }
+
   private static void landing(ServerLevel level, BlockPos b) {
     for (int x = -4; x <= 4; x++)
       for (int z = -4; z <= 4; z++) {
@@ -146,35 +162,48 @@ public final class DreamRealm {
   }
 
   public static void tick(ServerPlayer p) {
-    if (!isDream(p.level()) || p.tickCount % 100 != 0 || p.isSpectator()) return;
+    if (p.tickCount % 100 != 0 || !canAttemptNaturalSpawning(p)) return;
     var level = p.serverLevel();
-    var d = ShadowSlaveMod.soul(p);
-    if (!d.initiated() && !p.isCreative()) return;
     long now = level.getGameTime();
-    if (p.isCreative() || Sanctuary.isSafe(level, p.blockPosition())) return;
     // Vanilla mob-cap-like local ceiling; no block scanning or forced distant chunks.
-    if (level.getEntitiesOfClass(NightmareCreature.class, p.getBoundingBox().inflate(64)).size()
+    if (level.getEntitiesOfClass(NightmareCreature.class, p.getBoundingBox().inflate(64),
+            mob -> !mob.isEcho() && !mob.isBoss() && mob.trialId == null).size()
         >= 8) return;
     if (now - SPAWN_CLOCK.getOrDefault(p.getUUID(), 0L) < 160) return;
     SPAWN_CLOCK.put(p.getUUID(), now);
-    int x = p.getBlockX() + p.getRandom().nextInt(57) - 28,
-        z = p.getBlockZ() + p.getRandom().nextInt(57) - 28;
-    if (Math.abs(x - p.getBlockX()) + Math.abs(z - p.getBlockZ()) < 18) return;
-    if (!level.hasChunk(x >> 4, z >> 4)) return;
-    var pos = safeSurface(level, x, z);
-    if (Sanctuary.isSafe(level, pos)) return;
-    if (!level.getBlockState(pos.below()).isSolid()
-        || !level.getBlockState(pos).isAir()
-        || !level.getBlockState(pos.above()).isAir()) return;
-    var biome = level.getBiome(pos).unwrapKey().map(k -> k.location().getPath()).orElse("");
-    var species =
-        com.shadowslave.entity.CreatureEcology.choose(biome, level.isNight(), p.getRandom());
-    if (species == null) return;
-    var mob = ShadowSlaveMod.CREATURE.get().create(level);
-    if (mob == null) return;
-    mob.configureSpecies(species);
-    if (!mob.canStandAt(pos)) return;
-    mob.moveTo(x + .5, pos.getY(), z + .5, 0, 0);
-    level.addFreshEntity(mob);
+    // A few bounded candidates tolerate foliage and uneven islands without increasing the cap.
+    for (int attempt = 0; attempt < 6; attempt++) {
+      double angle = p.getRandom().nextDouble() * Math.PI * 2;
+      double distance = 24 + p.getRandom().nextInt(17);
+      int x = p.getBlockX() + (int) Math.round(Math.cos(angle) * distance),
+          z = p.getBlockZ() + (int) Math.round(Math.sin(angle) * distance);
+      if (!level.hasChunk(x >> 4, z >> 4)) continue;
+      var pos = naturalSpawnSurface(level, x, z);
+      if (pos.getY() <= level.getMinBuildHeight()
+          || pos.getY() >= level.getMaxBuildHeight()
+          || Sanctuary.isSafe(level, pos)) continue;
+      if (!level.getBlockState(pos.below()).isSolid()
+          || !level.getBlockState(pos).isAir()
+          || !level.getBlockState(pos.above()).isAir()) continue;
+      if (level.players().stream().anyMatch(other -> !other.isSpectator()
+              && other.distanceToSqr(x + .5, pos.getY(), z + .5) < 24 * 24)) continue;
+      var biome = level.getBiome(pos).unwrapKey().map(k -> k.location().getPath()).orElse("");
+      var species =
+          com.shadowslave.entity.CreatureEcology.choose(biome, level.isNight(), p.getRandom());
+      if (species == null || pos.getY() + species.height() >= level.getMaxBuildHeight()) continue;
+      // Collision checks on a broad creature must not pull in unloaded neighbouring chunks.
+      int margin = (int) Math.ceil(species.width() / 2);
+      if (!level.hasChunk((x - margin) >> 4, (z - margin) >> 4)
+          || !level.hasChunk((x + margin) >> 4, (z - margin) >> 4)
+          || !level.hasChunk((x - margin) >> 4, (z + margin) >> 4)
+          || !level.hasChunk((x + margin) >> 4, (z + margin) >> 4)) continue;
+      var mob = ShadowSlaveMod.CREATURE.get().create(level);
+      if (mob == null) return;
+      mob.configureSpecies(species);
+      if (!mob.canStandAt(pos)) continue;
+      mob.moveTo(x + .5, pos.getY(), z + .5, 0, 0);
+      level.addFreshEntity(mob);
+      return;
+    }
   }
 }

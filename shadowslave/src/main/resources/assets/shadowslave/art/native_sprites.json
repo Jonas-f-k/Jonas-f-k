@@ -278,5 +278,11 @@
   "block/scarlet_litter_side",
   "block/autumn_litter_side",
   "block/turquoise_moss_side",
-  "block/sanctuary_moss_side"
+  "block/sanctuary_moss_side",
+  "block/dream_oak_top",
+  "block/dream_birch_top",
+  "block/blue_bark_top",
+  "block/rose_bark_top",
+  "block/redwood_bark_top",
+  "block/runic_timber_top"
 ]

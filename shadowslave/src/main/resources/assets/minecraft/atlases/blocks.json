@@ -1119,6 +1119,30 @@
     {
       "type": "minecraft:single",
       "resource": "shadowslave:block/sanctuary_moss_side"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/dream_oak_top"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/dream_birch_top"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/blue_bark_top"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/rose_bark_top"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/redwood_bark_top"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "shadowslave:block/runic_timber_top"
     }
   ]
 }

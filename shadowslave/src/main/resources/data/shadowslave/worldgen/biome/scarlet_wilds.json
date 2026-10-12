@@ -10,7 +10,7 @@
     "grass_color": 8501580,
     "foliage_color": 7252044,
     "particle": {
-      "probability": 0.006,
+      "probability": 0.0008,
       "options": {
         "type": "minecraft:crimson_spore"
       }

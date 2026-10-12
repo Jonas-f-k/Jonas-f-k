@@ -1,6 +1,7 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/cube_column",
   "textures": {
-    "all": "shadowslave:block/runic_timber"
+    "side": "shadowslave:block/runic_timber",
+    "end": "shadowslave:block/runic_timber_top"
   }
 }

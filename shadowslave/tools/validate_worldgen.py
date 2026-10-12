@@ -47,7 +47,7 @@ for missing in sorted(declared - MOD_BLOCKS - {"trial_altar", "trial_exit", "gat
 MOD_BLOCKS |= declared
 VANILLA_BLOCKS = {"minecraft:air", "minecraft:bedrock", "minecraft:water"}
 VANILLA_NOISES = {"minecraft:cave_cheese", "minecraft:surface", "minecraft:gravel", "minecraft:calcite"}
-VANILLA_PARTICLES = {"cherry_leaves", "end_rod", "crimson_spore", "ash"}
+VANILLA_PARTICLES = {"cherry_leaves", "end_rod", "crimson_spore", "ash", "white_ash"}
 VANILLA_SOUNDS = {"ambient.cave", "ambient.warped_forest.additions", "ambient.crimson_forest.additions",
                   "ambient.soul_sand_valley.additions", "ambient.basalt_deltas.loop"}
 MOD_NOISES = {f"shadowslave:{p.stem}" for p in (DATA / "worldgen/noise").glob("*.json")}
@@ -255,7 +255,7 @@ def configured(where, f):
             keys(where, layer, ["height", "provider"])
             int_provider(where, layer["height"], 0, 128)
             state_provider(where, layer["provider"])
-    elif t == "shadowslave:dream_ruin" or t in ("shadowslave:island_chains", "shadowslave:realm_waters"):
+    elif t == "shadowslave:dream_ruin" or t in ("shadowslave:island_chains", "shadowslave:realm_waters", "shadowslave:realm_decoration"):
         pass
     else:
         err(where, f"unsupported feature type {t}")

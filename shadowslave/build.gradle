@@ -51,6 +51,11 @@ neoForge {
     runs {
         client {
             client()
+            if (project.hasProperty('visualSmoke')) {
+                systemProperty 'shadowslave.visualSmoke', 'true'
+                systemProperty 'shadowslave.visualSmokeDir', file('build/reports/visual-smoke').absolutePath
+                programArguments.addAll '--width', '1280', '--height', '900'
+            }
             // Comma-separated list of namespaces to load gametests from. Empty = all namespaces.
             systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id
         }

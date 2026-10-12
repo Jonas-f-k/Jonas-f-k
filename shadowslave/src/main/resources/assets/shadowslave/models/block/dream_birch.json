@@ -1,6 +1,7 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/cube_column",
   "textures": {
-    "all": "shadowslave:block/dream_birch"
+    "side": "shadowslave:block/dream_birch",
+    "end": "shadowslave:block/dream_birch_top"
   }
 }

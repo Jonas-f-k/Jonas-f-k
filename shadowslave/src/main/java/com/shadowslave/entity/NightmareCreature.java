@@ -14,6 +14,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.server.level.*;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.BossEvent;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.damagesource.DamageType;
 import net.minecraft.world.effect.*;
@@ -33,6 +34,14 @@ public class NightmareCreature extends Monster {
       SynchedEntityData.defineId(NightmareCreature.class, EntityDataSerializers.INT);
   private static final EntityDataAccessor<Boolean> CHARGING =
       SynchedEntityData.defineId(NightmareCreature.class, EntityDataSerializers.BOOLEAN);
+  public static final int ATTACK_IDLE = 0, ATTACK_WINDUP = 1, ATTACK_STRIKE = 2,
+      ATTACK_RECOVERY = 3;
+  private static final EntityDataAccessor<Integer> ATTACK_PHASE =
+      SynchedEntityData.defineId(NightmareCreature.class, EntityDataSerializers.INT);
+  private static final EntityDataAccessor<Long> ATTACK_STARTED =
+      SynchedEntityData.defineId(NightmareCreature.class, EntityDataSerializers.LONG);
+  private static final EntityDataAccessor<Integer> ATTACK_DURATION =
+      SynchedEntityData.defineId(NightmareCreature.class, EntityDataSerializers.INT);
   public static final ResourceKey<DamageType> NIGHTMARE_DAMAGE =
       ResourceKey.create(Registries.DAMAGE_TYPE, ShadowSlaveMod.id("nightmare"));
   private static final EntityDataAccessor<String> SPECIES =
@@ -73,6 +82,9 @@ public class NightmareCreature extends Monster {
     builder.define(BOSS, false);
     builder.define(FAMILY, 0);
     builder.define(CHARGING, false);
+    builder.define(ATTACK_PHASE, ATTACK_IDLE);
+    builder.define(ATTACK_STARTED, 0L);
+    builder.define(ATTACK_DURATION, 1);
   }
 
   public boolean isEcho() {
@@ -132,10 +144,14 @@ public class NightmareCreature extends Monster {
 
   private void configureMovement() {
     var s = species();
-    if (s != null && (s.body() == 5 || s.body() == 6 || s.id().equals("chain_worm"))) {
+    boolean airborne = s != null && (s.body() == 5 || s.body() == 6 || s.id().equals("chain_worm"));
+    setNoGravity(airborne);
+    if (airborne) {
       navigation = new net.minecraft.world.entity.ai.navigation.FlyingPathNavigation(this, level());
       moveControl = new net.minecraft.world.entity.ai.control.FlyingMoveControl(this, 20, true);
-      setNoGravity(true);
+    } else if (navigation instanceof net.minecraft.world.entity.ai.navigation.FlyingPathNavigation) {
+      navigation = new net.minecraft.world.entity.ai.navigation.GroundPathNavigation(this, level());
+      moveControl = new net.minecraft.world.entity.ai.control.MoveControl(this);
     }
   }
 
@@ -149,7 +165,45 @@ public class NightmareCreature extends Monster {
   }
 
   public void setCharging(boolean value) {
+    boolean changed = value != isCharging();
     entityData.set(CHARGING, value);
+    if (!changed || level().isClientSide) return;
+    if (value) {
+      startAttackPhase(ATTACK_WINDUP, Math.max(1, Math.max(windup, specialWindup)));
+    } else if (getTarget() != null && getTarget().isAlive()) {
+      startAttackPhase(ATTACK_STRIKE, 10);
+    } else {
+      startAttackPhase(ATTACK_IDLE, 1);
+    }
+  }
+
+  /** Authoritative animation timing also reaches clients that start tracking mid-attack. */
+  public int attackPhase() {
+    return entityData.get(ATTACK_PHASE);
+  }
+
+  public float attackPhaseProgress(float partialTick) {
+    if (attackPhase() == ATTACK_IDLE) return 0;
+    float partial = Float.isFinite(partialTick) ? Math.clamp(partialTick, 0, 1) : 0;
+    double elapsed = level().getGameTime() - entityData.get(ATTACK_STARTED) + partial;
+    return (float) Math.clamp(elapsed / entityData.get(ATTACK_DURATION), 0, 1);
+  }
+
+  /** Matches the 0..1 strike input used by the species rig; windup is separately posed. */
+  public float attackAnimationProgress(float partialTick) {
+    return attackPhase() == ATTACK_STRIKE ? attackPhaseProgress(partialTick) : 0;
+  }
+
+  private void startAttackPhase(int phase, int ticks) {
+    entityData.set(ATTACK_PHASE, phase);
+    entityData.set(ATTACK_STARTED, level().getGameTime());
+    entityData.set(ATTACK_DURATION, Math.max(1, ticks));
+  }
+
+  private void tickAttackAnimation() {
+    if (attackPhaseProgress(0) < 1) return;
+    if (attackPhase() == ATTACK_STRIKE) startAttackPhase(ATTACK_RECOVERY, 8);
+    else if (attackPhase() == ATTACK_RECOVERY) startAttackPhase(ATTACK_IDLE, 1);
   }
 
   public boolean isBoss() {
@@ -188,9 +242,15 @@ public class NightmareCreature extends Monster {
   public boolean canStandAt(net.minecraft.core.BlockPos pos) {
     var body =
         getDimensions(getPose()).makeBoundingBox(pos.getX() + .5, pos.getY(), pos.getZ() + .5);
-    return level().noCollision(this, body)
-        && !level().containsAnyLiquid(body)
-        && level().getBlockState(pos.below()).isSolid();
+    if (!level().noCollision(this, body)
+        || level().containsAnyLiquid(body)
+        || !level().getBlockState(pos.below()).isSolid()) return false;
+    // Large creatures need support under their feet, not a lone block under their centre.
+    for (double x : new double[] {body.minX + .05, body.maxX - .05})
+      for (double z : new double[] {body.minZ + .05, body.maxZ - .05})
+        if (!level().getBlockState(net.minecraft.core.BlockPos.containing(x, pos.getY() - 1, z)).isSolid())
+          return false;
+    return true;
   }
 
   public void configure(int family, boolean boss, int rank, UUID trial, UUID owner, int encounter) {
@@ -240,6 +300,8 @@ public class NightmareCreature extends Monster {
   public boolean doHurtTarget(Entity target) {
     if (specialWindup > 0) return false;
     if (Sanctuary.isSafe(target.level(), target.blockPosition())) return false;
+    swing(InteractionHand.MAIN_HAND);
+    if (!level().isClientSide) startAttackPhase(ATTACK_STRIKE, 6);
     boolean hit =
         target.hurt(
             damageSources().mobAttack(this), (float) getAttributeValue(Attributes.ATTACK_DAMAGE));
@@ -264,6 +326,7 @@ public class NightmareCreature extends Monster {
   public void tick() {
     super.tick();
     if (!(level() instanceof ServerLevel level)) return;
+    tickAttackAnimation();
     if (isEcho()) {
       var master = owner == null ? null : level.getServer().getPlayerList().getPlayer(owner);
       if (master == null || master.level() != level) {
@@ -323,7 +386,7 @@ public class NightmareCreature extends Monster {
     AncientCombat.tick(this, level);
     tickSpecies(level);
     if (!isBoss()) return;
-    entityData.set(CHARGING, windup > 0);
+    setCharging(windup > 0);
     bossBar.setProgress(getHealth() / getMaxHealth());
     if (getTarget() == null || isNoAi()) return;
     if (windup > 0) {

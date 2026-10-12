@@ -43,20 +43,17 @@ public final class NightmareModel extends EntityModel<NightmareCreature> {
   }
   @Override public void setupAnim(NightmareCreature mob,float swing,float stride,float age,float yaw,float pitch) {
     echo=mob.isEcho();
-    animate(CreatureEcology.renderIndex(mob.species()),mob.family(),swing,stride,age,yaw,pitch,attackTime,mob.isCharging());
+    float strike=mob.attackAnimationProgress(age-mob.tickCount);
+    if(mob.attackPhase()==NightmareCreature.ATTACK_STRIKE)strike=Math.max(.001f,strike);
+    animate(CreatureEcology.renderIndex(mob.species()),mob.family(),swing,stride,age,yaw,pitch,strike,mob.isCharging());
   }
+  public ModelPart selectedRig(){return selected;}
   @Override public void renderToBuffer(PoseStack pose,VertexConsumer buffer,int light,int overlay,int tint) {
     var sprite=net.minecraft.client.Minecraft.getInstance().getTextureAtlas(net.minecraft.world.inventory.InventoryMenu.BLOCK_ATLAS)
       .apply(ShadowSlaveMod.id(skinSpecies<0?"entity/nightmare_"+skinFamily:"entity/species_"+skinSpecies));
     root.render(pose,sprite.wrap(buffer),light,overlay,echo?0xFFBCDCE5:tint);
   }
   public void renderGlow(PoseStack pose,VertexConsumer buffer,int tint,boolean boss) {
-    pose.pushPose();selected.translateAndRotate(pose);
-    var head=selected.getChild("head");pose.pushPose();head.translateAndRotate(pose);
-    var eyes=head.getChild("eyes");eyes.visible=true;
-    eyes.render(pose,buffer,0xF000F0,net.minecraft.client.renderer.texture.OverlayTexture.NO_OVERLAY,tint);
-    eyes.visible=false;pose.popPose();
-    if(boss){var runes=selected.getChild("runes");runes.visible=true;runes.render(pose,buffer,0xF000F0,net.minecraft.client.renderer.texture.OverlayTexture.NO_OVERLAY,tint);runes.visible=false;}
-    pose.popPose();
+    RigGlow.render(selected,pose,buffer,tint,boss);
   }
 }

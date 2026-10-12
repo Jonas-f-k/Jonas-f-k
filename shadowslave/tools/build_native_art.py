@@ -17,6 +17,68 @@ palettes=[['#282c36','#464653','#727482','#c69264'],['#252535','#414453','#74798
 regions={'frostglass_taiga':3,'aurora_fields':6,'amethyst_heights':5,'hollow_mountains':3,'death_zone':0,'nightmare_desert':0,'scarlet_wilds':0,'forgotten_shore':3,'chained_isles':1,'azure_woods':2,'moonlit_grove':5,'golden_grove':4,'verdant_gardens':4,'mosslight_ravine':4}
 def rect(x,y,w,h,c):return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" fill="{c}"/>'
 def poly(points,c):return f'<polygon points="{points}" fill="{c}"/>'
+def shade(color,delta):
+ rgb=[max(0,min(255,int(color[i:i+2],16)+delta)) for i in (1,3,5)]
+ return '#'+''.join(f'{c:02x}' for c in rgb)
+def natural_palette(token):
+ presets={
+  'ash_stone':('#3f454e','#555d67','#68727b'),
+  'fractured_stone':('#393f49','#515963','#646e78'),
+  'sanctuary_limestone':('#a5ae9d','#c5ccb9','#dde2d1'),
+  'pale_marble':('#a7aca7','#c7cec4','#e0e4d9'),
+  'dream_loam':('#49352b','#604737','#775946'),
+  'ashen_soil':('#41453f','#535a4f','#656c5d'),
+  'blue_shale':('#3e4c5d','#536477','#6b7e90'),
+  'drowned_stone':('#3b5057','#536c70','#6c8588'),
+  'crystal_rock':('#535068','#6c667f','#888198'),
+  'rose_clay':('#865f62','#a27878','#ba9090'),
+  'warm_sand':('#a89470','#c4b38d','#dacba5'),
+  'golden_sandstone':('#9d835c','#bca17b','#d4bb92'),
+  'red_sandstone':('#845a4b','#aa7660','#c89175'),
+  'snow_soil':('#aebcc0','#d0dedc','#e6efea'),
+  'meadow_grass':('#46663d','#60864b','#769957'),
+  'sanctuary_moss':('#45624b','#62845b','#7b9b71'),
+  'turquoise_moss':('#355e5b','#4c8374','#63a18d'),
+  'ashen_grass':('#525c48','#6d7960','#889477'),
+  'blossom_grass':('#667956','#829567','#9dab7f'),
+  'lavender_grass':('#635f77','#807c92','#9996a8'),
+  'frost_grass':('#829997','#a7bcb0','#c1d2c2'),
+  'scarlet_litter':('#74413f','#95554e','#b8755e'),
+  'autumn_litter':('#7d6844','#9b8959','#bba36b'),
+ }
+ return presets.get(token)
+def natural_tile(token,seed):
+ p=natural_palette(token)
+ if p:
+  dark,mid,light=p;parts=[rect(0,0,16,16,mid)]
+  grass=any(k in token for k in ['grass','moss','litter'])
+  for i in range(28):
+   bits=(seed*1664525+i*1013904223)&0xffffffff;x=1+bits%13;y=1+(bits>>8)%13
+   color=shade(mid,(-7,-4,4,7)[i%4])
+   parts.append(rect(x,y,1+i%2,1+(i//4)%2,color))
+   if grass and i%5==0:parts += [rect(x,y,1,2,dark),rect(x+1,y,1,1,light)]
+  if 'stone' in token or 'shale' in token or 'rock' in token or 'marble' in token:
+   for i in range(4):
+    x=2+(seed>>(i*4))%9;y=2+(seed>>(i*5+1))%10
+    parts += [rect(x,y,3,1,shade(mid,-10)),rect(x+2,y+1,2,1,shade(mid,-6))]
+  parts += [rect(0,0,16,1,mid),rect(0,15,16,1,mid),rect(0,0,1,16,mid),rect(15,0,1,16,mid)]
+  return parts
+ if token.endswith('_leaves'):
+  base={'golden':'#b09b56','pink':'#b9809a','crimson':'#91505e','emerald':'#5c855c','teal':'#4d897d','cyan':'#669f9d','lavender':'#8b84a3','frost':'#9dbab2'}.get(token.split('_')[0],'#65825d')
+  parts=[]
+  for x,y in [(0,0),(5,1),(11,0),(2,5),(8,5),(13,6),(0,11),(5,12),(11,11)]:
+   parts += [rect(x,y,4,4,shade(base,-12)),rect(x+1,y,3,3,base),rect(x+1,y,2,1,shade(base,14)),rect(x+2,y+3,1,1,shade(base,-3))]
+  return parts
+ if token in ['dream_oak','dream_birch','blue_bark','rose_bark','redwood_bark','runic_timber']:
+  base={'dream_oak':'#70573d','dream_birch':'#c4c9b9','blue_bark':'#657d80','rose_bark':'#9b767c','redwood_bark':'#7d4d3f','runic_timber':'#68634a'}[token]
+  parts=[rect(0,0,16,16,base)]
+  for i,x in enumerate([1,4,7,11,14]):
+   parts += [rect(x,0,1,16,shade(base,-13-i%2*6)),rect(x+1,0,1,16,shade(base,9))]
+   for j in range(3):parts.append(rect(x-1,2+j*5+(i%2),2,2,shade(base,-5)))
+  if token=='dream_birch':
+   for x,y,w in [(2,3,4),(10,6,5),(4,11,3),(12,14,3)]:parts.append(rect(x,y,w,1,'#656a60'))
+  return parts
+ return None
 def export(name,size,parts):
  w,h=size if isinstance(size,tuple) else (size,size)
  svg=f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" shape-rendering="crispEdges">'+''.join(parts)+'</svg>'
@@ -66,7 +128,12 @@ for entry in manifest:
   dark,mid,light,accent=palettes[family]
   if ident=='forsaken_knight':dark,mid,light,accent=['#1b2029','#414c60','#9eafc3','#c49770']
   elif ident=='stone_saint':dark,mid,light,accent=['#222a32','#56626d','#a4b4bf','#a6ba91']
-  elif ident.startswith('carapace_'):dark,mid,light,accent=['#35272a','#805b52','#c79978','#d7b896']
+  elif ident=='carapace_demon':dark,mid,light,accent=['#323e47','#9eaeb9','#d6e2e4','#faf4dc']
+  elif ident=='carapace_centurion':dark,mid,light,accent=['#211f27','#46323b','#98666b','#dfcfab']
+  elif ident=='carapace_scavenger':dark,mid,light,accent=['#35272a','#805b52','#c79978','#d7b896']
+  elif ident=='soul_devouring_tree':dark,mid,light,accent=['#40312a','#715045','#a44e4d','#e0ae74']
+  elif ident=='lord_of_dead':dark,mid,light,accent=['#555047','#a49b83','#d2c6a6','#e8debf']
+  elif ident=='mordant_mimic':dark,mid,light,accent=['#31272c','#725b43','#927c5d','#d9c7a9']
   elif ident in ['dragon','cinder_hound']:dark,mid,light,accent=['#30272b','#6d4542','#b66d51','#e8bc79']
   parts=[]
   furry=any(k in ident for k in ['wolf','hound','hart','ravager','stalker'])
@@ -94,6 +161,9 @@ for entry in manifest:
   for y in range(0,64,16):parts += [rect(0,y,64,2,a),rect(0,y+14,64,2,'#25303d'),rect(4,y+4,8,7,a),rect(5,y+5,6,5,c)]
   export(name,64,parts);continue
  # Blocks / foliage / plants: compact hand-designed pixel clusters, no image-atlas sampling.
+ natural=natural_tile(token,seed)
+ if name.startswith('block/') and natural is not None:
+  export(name,16,natural);continue
  lower=token.lower();family=4 if any(s in lower for s in ['moss','meadow','emerald','leaf','runic']) else 2 if any(s in lower for s in ['azure','cyan','blue','teal','turquoise','drowned']) else 5 if any(s in lower for s in ['pink','rose','lavender','amethyst','plum','pearl']) else 0 if any(s in lower for s in ['ash','scarlet','crimson','red','ember']) else 3
  dark,mid,light,accent=palettes[family]
  if any(s in lower for s in ['gold','sun','honey','warm','autumn','bronze']):dark,mid,light,accent=['#6b5535','#aa8950','#d4b779','#f1d594']
@@ -120,10 +190,20 @@ for entry in manifest:
 for token in ['ashen_grass','meadow_grass','blossom_grass','lavender_grass','frost_grass','scarlet_litter','autumn_litter','turquoise_moss','sanctuary_moss']:
  m=A/f'models/block/{token}.json'
  if not m.exists():continue
- name='block/'+token+'_side';p=palettes[4 if token in ['meadow_grass','sanctuary_moss'] else 5 if 'blossom' in token or 'lavender' in token else 3]
- export(name,16,[rect(0,0,16,16,'#524337'),rect(0,0,16,3,p[1]),rect(2,3,3,2,p[1]),rect(9,3,4,1,p[1]),rect(3,8,4,2,'#6b5744'),rect(10,12,3,2,'#6b5744')])
+ name='block/'+token+'_side';p=natural_palette(token);parts=natural_tile('dream_loam',int(hashlib.sha256(token.encode()).hexdigest()[:8],16))
+ parts += [rect(0,0,16,3,p[1])]
+ for x in range(16):
+  depth=1+(x*7+len(token))%3
+  parts += [rect(x,3,1,depth,p[1]),rect(x,0,1,1,shade(p[1],7)),rect(x,3+depth,1,1,shade(p[1],-10))]
+ export(name,16,parts)
  m.write_text(json.dumps({'parent':'minecraft:block/cube_bottom_top','textures':{'top':'shadowslave:block/'+token,'side':'shadowslave:'+name,'bottom':'shadowslave:block/dream_loam'}},indent=2)+'\n')
 # Ensure generated trees use cutout foliage on both graphics presets.
+for token in ['dream_oak','dream_birch','blue_bark','rose_bark','redwood_bark','runic_timber']:
+ name='block/'+token+'_top';base={'dream_oak':'#9c825b','dream_birch':'#bdbaa0','blue_bark':'#8fa99e','rose_bark':'#bba397','redwood_bark':'#ae805b','runic_timber':'#969574'}[token]
+ parts=[rect(0,0,16,16,shade(base,-25))]
+ for inset in [1,3,5,7]:parts += [rect(inset,inset,16-inset*2,16-inset*2,shade(base,-12+inset*2)),rect(inset,inset,16-inset*2,1,shade(base,9))]
+ export(name,16,parts)
+ (A/f'models/block/{token}.json').write_text(json.dumps({'parent':'minecraft:block/cube_column','textures':{'side':'shadowslave:block/'+token,'end':'shadowslave:'+name}},indent=2)+'\n')
 for m in (A/'models/block').glob('*_leaves.json'):
  data=json.loads(m.read_text());data['render_type']='minecraft:cutout_mipped';m.write_text(json.dumps(data,indent=2)+'\n')
 (A/'art/native_sprites.json').write_text(json.dumps(textures,indent=2)+'\n')

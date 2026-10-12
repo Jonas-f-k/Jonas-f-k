@@ -1,0 +1,31 @@
+{
+  "repository": "https://github.com/JannisX11/blockbench-plugins",
+  "revision": "91ac60fa067008937393e88c902f8871406f55ed",
+  "plugin_id": "animation_sliders",
+  "version": "0.5.0",
+  "min_blockbench_version": "4.8.0",
+  "retrieved_utc": "2026-10-11",
+  "scope": "Standalone Blockbench editor plugin; excluded from runtime JAR",
+  "license": "GPL-3.0",
+  "files": [
+    {
+      "file": "animation_sliders.js",
+      "source_url": "https://raw.githubusercontent.com/JannisX11/blockbench-plugins/91ac60fa067008937393e88c902f8871406f55ed/plugins/animation_sliders/animation_sliders.js",
+      "bytes": 13069,
+      "sha256": "469d4a21582b62ea3625939e620972333f21886285fd482ffb616fd98e192de3"
+    },
+    {
+      "file": "LICENSE.MD",
+      "source_url": "https://raw.githubusercontent.com/JannisX11/blockbench-plugins/91ac60fa067008937393e88c902f8871406f55ed/plugins/animation_sliders/LICENSE.MD",
+      "bytes": 35149,
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "file": "about.md",
+      "source_url": "https://raw.githubusercontent.com/JannisX11/blockbench-plugins/91ac60fa067008937393e88c902f8871406f55ed/plugins/animation_sliders/about.md",
+      "bytes": 1060,
+      "sha256": "1a060a07b3e8ae9a142382d149ebfbb9874db57470ee5ace84d73846a391999c"
+    }
+  ],
+  "catalog_source_url": "https://raw.githubusercontent.com/JannisX11/blockbench-plugins/91ac60fa067008937393e88c902f8871406f55ed/plugins.json"
+}

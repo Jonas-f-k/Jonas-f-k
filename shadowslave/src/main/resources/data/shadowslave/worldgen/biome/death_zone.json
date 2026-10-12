@@ -10,7 +10,7 @@
     "grass_color": 8501580,
     "foliage_color": 7252044,
     "particle": {
-      "probability": 0.01,
+      "probability": 0.0015,
       "options": {
         "type": "minecraft:ash"
       }

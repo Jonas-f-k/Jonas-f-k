@@ -132,13 +132,13 @@ BIOME = {
     "verdant_gardens": dict(
         top="meadow_grass", sub="dream_loam", deep="sanctuary_limestone", steep="sanctuary_limestone",
         shore="warm_sand", lake="dream_loam", patches=[("minecraft:surface", 0.3, 0.7, "sanctuary_moss")],
-        sky=9359342, fog=13953988, water=0x4FB7A7, water_fog=0x2C8176, particle=("cherry_leaves", 0.006),
+        sky=9359342, fog=13953988, water=0x4FB7A7, water_fog=0x2C8176, particle=("cherry_leaves", 0.001),
         leaves="emerald_leaves", trunk="runic_timber", trees=[("broadleaf", 3), ("fancy", 2), ("grand", 1)],
         density=(2, 7), flowers=["foxglove_bloom", "jade_bloom", "lotus_bloom"], flower_count=5, rubble=None),
     "blossom_vale": dict(
         top="blossom_grass", sub="dream_loam", deep="sanctuary_limestone", steep="sanctuary_limestone",
         shore="warm_sand", lake="rose_clay", patches=[("minecraft:surface", 0.3, 0.7, "meadow_grass")],
-        sky=10146289, fog=15259878, water=0xE59DBB, water_fog=0xA86A87, particle=("cherry_leaves", 0.01),
+        sky=10146289, fog=15259878, water=0xE59DBB, water_fog=0xA86A87, particle=("cherry_leaves", 0.0015),
         leaves="pink_leaves", trunk="rose_bark", trees=[("broadleaf", 3), ("fancy", 2), ("grand", 1)],
         density=(2, 8), flowers=["peony_bloom", "rose_bloom", "hibiscus_bloom"], flower_count=6, rubble=None),
     "golden_grove": dict(
@@ -150,14 +150,14 @@ BIOME = {
     "moonlit_grove": dict(
         top="turquoise_moss", sub="dream_loam", deep="sanctuary_limestone", steep="sanctuary_limestone",
         shore="warm_sand", lake="dream_loam", patches=[("minecraft:surface", 0.3, 0.7, "sanctuary_moss")],
-        sky=7442090, fog=7969951, water=0x2B6F80, water_fog=0x153F4C, particle=("end_rod", 0.004),
+        sky=7442090, fog=7969951, water=0x2B6F80, water_fog=0x153F4C, particle=("white_ash", 0.00035),
         additions=("ambient.warped_forest.additions", 0.003),
         leaves="teal_leaves", trunk="blue_bark", trees=[("broadleaf", 2), ("fancy", 2), ("grand", 2)],
         density=(3, 9), flowers=["lotus_bloom", "moon_bloom", "azure_bloom"], flower_count=4, rubble=None),
     "azure_woods": dict(
         top="turquoise_moss", sub="dream_loam", deep="blue_shale", steep="blue_shale",
         shore="warm_sand", lake="dream_loam", patches=[("minecraft:surface", 0.3, 0.7, "frost_grass")],
-        sky=7914728, fog=11721452, water=0x2E6FB0, water_fog=0x1B4372, particle=("end_rod", 0.004),
+        sky=7914728, fog=11721452, water=0x2E6FB0, water_fog=0x1B4372, particle=("white_ash", 0.00035),
         leaves="cyan_leaves", trunk="blue_bark", trees=[("broadleaf", 3), ("fancy", 2), ("grand", 1)],
         density=(3, 9), flowers=["azure_bloom", "lotus_bloom", "cloud_bloom"], flower_count=4, rubble=None),
     "mosslight_ravine": dict(
@@ -169,7 +169,7 @@ BIOME = {
     "aurora_fields": dict(
         top="lavender_grass", sub="dream_loam", deep="blue_shale", steep="blue_shale",
         shore="snow_soil", lake="dream_loam", patches=[("minecraft:surface", 0.35, 0.8, "frost_grass")],
-        sky=9881046, fog=12639449, water=0x8C7BD1, water_fog=0x5A4C96, particle=("cherry_leaves", 0.006),
+        sky=9881046, fog=12639449, water=0x8C7BD1, water_fog=0x5A4C96, particle=("cherry_leaves", 0.001),
         leaves="lavender_leaves", trunk="dream_birch", trees=[("broadleaf", 3), ("fancy", 1)], density=(0, 2),
         flowers=["violet_bloom", "crocus_bloom", "frost_bloom"], flower_count=6, rubble=None),
     "frostglass_taiga": dict(
@@ -181,7 +181,7 @@ BIOME = {
     "amethyst_heights": dict(
         top="lavender_grass", sub="dream_loam", deep="crystal_rock", steep="crystal_rock",
         shore="dream_loam", lake="dream_loam", patches=[("minecraft:gravel", 0.1, 0.45, "crystal_rock")],
-        sky=11777001, fog=13945828, water=0x8A6AB0, water_fog=0x553B7C, particle=("end_rod", 0.006),
+        sky=11777001, fog=13945828, water=0x8A6AB0, water_fog=0x553B7C, particle=("white_ash", 0.0004),
         leaves="lavender_leaves", trunk="rose_bark", trees=[("broadleaf", 3), ("fancy", 1)], density=(0, 2),
         flowers=["crocus_bloom", "violet_bloom"], flower_count=3,
         rubble=("crystal_rock", "amethyst_cluster"), spires=[("amethyst_crystal", 3), ("rose_crystal", 1)]),
@@ -196,7 +196,7 @@ BIOME = {
         shore="ashen_soil", lake="ashen_soil", patches=[("minecraft:gravel", 0.1, 0.5, "fractured_stone"),
                                                          ("minecraft:calcite", -0.1, 0.1, "fossil_bone")],
         sky=6580082, fog=9277591, water=0x3B4A36, water_fog=0x232B20,
-        loop="ambient.basalt_deltas.loop", mood=True, particle=("ash", 0.01),
+        loop="ambient.basalt_deltas.loop", mood=True, particle=("ash", 0.0015),
         dead="petrified_bark", dead_count=(2, 6), trees=None, flowers=["moon_bloom"], flower_count=1,
         rubble=("fractured_stone", "ash_stone"), bones=True),
     "nightmare_desert": dict(
@@ -208,7 +208,7 @@ BIOME = {
     "scarlet_wilds": dict(
         top="scarlet_litter", sub="dream_loam", deep="red_sandstone", steep="red_sandstone",
         shore="warm_sand", lake="rose_clay", patches=[("minecraft:surface", 0.3, 0.7, "autumn_litter")],
-        sky=11895449, fog=13148063, water=0xA5424F, water_fog=0x6C2430, particle=("crimson_spore", 0.006),
+        sky=11895449, fog=13148063, water=0xA5424F, water_fog=0x6C2430, particle=("crimson_spore", 0.0008),
         additions=("ambient.crimson_forest.additions", 0.003),
         leaves="crimson_leaves", trunk="redwood_bark", trees=[("broadleaf", 3), ("fancy", 2), ("grand", 1)],
         density=(3, 9), flowers=["crimson_bloom", "hibiscus_bloom", "ember_bloom"], flower_count=4, rubble=None),
@@ -314,11 +314,7 @@ def build_features(biome, spec):
 
     # --- living trees: random selection between styles, clustered into groves by a noise switch
     if spec.get("trees"):
-        selector = {"type": mc("random_selector"), "config": {
-            "features": [{"chance": round(w / sum(x[1] for x in spec["trees"]), 3),
-                          "feature": {"feature": tree_config(s, spec["trunk"], spec["leaves"], spec["top"]), "placement": []}}
-                         for s, w in spec["trees"][1:]],
-            "default": {"feature": tree_config(spec["trees"][0][0], spec["trunk"], spec["leaves"], spec["top"]), "placement": []}}}
+        selector = {"type": f"{NS}:realm_decoration", "config": {}}
         sparse, dense = spec["density"]
         counter = {"type": mc("noise_threshold_count"), "noise_level": -0.25, "below_noise": sparse, "above_noise": dense}
         out.append(register("trees", biome, "trees", selector, surface_placement([counter], ground)))

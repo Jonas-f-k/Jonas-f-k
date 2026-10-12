@@ -28,9 +28,7 @@ public final class BeastModel extends EntityModel<AbstractClientPlayer> {
     root.render(pose,sprite.wrap(buffer),light,overlay,tint);
   }
   public void glow(PoseStack pose,VertexConsumer buffer,int tint){
-    var f=forms[selected];pose.pushPose();f.translateAndRotate(pose);
-    var head=f.getChild("head");head.translateAndRotate(pose);var eyes=head.getChild("eyes");eyes.visible=true;
-    eyes.render(pose,buffer,0xF000F0,net.minecraft.client.renderer.texture.OverlayTexture.NO_OVERLAY,tint);eyes.visible=false;pose.popPose();
+    RigGlow.render(forms[selected],pose,buffer,tint,true);
   }
   public ModelPart claw(int sign){
     var f=forms[selected];
@@ -38,4 +36,5 @@ public final class BeastModel extends EntityModel<AbstractClientPlayer> {
     if(f.hasChild("leg_"+(sign<0?0:1)))return f.getChild("leg_"+(sign<0?0:1));
     return f.getChild("wing_"+sign);
   }
+  public ModelPart selectedRig(){return forms[selected];}
 }

@@ -10,9 +10,9 @@
     "grass_color": 8501580,
     "foliage_color": 7252044,
     "particle": {
-      "probability": 0.004,
+      "probability": 0.00035,
       "options": {
-        "type": "minecraft:end_rod"
+        "type": "minecraft:white_ash"
       }
     }
   },
