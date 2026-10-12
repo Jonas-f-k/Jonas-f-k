@@ -1,59 +1,53 @@
-# Shadow Slave — 0.6.0-rework.2
+# Shadow Slave — 0.6.0-rework.3
 
-Combined source rework for **Minecraft 1.21.1 · NeoForge 21.1.256 · Java 21**.
+Minecraft **1.21.1 · NeoForge 21.1.256 · Java 21**.
 
-The uploaded `0.6.0-alpha-source` ZIP is the gameplay foundation. The uploaded Markdown and development-goal text are reference specifications. Their historical build/test claims are not evidence that this source revision passes those checks. See `VALIDATION.md` for this revision's actual results.
+[Download the playable mod ZIP](https://github.com/Jonas-f-k/Jonas-f-k/actions/runs/38256745252/artifacts/11750373710). Extract `shadowslave-0.6.0-rework.3.jar`, replace the earlier Shadow Slave JAR in `mods`, and restart Minecraft. GitHub may require sign-in for artifact downloads.
 
-This revision separates creature skin, flexible joints, raised plates and hard tips into four mapped material regions, with clearer species palettes and separate armor UV regions. The client checker now samples painted pixels on the actual baked model faces.
+[Actual Minecraft visual captures](https://github.com/Jonas-f-k/Jonas-f-k/actions/runs/38256745252/artifacts/11750119045) · [39 editable Blockbench models and animation tool](https://github.com/Jonas-f-k/Jonas-f-k/actions/runs/38256745252/artifacts/11749954155) · [Successful build](https://github.com/Jonas-f-k/Jonas-f-k/actions/runs/38256745252)
 
-A compiled JAR is available from the successful [GitHub build](https://github.com/Jonas-f-k/Jonas-f-k/actions/runs/38184789143). [Download the compiled mod ZIP](https://github.com/Jonas-f-k/Jonas-f-k/actions/runs/38184789143/artifacts/11719321901), extract it, and put `shadowslave-0.6.0-rework.2.jar` in the `mods` folder of a Minecraft 1.21.1 / NeoForge 21.1.256 profile. Remove the earlier Shadow Slave JAR and restart Minecraft. GitHub may ask you to sign in before downloading an Actions artifact.
+## The redesign
 
-This build passed all 29 required server GameTests, real Minecraft client-model/UV and painted-face checks, native resource checks and the offline world/effect checks. Graphical gameplay, shader appearance and multiplayer/modpack checks still require local testing. The original local build environment remains network-restricted; GitHub Actions produced the JAR.
+- **32 creature anatomies**: eight-legged carapaces with separate pincers/scythes, low spiders, locust Reavers, long-bodied predators, six-armed Messengers, a bone-mound Lord of the Dead, hinged Mimics and branching Soul Trees. Source evidence and uncertain adaptations are documented in [the visual research](docs/VISUAL_REFERENCE_RESEARCH.md).
+- **Seven transformations**: connected quadruped dragon/wolf/stag/griffin skeletons, a horizontal finned Leviathan, a heavy Colossus and a two-legged Wyvern. Knees, jaws, wings, tail segments and expressive anticipation/strike/recovery poses animate. R publishes a tracked ability pose for every form.
+- **Automatic bundled spell shaders**: nine procedural materials create stepped flames, luminous rune seals, matte shadow wisps, foam, thorn leaves, prism highlights and orbital motes. These are local magic shaders. Full-scene shader-pack lighting is a separate capability. No external shader mod is needed for the included effects.
+- **Natural terrain art**: 286 native sprites include subtle stone/soil/grass clusters, ragged turf sides, bark and cut log ends, transparent foliage and transparent flowers. Source-based creature palettes use controlled contrast.
+- **Varied trees and quieter atmosphere**: biome tree features now use the connected branching generator, uneven canopy lobes and staggered conifer boughs. Bright ambient end rods are replaced with sparse small motes. Existing placed trees keep their old geometry; explore new chunks to see the new crowns.
+- **Animated Bestiary**: press **O → Bestiary → View animated models**. Inspect creatures, transformations and magic; drag to rotate, choose idle/walk/windup/strike/flight, and browse the overview.
+- **Spawning and presentation fixes**: true terrain height, broad-body footing, bounded candidate searches, Peaceful/gamerule compliance and synchronized creature attacks. Natural Nightmare mobs appear in **Dream Realm Survival wilderness**, outside Sanctuaries.
 
-## Main changes
+The seven transformation families and the roster's explicitly original species are mod adaptations. The source research distinguishes primary novel evidence, secondary descriptions and artistic inference. Gameplay progression, Memory IDs, cores, traits, trials and ownership are preserved.
 
-- All 32 regional creatures have complete articulated species rigs, with unique geometry. Crabs have jointed pincers, spiders have eight articulated legs, mimics have hinged lids, plants open their petals, worms have segmented bodies, and undead, beasts and flyers have their own anatomy. Warning poses, jaws, knees, forearms, feathers, veils and tails animate.
-- The seven transformations use dragon, quadruped wolf, finned leviathan, heavy colossus, antlered stag, four-legged winged griffin and two-legged wyvern bodies. Original collision dimensions, form abilities and cleanup stay in place.
-- 280 native pixel sprites replace the illustrated-atlas runtime path. There are 128 distinct Memory icons, dedicated creature materials, full-cube grass with separate soil faces, transparent leaves, and brighter equipped armor materials. 62 unchanged Malcolm Riley sprites retain attribution and licenses.
-- The Soul Sea has custom controls, visible core saturation, ranked Memory rows, compact responsive actions and a paginated bestiary. The HUD shows Essence, core fill, ability cooldowns and actual equipped Memory icons.
-- Seven geometric magic families add growth-scaled casts, transformation effects, beast effects, weapon impacts and locked creature warning rings. Server packets are bounded; the client caps active effects at 32 and vertices at 12,000 per frame.
-- The Dream Realm uses direct cartographic biome lookup and seeded terrain profiles. Clusters of 4–7 unequal islands have five shapes and connected sagging-chain graphs. Vanilla cave density is removed; explicit basin water replaces the global fluid plane. Existing Citadels, ruins and regional scenery remain.
+## Verified
 
-Gameplay progression, Memory IDs, Divine core cap, traits, trials, Echo ownership and magical-damage protection logic are retained from the source foundation. This pass does not claim new lore verification or balance playtesting.
+This source compiled and passed **33 required server GameTests**, actual Minecraft model/UV checks, painted-face checks, asset/terrain/effect checks and **five actual OpenGL client captures**. The real client loaded the bundled shader and drew the mod's atlas-backed creature/form models. Details and limits are in [VALIDATION.md](VALIDATION.md).
 
-## Build and test
+[Creatures](docs/previews/species-overview.png) · [Transformations](docs/previews/forms-overview.png) · [Flight poses](docs/previews/forms-flight.png) · [Magic](docs/previews/magic-overview.png). Documentation previews are resized native client captures. The artifact above contains the original 1280×900 images.
 
-Use a complete JDK 21, not a JRE. The wrapper downloads Gradle 9.2.1.
+## Build and use
 
 ```sh
-./gradlew clean build prepareClientRun runGameTestServer
+bash gradlew clean build prepareClientRun runGameTestServer
 python tools/verify_client_models.py
-python tools/verify_art_resources.py
-python tools/validate_worldgen.py
+python tools/verify_offline.py
+python tools/export_blockbench_models.py
 ```
 
-On Windows, use `gradlew.bat`. The JAR will be `build/libs/shadowslave-0.6.0-rework.2.jar` after a successful build. Put the same JAR on server and clients; remove the older version. This material update works in existing worlds. Use a fresh world to evaluate the earlier terrain changes. Existing worlds keep already-generated chunks and can retain older saved generator settings.
+The result is `build/libs/shadowslave-0.6.0-rework.3.jar`. On Windows use `gradlew.bat`. Put the same revision on clients and server. Build downloads need the usual NeoForge/Minecraft Maven and asset hosts; the current local cloud environment cannot fetch all dependencies, so GitHub Actions performs compilation and client rendering.
 
-Build downloads need HTTPS access to the Gradle/Maven repositories and Minecraft metadata/libraries, including `maven.neoforged.net`, `libraries.minecraft.net`, `piston-meta.mojang.com` and `piston-data.mojang.com`. A dependency download failure does not constitute a Java compilation result.
-
-## Offline checks
+For the opt-in graphical developer check:
 
 ```sh
-python tools/verify_art_resources.py
-python tools/validate_worldgen.py
-python tools/verify_rigs_offline.py rigs.json
-javac -d work/checks src/main/java/com/shadowslave/world/Archipelago.java src/main/java/com/shadowslave/client/SpellGeometry.java tools/java/ArchipelagoCheck.java tools/java/VisualMathCheck.java
-java -cp work/checks ArchipelagoCheck
-java -cp work/checks VisualMathCheck
+xvfb-run -a python tools/run_visual_smoke.py --timeout 240
 ```
 
-The rig harness tests the real builder/animation code using small geometry stand-ins. It does not validate Minecraft APIs or replace real model baking. The preview sheet is generated from that geometry; it is not an in-game screenshot.
+This launches the real client in a virtual display, requires shader loading, captures models/effects, then exits. It is disabled in normal gameplay. [Testing commands](TESTING_COMMANDS.md) cover trials, forms, mobs, Memories and realm exploration.
 
-`TESTING_COMMANDS.md` supplies gameplay commands. `docs/SHADER_COMPATIBILITY.md` supplies the render test matrix. `ASSET_CREDITS.md` and `REWORK_REFERENCES.md` distinguish reused assets from inspiration.
+## Editable art and plugins
 
-## Editable art
+[Editor instructions](docs/EDITABLE_MODELS.md) explain the exported Blockbench 5 models and included **Animation Sliders 0.5.0** plugin. The plugin is supplied with its GPLv3 license and pinned source hashes, separately from the mod JAR. Install it in Blockbench with **File → Plugins → Load Plugin from File**. It has not been installed automatically on your computer.
 
-Generated SVG sources are in `art_source/native`; the 62 selected upstream originals and license are in `art_source/upstream`. Rebuild current assets with Python plus CairoSVG:
+Original texture SVGs live in `art_source/native`. Rebuild sprites and biome data with:
 
 ```sh
 python -m pip install cairosvg pillow
@@ -61,4 +55,6 @@ python tools/build_native_art.py
 python tools/build_worldgen.py
 ```
 
-The older art generators remain historical tools; they target the retired atlas pipeline. Use the current generators above for this revision.
+62 unchanged Malcolm Riley sprites retain attribution and licenses in [ASSET_CREDITS.md](ASSET_CREDITS.md). Other reference projects informed design; their code/models are not bundled.
+
+The uploaded source ZIP is the gameplay foundation. Uploaded documents are reference specifications; their historical release/test claims are not used as validation evidence for this revision.

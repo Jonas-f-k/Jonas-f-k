@@ -2,7 +2,7 @@
 
 This source targets Minecraft 1.21.1 / NeoForge 21.1.256. A shader mod is optional. This revision compiled successfully on GitHub Actions and passed server GameTests and real client model checks. Interactive graphics and optional shader stacks remain untested.
 
-Native pixel albedos, entity normals and Minecraft's lightmap provide ordinary shading. Eyes and equipped trims have emissive layers. Spell geometry uses `RenderType.lightning()` after weather, matching its built-in render target, with built-in depth testing and translucency; the mod does not replace shaders, alter the projection, force camera shake or install a shader pack. Effects and warnings remain server-triggered; shading is cosmetic.
+Native pixel albedos, entity normals and Minecraft's lightmap provide ordinary shading. Eyes and equipped trims have emissive layers. Local spell geometry uses the mod's automatically loaded GLSL shader with depth-tested glow and matte-shadow passes after weather. A resource-load failure uses bounded vanilla rendering as fallback. The bundled shader covers spell effects; a full-world lighting shader pack is a separate optional capability. Effects and warnings remain server-triggered.
 
 The linked Iris, Oculus, Sodium and Embeddium projects are compatibility references. Select releases that explicitly support Minecraft 1.21.1 and NeoForge and satisfy that release's dependencies. This package does not contain them or claim that they can all be installed together. Complementary and Bliss are optional shader-pack references, not tested bundled dependencies.
 

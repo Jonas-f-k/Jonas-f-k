@@ -1,6 +1,25 @@
-# Testing commands — Shadow Slave 0.6.0-alpha
+# Testing commands — Shadow Slave 0.6.0-rework.3
 
 Enable cheats or use operator permission level 2. Replace `@s` with your player name when executing from the server console. Commands that act on the executing player, such as `profile`, `spawn` and `trialwarp`, must be run in the player's chat.
+
+## Animated model and shader viewer
+
+Press **O → Bestiary → View animated models**. Browse Creatures, Transformations and Magic. Drag to rotate; choose Idle, Walk, Windup, Strike or Flight. Overview pages adapt to the window size. This draws the same native runtime geometry and shipped shader used by the mod.
+
+The local spell shader loads automatically with the mod. No external shader pack is needed for rune, wisp, flame, foam and prism effects. A full-world lighting shader pack is a separate optional setup.
+
+## Finding natural mobs
+
+Natural Nightmare creatures spawn in **Dream Realm Survival wilderness**. Creative mode, the Overworld and sheltered Sanctuaries intentionally do not populate them naturally. Check difficulty and gamerule, enter the realm, and move well away from a Sanctuary:
+
+```mcfunction
+/difficulty normal
+/gamerule doMobSpawning true
+/spell profile 0 4 6
+/spell dream
+```
+
+Fly to wilderness in Creative if needed, then use `/gamemode survival`. Existing `/spell spawn <species_id>` commands provide an immediate controlled encounter outside Sanctuaries. New tree shapes need newly generated chunks; textures update in existing chunks.
 
 ## First Nightmare
 
