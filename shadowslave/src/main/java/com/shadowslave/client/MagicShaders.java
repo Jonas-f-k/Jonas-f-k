@@ -20,7 +20,7 @@ public final class MagicShaders extends RenderType {
   private static final Logger LOG=LogUtils.getLogger();
   private static ShaderInstance spell;
   private static boolean warned;
-  private static final RenderType MAGIC=create("shadowslave_arcane",DefaultVertexFormat.POSITION_COLOR_TEX,
+  private static final RenderType MAGIC=create("shadowslave_arcane",DefaultVertexFormat.POSITION_TEX_COLOR,
       VertexFormat.Mode.QUADS,262144,false,false,CompositeState.builder()
           .setShaderState(new RenderStateShard.ShaderStateShard(()->spell))
           .setTransparencyState(ADDITIVE_TRANSPARENCY)
@@ -28,7 +28,7 @@ public final class MagicShaders extends RenderType {
           .setCullState(NO_CULL)
           .setWriteMaskState(COLOR_WRITE)
           .createCompositeState(false));
-  private static final RenderType SHADOW=create("shadowslave_shadow_wisps",DefaultVertexFormat.POSITION_COLOR_TEX,
+  private static final RenderType SHADOW=create("shadowslave_shadow_wisps",DefaultVertexFormat.POSITION_TEX_COLOR,
       VertexFormat.Mode.QUADS,65536,false,true,CompositeState.builder()
           .setShaderState(new RenderStateShard.ShaderStateShard(()->spell))
           .setTransparencyState(TRANSLUCENT_TRANSPARENCY)
@@ -36,12 +36,12 @@ public final class MagicShaders extends RenderType {
           .setCullState(NO_CULL)
           .setWriteMaskState(COLOR_WRITE)
           .createCompositeState(false));
-  private MagicShaders(){super("shadowslave_unused",DefaultVertexFormat.POSITION_COLOR_TEX,VertexFormat.Mode.QUADS,256,false,false,()->{},()->{});}
+  private MagicShaders(){super("shadowslave_unused",DefaultVertexFormat.POSITION_TEX_COLOR,VertexFormat.Mode.QUADS,256,false,false,()->{},()->{});}
   @SubscribeEvent public static void register(RegisterShadersEvent event){
     spell=null;
     try {
       event.registerShader(new ShaderInstance(event.getResourceProvider(),
-          ResourceLocation.fromNamespaceAndPath(ShadowSlaveMod.ID,"arcane"),DefaultVertexFormat.POSITION_COLOR_TEX),loaded->{
+          ResourceLocation.fromNamespaceAndPath(ShadowSlaveMod.ID,"arcane"),DefaultVertexFormat.POSITION_TEX_COLOR),loaded->{
         spell=loaded;
         LOG.info("Shadow Slave bundled arcane GLSL shader loaded (nine procedural materials)");
       });

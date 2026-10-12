@@ -23,7 +23,7 @@ public final class CreatureRig {
         || name.contains("mane") || name.contains("feather") || name.contains("petal")
         || name.contains("moss") || name.contains("veil") || name.contains("foliage")
         || name.contains("leaf") || name.contains("helmet") || name.equals("cap")
-        || name.equals("base") || name.contains("mantle") || name.equals("fin")) band = 2;
+        || name.equals("base") || name.startsWith("stone_") || name.contains("mantle") || name.equals("fin")) band = 2;
     if (name.contains("horn") || name.contains("fang") || name.contains("claw")
         || name.contains("tusk") || name.contains("tooth") || name.contains("weapon")
         || name.contains("spine") || name.contains("crown") || name.contains("tine")
